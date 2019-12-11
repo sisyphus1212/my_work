@@ -1,0 +1,9 @@
+*.a
+*.o
+*.lo
+*.so*
+*.la
+*.pyc
+*si4project
+*.log
+
