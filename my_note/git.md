@@ -35,6 +35,7 @@ Git 2.0版本之前，默认采用matching方法，现在改为默认采用simpl
 
 ## 常用命令
 * git config --global user.email "sisyphus12@163.com"
+* git config --global user.name "sisyphus12"
 ---
 * git add -A  提交所有变化
 * git add -u  提交被修改(modified)和被删除(deleted)文件，不包括新文件(new)
@@ -44,7 +45,7 @@ Git 2.0版本之前，默认采用matching方法，现在改为默认采用simpl
 * git remote -v 查看本地存储的远程仓库信息 
 * git checkout dev 从当前分支切换到‘dev’分支
 * git checkout -b 'dev' 建立并切换新分支 
-* git branch -d <branchname> //删除本地分支 -m 重命名本地分支
+* git branch -d <branchname> //删除本地分支 -m 重命名本地分支 -r //查看远程所有分支
 * git branch -vv 查看当前详细分支信息（可看到当前分支与对应的远程追踪分支）
 ---
 * git log --oneline -3 查看更改操作，只取其中三条
@@ -52,4 +53,5 @@ Git 2.0版本之前，默认采用matching方法，现在改为默认采用simpl
 ---
 * git pull = git fetch + git merge
 * git fetch origin master:temp           #从远程的origin仓库的master分支下载到本地并新建一个分支temp
-
+---
+* git reset --hard commit_id     //退到/进到 指定commit的sha码
