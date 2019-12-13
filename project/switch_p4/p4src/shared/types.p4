@@ -570,15 +570,12 @@ struct switch_lookup_fields_t {
     bit<128> ip_src_addr;
     bit<128> ip_dst_addr;
 
-    bit<8> tcp_flags;
-    bit<16> l4_src_port;
-    bit<16> l4_dst_port;
-
+    bit<8>  tcp_flags;
     bit<8>  udp_flags;
     bit<16> l4_src_port;
     bit<16> l4_dst_port;
 
-    bit<8> vxlan_flags
+    bit<8> vxlan_flags;
     bit<24> vni;
 }
 

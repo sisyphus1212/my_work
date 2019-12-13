@@ -106,8 +106,8 @@ control PktValidation(
         lkp.pcp = hdr.vlan_tag[1].pcp;
     }
 
-    action valid_broadcast_pkt_tagged() {
-        lkp.vni = SWITCH_PKT_TYPE_BROADCAST;
+    action valid_vxlan_pkt_tagged() {
+        lkp.vni = hdr.vxlan.vni;
         lkp.mac_src_addr = hdr.ethernet.src_addr;
         lkp.mac_dst_addr = hdr.ethernet.dst_addr;
         lkp.mac_type = hdr.vlan_tag[0].ether_type;

@@ -11,6 +11,22 @@
               "operation" : "set",
               "dst" : {
                 "type" : "phv",
+                "name" : "ig_md.lkp.l4_src_port"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "65535"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
                 "name" : "ig_md.lkp.mac_src_addr"
               },
               "dst_mask" : {
@@ -541,7 +557,24 @@
       "actions" : [
         {
           "name" : "SwitchIngress.pkt_validation.init_l4_lkp_ports",
-          "primitives" : []
+          "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "ig_md.lkp.l4_src_port"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "65535"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0"
+              }
+            }
+          ]
         },
         {
           "name" : "SwitchIngress.pkt_validation.set_tcp_ports",
@@ -672,11 +705,44 @@
         },
         {
           "name" : "SwitchIngress.pkt_validation.set_igmp_type",
-          "primitives" : []
+          "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "ig_md.lkp.l4_src_port"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "65535"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0"
+              }
+            }
+          ]
         },
         {
           "name" : "SwitchIngress.pkt_validation.set_arp_opcode",
           "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "ig_md.lkp.l4_src_port"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "65535"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0"
+              }
+            },
             {
               "name" : "ModifyFieldPrimitive",
               "operation" : "set",
@@ -2723,38 +2789,6 @@
       ]
     },
     {
-      "name" : "tbl_act_0",
-      "actions" : [
-        {
-          "name" : "act_0",
-          "primitives" : [
-            {
-              "name" : "ExecuteStatefulAluFromHashPrimitive",
-              "dst" : {
-                "type" : "stateful",
-                "name" : "SwitchIngress.ingress_port_mapping.vlan_membership"
-              },
-              "idx" : {
-                "type" : "hash",
-                "name" : "hash_SwitchIngress.ingress_port_mapping.vlan_membership",
-                "algorithm" : "identity"
-              },
-              "hash_inputs" : ["ig_md.port$60$60", "hdr.vlan_tag$0.vid"],
-              "stateful_alu_details" : {
-                "single_bit_mode" : true,
-                "name" : "ingress_port_mapping_check_vlan_membership",
-                "output_value" : {
-                  "operand_1_type" : "memory",
-                  "operand_1_value" : "memory_lo"
-                },
-                "output_dst" : "ig_md.flags.port_vlan_miss"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name" : "SwitchIngress.bd_stats.bd_stats",
       "actions" : [
         {
@@ -2772,42 +2806,46 @@
       ]
     },
     {
-      "name" : "tbl_act_15",
+      "name" : "tbl_compute_ip_hash",
       "actions" : [
         {
-          "name" : "act_15",
+          "name" : "compute_ip_hash",
           "primitives" : [
             {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
+              "name" : "SetFieldToHashIndexPrimitive",
               "dst" : {
                 "type" : "phv",
-                "name" : "ig_md.dtel.report_type"
+                "name" : "ig_md.hash"
               },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "15"
+              "idx" : {
+                "type" : "hash",
+                "name" : "hash_ig_md.hash",
+                "algorithm" : "crc_32"
               },
-              "src1" : {
-                "type" : "immediate",
-                "name" : "0b0"
-              }
-            },
+              "hash_inputs" : ["ig_md.lkp.ip_src_addr", "ig_md.lkp.ip_dst_addr", "ig_md.lkp.ip_proto", "ig_md.lkp.l4_dst_port", "ig_md.lkp.l4_src_port"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "tbl_compute_non_ip_hash",
+      "actions" : [
+        {
+          "name" : "compute_non_ip_hash",
+          "primitives" : [
             {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
+              "name" : "SetFieldToHashIndexPrimitive",
               "dst" : {
                 "type" : "phv",
-                "name" : "ig_md.dtel.session_id"
+                "name" : "ig_md.hash"
               },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "1023"
+              "idx" : {
+                "type" : "hash",
+                "name" : "hash_ig_md.hash",
+                "algorithm" : "crc_32"
               },
-              "src1" : {
-                "type" : "immediate",
-                "name" : "0"
-              }
+              "hash_inputs" : ["ig_md.lkp.mac_type", "ig_md.lkp.mac_src_addr", "ig_md.lkp.mac_dst_addr"]
             }
           ]
         }
@@ -2841,22 +2879,6 @@
               "dst" : {
                 "type" : "phv",
                 "name" : "ig_md.flags.flood_to_multicast_routers"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "1"
-              },
-              "src1" : {
-                "type" : "immediate",
-                "name" : "0"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "ig_md.checks.mrpf"
               },
               "dst_mask" : {
                 "type" : "immediate",
@@ -2910,22 +2932,6 @@
               "dst" : {
                 "type" : "phv",
                 "name" : "ig_md.flags.flood_to_multicast_routers"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "1"
-              },
-              "src1" : {
-                "type" : "immediate",
-                "name" : "0"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "ig_md.checks.mrpf"
               },
               "dst_mask" : {
                 "type" : "immediate",
@@ -3510,27 +3516,11 @@
       ]
     },
     {
-      "name" : "SwitchIngress.dmac.dmac",
+      "name" : "tbl_act_6",
       "actions" : [
         {
-          "name" : "SwitchIngress.dmac.dmac_miss",
+          "name" : "act_5",
           "primitives" : [
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "ig_md.egress_ifindex"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "65535"
-              },
-              "src1" : {
-                "type" : "immediate",
-                "name" : "0xffff"
-              }
-            },
             {
               "name" : "ModifyFieldPrimitive",
               "operation" : "set",
@@ -3544,70 +3534,7 @@
               },
               "src1" : {
                 "type" : "immediate",
-                "name" : "1"
-              }
-            }
-          ]
-        },
-        {
-          "name" : "SwitchIngress.dmac.dmac_hit",
-          "primitives" : [
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "ig_md.egress_ifindex"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "65535"
-              },
-              "src1" : {
-                "type" : "action_param",
-                "name" : "ifindex"
-              }
-            }
-          ]
-        },
-        {
-          "name" : "SwitchIngress.dmac.dmac_multicast",
-          "primitives" : [
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "ig_md.multicast.id"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "65535"
-              },
-              "src1" : {
-                "type" : "action_param",
-                "name" : "index"
-              }
-            }
-          ]
-        },
-        {
-          "name" : "SwitchIngress.dmac.dmac_redirect",
-          "primitives" : [
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "ig_md.nexthop"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "65535"
-              },
-              "src1" : {
-                "type" : "action_param",
-                "name" : "nexthop_index"
+                "name" : "0"
               }
             }
           ]
@@ -3713,6 +3640,32 @@
               "src1" : {
                 "type" : "action_param",
                 "name" : "nexthop_index"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "tbl_act_7",
+      "actions" : [
+        {
+          "name" : "act_6",
+          "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "ig_md.flags.dmac_miss"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "1"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0"
               }
             }
           ]
@@ -4602,6 +4555,111 @@
       ]
     },
     {
+      "name" : "SwitchIngress.dmac.dmac",
+      "actions" : [
+        {
+          "name" : "SwitchIngress.dmac.dmac_miss",
+          "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "ig_md.egress_ifindex"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "65535"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0xffff"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "ig_md.flags.dmac_miss"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "1"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "1"
+              }
+            }
+          ]
+        },
+        {
+          "name" : "SwitchIngress.dmac.dmac_hit",
+          "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "ig_md.egress_ifindex"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "65535"
+              },
+              "src1" : {
+                "type" : "action_param",
+                "name" : "ifindex"
+              }
+            }
+          ]
+        },
+        {
+          "name" : "SwitchIngress.dmac.dmac_multicast",
+          "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "ig_md.multicast.id"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "65535"
+              },
+              "src1" : {
+                "type" : "action_param",
+                "name" : "index"
+              }
+            }
+          ]
+        },
+        {
+          "name" : "SwitchIngress.dmac.dmac_redirect",
+          "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "ig_md.nexthop"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "65535"
+              },
+              "src1" : {
+                "type" : "action_param",
+                "name" : "nexthop_index"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name" : "SwitchIngress.qos.policer.meter_index",
       "actions" : [
         {
@@ -4621,32 +4679,6 @@
               "src1" : {
                 "type" : "action_param",
                 "name" : "SwitchIngress.qos.policer.meter"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name" : "SwitchIngress.storm_control.storm_control",
-      "actions" : [
-        {
-          "name" : "SwitchIngress.storm_control.set_meter",
-          "primitives" : [
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "ig_md.qos.storm_control_color"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "3"
-              },
-              "src1" : {
-                "type" : "action_param",
-                "name" : "SwitchIngress.storm_control.meter"
               }
             }
           ]
@@ -5147,52 +5179,6 @@
       ]
     },
     {
-      "name" : "tbl_compute_ip_hash",
-      "actions" : [
-        {
-          "name" : "compute_ip_hash",
-          "primitives" : [
-            {
-              "name" : "SetFieldToHashIndexPrimitive",
-              "dst" : {
-                "type" : "phv",
-                "name" : "ig_md.hash"
-              },
-              "idx" : {
-                "type" : "hash",
-                "name" : "hash_ig_md.hash",
-                "algorithm" : "crc_32"
-              },
-              "hash_inputs" : ["ig_md.lkp.ip_src_addr", "ig_md.lkp.ip_dst_addr", "ig_md.lkp.ip_proto", "ig_md.lkp.l4_dst_port", "ig_md.lkp.l4_src_port"]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name" : "tbl_compute_non_ip_hash",
-      "actions" : [
-        {
-          "name" : "compute_non_ip_hash",
-          "primitives" : [
-            {
-              "name" : "SetFieldToHashIndexPrimitive",
-              "dst" : {
-                "type" : "phv",
-                "name" : "ig_md.hash"
-              },
-              "idx" : {
-                "type" : "hash",
-                "name" : "hash_ig_md.hash",
-                "algorithm" : "crc_32"
-              },
-              "hash_inputs" : ["ig_md.lkp.mac_type", "ig_md.lkp.mac_src_addr", "ig_md.lkp.mac_dst_addr"]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name" : "SwitchIngress.nexthop.nexthop",
       "actions" : [
         {
@@ -5645,6 +5631,48 @@
       ]
     },
     {
+      "name" : "tbl_act_15",
+      "actions" : [
+        {
+          "name" : "act_15",
+          "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "ig_md.dtel.report_type"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "15"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0b0"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "ig_md.dtel.session_id"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "1023"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name" : "SwitchIngress.smac.learning",
       "actions" : [
         {
@@ -5675,28 +5703,31 @@
       ]
     },
     {
-      "name" : "SwitchIngress.storm_control.stats",
+      "name" : "tbl_act_0",
       "actions" : [
         {
-          "name" : "SwitchIngress.storm_control.count",
+          "name" : "act_0",
           "primitives" : [
             {
-              "name" : "CountPrimitive",
+              "name" : "ExecuteStatefulAluFromHashPrimitive",
               "dst" : {
-                "type" : "counter",
-                "name" : "SwitchIngress.storm_control.storm_control_stats"
-              }
-            }
-          ]
-        },
-        {
-          "name" : "SwitchIngress.storm_control.drop_and_count",
-          "primitives" : [
-            {
-              "name" : "CountPrimitive",
-              "dst" : {
-                "type" : "counter",
-                "name" : "SwitchIngress.storm_control.storm_control_stats"
+                "type" : "stateful",
+                "name" : "SwitchIngress.ingress_port_mapping.vlan_membership"
+              },
+              "idx" : {
+                "type" : "hash",
+                "name" : "hash_SwitchIngress.ingress_port_mapping.vlan_membership",
+                "algorithm" : "identity"
+              },
+              "hash_inputs" : ["ig_md.port$60$60", "hdr.vlan_tag$0.vid"],
+              "stateful_alu_details" : {
+                "single_bit_mode" : true,
+                "name" : "ingress_port_mapping_check_vlan_membership",
+                "output_value" : {
+                  "operand_1_type" : "memory",
+                  "operand_1_value" : "memory_lo"
+                },
+                "output_dst" : "ig_md.flags.port_vlan_miss"
               }
             }
           ]
@@ -5704,23 +5735,26 @@
       ]
     },
     {
-      "name" : "tbl_act_9",
+      "name" : "SwitchIngress.storm_control.storm_control",
       "actions" : [
         {
-          "name" : "act_9",
+          "name" : "SwitchIngress.storm_control.set_meter",
           "primitives" : [
             {
-              "name" : "CountFromHashPrimitive",
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
               "dst" : {
-                "type" : "counter",
-                "name" : "SwitchIngress.racl.stats"
+                "type" : "phv",
+                "name" : "ig_md.qos.storm_control_color"
               },
-              "idx" : {
-                "type" : "hash",
-                "name" : "hash_SwitchIngress.racl.stats",
-                "algorithm" : "identity"
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "3"
               },
-              "hash_inputs" : ["racl_stats_index"]
+              "src1" : {
+                "type" : "action_param",
+                "name" : "SwitchIngress.storm_control.meter"
+              }
             }
           ]
         }
@@ -5883,6 +5917,29 @@
       ]
     },
     {
+      "name" : "tbl_act_9",
+      "actions" : [
+        {
+          "name" : "act_9",
+          "primitives" : [
+            {
+              "name" : "CountFromHashPrimitive",
+              "dst" : {
+                "type" : "counter",
+                "name" : "SwitchIngress.racl.stats"
+              },
+              "idx" : {
+                "type" : "hash",
+                "name" : "hash_SwitchIngress.racl.stats",
+                "algorithm" : "identity"
+              },
+              "hash_inputs" : ["racl_stats_index"]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name" : "tbl_act_4",
       "actions" : [
         {
@@ -5900,36 +5957,6 @@
                 "algorithm" : "identity"
               },
               "hash_inputs" : ["acl_stats_index"]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name" : "SwitchIngress.dtel.mirror_session",
-      "actions" : [
-        {
-          "name" : "NoAction",
-          "primitives" : []
-        },
-        {
-          "name" : "SwitchIngress.dtel.set_mirror_session",
-          "primitives" : [
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "ig_md.dtel.session_id"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "1023"
-              },
-              "src1" : {
-                "type" : "action_param",
-                "name" : "session_id"
-              }
             }
           ]
         }
@@ -5974,22 +6001,6 @@
               "dst_mask" : {
                 "type" : "immediate",
                 "name" : "1"
-              },
-              "src1" : {
-                "type" : "immediate",
-                "name" : "0"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "ig_intr_md_for_tm.packet_color"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "3"
               },
               "src1" : {
                 "type" : "immediate",
@@ -6112,6 +6123,65 @@
               "src1" : {
                 "type" : "action_param",
                 "name" : "mgid"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "SwitchIngress.dtel.mirror_session",
+      "actions" : [
+        {
+          "name" : "NoAction",
+          "primitives" : []
+        },
+        {
+          "name" : "SwitchIngress.dtel.set_mirror_session",
+          "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "ig_md.dtel.session_id"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "1023"
+              },
+              "src1" : {
+                "type" : "action_param",
+                "name" : "session_id"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "SwitchIngress.storm_control.stats",
+      "actions" : [
+        {
+          "name" : "SwitchIngress.storm_control.count",
+          "primitives" : [
+            {
+              "name" : "CountPrimitive",
+              "dst" : {
+                "type" : "counter",
+                "name" : "SwitchIngress.storm_control.storm_control_stats"
+              }
+            }
+          ]
+        },
+        {
+          "name" : "SwitchIngress.storm_control.drop_and_count",
+          "primitives" : [
+            {
+              "name" : "CountPrimitive",
+              "dst" : {
+                "type" : "counter",
+                "name" : "SwitchIngress.storm_control.storm_control_stats"
               }
             }
           ]
@@ -6731,6 +6801,36 @@
       ]
     },
     {
+      "name" : "tbl_act_23",
+      "actions" : [
+        {
+          "name" : "act_24",
+          "primitives" : [
+            {
+              "name" : "DirectAluPrimitive",
+              "operation" : "sub",
+              "dst" : {
+                "type" : "phv",
+                "name" : "eg_md.dtel.latency"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "0"
+              },
+              "src1" : {
+                "type" : "phv",
+                "name" : "eg_intr_md_from_prsr.global_tstamp"
+              },
+              "src2" : {
+                "type" : "phv",
+                "name" : "eg_md.ingress_timestamp"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name" : "tbl_act_24",
       "actions" : [
         {
@@ -6757,244 +6857,6 @@
       ]
     },
     {
-      "name" : "SwitchEgress.multicast_replication.rid",
-      "actions" : [
-        {
-          "name" : "SwitchEgress.multicast_replication.rid_miss",
-          "primitives" : [
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "eg_md.flags.routed"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "1"
-              },
-              "src1" : {
-                "type" : "immediate",
-                "name" : "0"
-              }
-            }
-          ]
-        },
-        {
-          "name" : "SwitchEgress.multicast_replication.rid_hit",
-          "primitives" : [
-            {
-              "name" : "DirectAluPrimitive",
-              "operation" : "xor",
-              "dst" : {
-                "type" : "phv",
-                "name" : "eg_md.checks.same_bd"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "65535"
-              },
-              "src1" : {
-                "type" : "action_param",
-                "name" : "bd"
-              },
-              "src2" : {
-                "type" : "phv",
-                "name" : "eg_md.bd"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "eg_md.bd"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "65535"
-              },
-              "src1" : {
-                "type" : "action_param",
-                "name" : "bd"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name" : "tbl_act_23",
-      "actions" : [
-        {
-          "name" : "act_24",
-          "primitives" : [
-            {
-              "name" : "DirectAluPrimitive",
-              "operation" : "sub",
-              "dst" : {
-                "type" : "phv",
-                "name" : "eg_md.dtel.latency"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "0"
-              },
-              "src1" : {
-                "type" : "phv",
-                "name" : "eg_intr_md_from_prsr.global_tstamp"
-              },
-              "src2" : {
-                "type" : "phv",
-                "name" : "eg_md.ingress_timestamp"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "dtel_queue_report_flag"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "1"
-              },
-              "src1" : {
-                "type" : "immediate",
-                "name" : "0"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name" : "SwitchEgress.egress_port_mapping.port_mapping",
-      "actions" : [
-        {
-          "name" : "SwitchEgress.egress_port_mapping.port_normal",
-          "primitives" : [
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "eg_md.port_lag_index"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "1023"
-              },
-              "src1" : {
-                "type" : "action_param",
-                "name" : "port_lag_index"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "eg_md.qos.group"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "31"
-              },
-              "src1" : {
-                "type" : "action_param",
-                "name" : "qos_group"
-              }
-            }
-          ]
-        },
-        {
-          "name" : "SwitchEgress.egress_port_mapping.port_cpu",
-          "primitives" : [
-            {
-              "name" : "AddHeaderPrimitive",
-              "dst" : {
-                "type" : "header",
-                "name" : "hdr.fabric.$valid"
-              }
-            },
-            {
-              "name" : "AddHeaderPrimitive",
-              "dst" : {
-                "type" : "header",
-                "name" : "hdr.cpu.$valid"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "hdr.cpu.ingress_port"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "127"
-              },
-              "src1" : {
-                "type" : "immediate",
-                "name" : "0"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "hdr.cpu.ingress_port"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "511"
-              },
-              "src1" : {
-                "type" : "phv",
-                "name" : "eg_md.ingress_port"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "hdr.cpu.ether_type"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "65535"
-              },
-              "src1" : {
-                "type" : "phv",
-                "name" : "hdr.ethernet.ether_type"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "hdr.ethernet.ether_type"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "65535"
-              },
-              "src1" : {
-                "type" : "immediate",
-                "name" : "0x9000"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "name" : "SwitchEgress.dtel.egress_port_conversion",
       "actions" : [
         {
@@ -7010,6 +6872,62 @@
               "dst" : {
                 "type" : "phv",
                 "name" : "hdr.dtel_drop_report.egress_port"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "511"
+              },
+              "src1" : {
+                "type" : "action_param",
+                "name" : "port"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "tbl_act_25",
+      "actions" : [
+        {
+          "name" : "act_26",
+          "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "dtel_drop_report_flag"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "3"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "SwitchEgress.dtel.ingress_port_conversion",
+      "actions" : [
+        {
+          "name" : "NoAction",
+          "primitives" : []
+        },
+        {
+          "name" : "SwitchEgress.dtel.convert_ingress_port",
+          "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "hdr.dtel_drop_report.ingress_port"
               },
               "dst_mask" : {
                 "type" : "immediate",
@@ -7050,36 +6968,6 @@
                   "operand_1_value" : "memory_lo"
                 },
                 "output_dst" : "dtel_drop_report_flag$00"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name" : "SwitchEgress.dtel.ingress_port_conversion",
-      "actions" : [
-        {
-          "name" : "NoAction",
-          "primitives" : []
-        },
-        {
-          "name" : "SwitchEgress.dtel.convert_ingress_port",
-          "primitives" : [
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "hdr.dtel_drop_report.ingress_port"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "511"
-              },
-              "src1" : {
-                "type" : "action_param",
-                "name" : "port"
               }
             }
           ]
@@ -10964,10 +10852,10 @@
       ]
     },
     {
-      "name" : "tbl_act_17",
+      "name" : "SwitchEgress.multicast_replication.rid",
       "actions" : [
         {
-          "name" : "act_17",
+          "name" : "SwitchEgress.multicast_replication.rid_miss",
           "primitives" : [
             {
               "name" : "ModifyFieldPrimitive",
@@ -10983,6 +10871,172 @@
               "src1" : {
                 "type" : "immediate",
                 "name" : "0"
+              }
+            }
+          ]
+        },
+        {
+          "name" : "SwitchEgress.multicast_replication.rid_hit",
+          "primitives" : [
+            {
+              "name" : "DirectAluPrimitive",
+              "operation" : "xor",
+              "dst" : {
+                "type" : "phv",
+                "name" : "eg_md.checks.same_bd"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "65535"
+              },
+              "src1" : {
+                "type" : "action_param",
+                "name" : "bd"
+              },
+              "src2" : {
+                "type" : "phv",
+                "name" : "eg_md.bd"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "eg_md.bd"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "65535"
+              },
+              "src1" : {
+                "type" : "action_param",
+                "name" : "bd"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "SwitchEgress.egress_port_mapping.port_mapping",
+      "actions" : [
+        {
+          "name" : "SwitchEgress.egress_port_mapping.port_normal",
+          "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "eg_md.port_lag_index"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "1023"
+              },
+              "src1" : {
+                "type" : "action_param",
+                "name" : "port_lag_index"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "eg_md.qos.group"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "31"
+              },
+              "src1" : {
+                "type" : "action_param",
+                "name" : "qos_group"
+              }
+            }
+          ]
+        },
+        {
+          "name" : "SwitchEgress.egress_port_mapping.port_cpu",
+          "primitives" : [
+            {
+              "name" : "AddHeaderPrimitive",
+              "dst" : {
+                "type" : "header",
+                "name" : "hdr.fabric.$valid"
+              }
+            },
+            {
+              "name" : "AddHeaderPrimitive",
+              "dst" : {
+                "type" : "header",
+                "name" : "hdr.cpu.$valid"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "hdr.cpu.ingress_port"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "127"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "hdr.cpu.ingress_port"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "511"
+              },
+              "src1" : {
+                "type" : "phv",
+                "name" : "eg_md.ingress_port"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "hdr.cpu.ether_type"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "65535"
+              },
+              "src1" : {
+                "type" : "phv",
+                "name" : "hdr.ethernet.ether_type"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "hdr.ethernet.ether_type"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "65535"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0x9000"
               }
             }
           ]
@@ -11015,39 +11069,6 @@
                   "operand_1_value" : "memory_lo"
                 },
                 "output_dst" : "eg_md.checks.stp"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name" : "tbl_act_20",
-      "actions" : [
-        {
-          "name" : "act_20",
-          "primitives" : [
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "hdr.ethernet.ether_type"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "65535"
-              },
-              "src1" : {
-                "type" : "phv",
-                "name" : "hdr.vlan_tag$0.ether_type"
-              }
-            },
-            {
-              "name" : "RemoveHeaderPrimitive",
-              "dst" : {
-                "type" : "header",
-                "name" : "hdr.vlan_tag$0.$valid"
               }
             }
           ]
@@ -11135,6 +11156,32 @@
               "src2" : {
                 "type" : "action_param",
                 "name" : "quantization_mask"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "tbl_act_17",
+      "actions" : [
+        {
+          "name" : "act_17",
+          "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "eg_md.flags.routed"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "1"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0"
               }
             }
           ]
@@ -11282,6 +11329,39 @@
       ]
     },
     {
+      "name" : "tbl_act_20",
+      "actions" : [
+        {
+          "name" : "act_20",
+          "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "hdr.ethernet.ether_type"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "65535"
+              },
+              "src1" : {
+                "type" : "phv",
+                "name" : "hdr.vlan_tag$0.ether_type"
+              }
+            },
+            {
+              "name" : "RemoveHeaderPrimitive",
+              "dst" : {
+                "type" : "header",
+                "name" : "hdr.vlan_tag$0.$valid"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name" : "SwitchEgress.rewrite.nexthop_rewrite",
       "actions" : [
         {
@@ -11356,229 +11436,6 @@
         {
           "name" : "SwitchEgress.rewrite.rewrite_l3_with_tunnel_id",
           "primitives" : []
-        }
-      ]
-    },
-    {
-      "name" : "SwitchEgress.qos.queue",
-      "actions" : [
-        {
-          "name" : "SwitchEgress.qos.count",
-          "primitives" : [
-            {
-              "name" : "CountPrimitive",
-              "dst" : {
-                "type" : "counter",
-                "name" : "SwitchEgress.qos.queue_stats"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name" : "SwitchEgress.vlan_xlate.port_bd_to_vlan_mapping",
-      "actions" : [
-        {
-          "name" : "SwitchEgress.vlan_xlate.set_vlan_untagged",
-          "primitives" : []
-        },
-        {
-          "name" : "SwitchEgress.vlan_xlate.set_vlan_tagged",
-          "primitives" : [
-            {
-              "name" : "AddHeaderPrimitive",
-              "dst" : {
-                "type" : "header",
-                "name" : "hdr.vlan_tag$0.$valid"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "hdr.vlan_tag$0.ether_type"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "65535"
-              },
-              "src1" : {
-                "type" : "phv",
-                "name" : "hdr.ethernet.ether_type"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "hdr.vlan_tag$0.pcp"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "7"
-              },
-              "src1" : {
-                "type" : "phv",
-                "name" : "eg_md.lkp.pcp"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "hdr.vlan_tag$0.cfi"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "1"
-              },
-              "src1" : {
-                "type" : "immediate",
-                "name" : "0"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "hdr.vlan_tag$0.vid"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "4095"
-              },
-              "src1" : {
-                "type" : "action_param",
-                "name" : "vid"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "hdr.ethernet.ether_type"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "65535"
-              },
-              "src1" : {
-                "type" : "immediate",
-                "name" : "0x8100"
-              }
-            }
-          ]
-        },
-        {
-          "name" : "SwitchEgress.vlan_xlate.set_double_tagged",
-          "primitives" : []
-        }
-      ]
-    },
-    {
-      "name" : "SwitchEgress.vlan_xlate.bd_to_vlan_mapping",
-      "actions" : [
-        {
-          "name" : "SwitchEgress.vlan_xlate.set_vlan_untagged",
-          "primitives" : []
-        },
-        {
-          "name" : "SwitchEgress.vlan_xlate.set_vlan_tagged",
-          "primitives" : [
-            {
-              "name" : "AddHeaderPrimitive",
-              "dst" : {
-                "type" : "header",
-                "name" : "hdr.vlan_tag$0.$valid"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "hdr.vlan_tag$0.ether_type"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "65535"
-              },
-              "src1" : {
-                "type" : "phv",
-                "name" : "hdr.ethernet.ether_type"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "hdr.vlan_tag$0.pcp"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "7"
-              },
-              "src1" : {
-                "type" : "phv",
-                "name" : "eg_md.lkp.pcp"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "hdr.vlan_tag$0.cfi"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "1"
-              },
-              "src1" : {
-                "type" : "immediate",
-                "name" : "0"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "hdr.vlan_tag$0.vid"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "4095"
-              },
-              "src1" : {
-                "type" : "action_param",
-                "name" : "vid"
-              }
-            },
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "hdr.ethernet.ether_type"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "65535"
-              },
-              "src1" : {
-                "type" : "immediate",
-                "name" : "0x8100"
-              }
-            }
-          ]
         }
       ]
     },
@@ -11970,6 +11827,22 @@
           "name" : "act_29",
           "primitives" : [
             {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "dtel_flow_report_flag"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "3"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0"
+              }
+            },
+            {
               "name" : "SetFieldToHashIndexPrimitive",
               "dst" : {
                 "type" : "phv",
@@ -12070,24 +11943,7 @@
       "actions" : [
         {
           "name" : "NoAction",
-          "primitives" : [
-            {
-              "name" : "ModifyFieldPrimitive",
-              "operation" : "set",
-              "dst" : {
-                "type" : "phv",
-                "name" : "rewrite_smac_index"
-              },
-              "dst_mask" : {
-                "type" : "immediate",
-                "name" : "65535"
-              },
-              "src1" : {
-                "type" : "immediate",
-                "name" : "0"
-              }
-            }
-          ]
+          "primitives" : []
         },
         {
           "name" : "SwitchEgress.rewrite.egress_bd.set_bd_properties",
@@ -12122,6 +11978,23 @@
               "src1" : {
                 "type" : "action_param",
                 "name" : "mtu_index"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "SwitchEgress.rewrite.egress_bd.bd_stats",
+      "actions" : [
+        {
+          "name" : "SwitchEgress.rewrite.egress_bd.count",
+          "primitives" : [
+            {
+              "name" : "CountPrimitive",
+              "dst" : {
+                "type" : "counter",
+                "name" : "SwitchEgress.rewrite.egress_bd.stats"
               }
             }
           ]
@@ -12501,76 +12374,205 @@
       ]
     },
     {
-      "name" : "SwitchEgress.rewrite.egress_bd.bd_stats",
+      "name" : "SwitchEgress.vlan_xlate.port_bd_to_vlan_mapping",
       "actions" : [
         {
-          "name" : "SwitchEgress.rewrite.egress_bd.count",
-          "primitives" : [
-            {
-              "name" : "CountPrimitive",
-              "dst" : {
-                "type" : "counter",
-                "name" : "SwitchEgress.rewrite.egress_bd.stats"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name" : "SwitchEgress.dtel.egress_port_conversion2",
-      "actions" : [
-        {
-          "name" : "NoAction",
+          "name" : "SwitchEgress.vlan_xlate.set_vlan_untagged",
           "primitives" : []
         },
         {
-          "name" : "SwitchEgress.dtel.convert_egress_port2",
+          "name" : "SwitchEgress.vlan_xlate.set_vlan_tagged",
           "primitives" : [
+            {
+              "name" : "AddHeaderPrimitive",
+              "dst" : {
+                "type" : "header",
+                "name" : "hdr.vlan_tag$0.$valid"
+              }
+            },
             {
               "name" : "ModifyFieldPrimitive",
               "operation" : "set",
               "dst" : {
                 "type" : "phv",
-                "name" : "hdr.dtel_switch_local_report.egress_port"
+                "name" : "hdr.vlan_tag$0.ether_type"
               },
               "dst_mask" : {
                 "type" : "immediate",
-                "name" : "511"
+                "name" : "65535"
               },
               "src1" : {
-                "type" : "action_param",
-                "name" : "port"
+                "type" : "phv",
+                "name" : "hdr.ethernet.ether_type"
               }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name" : "SwitchEgress.dtel.ingress_port_conversion2",
-      "actions" : [
-        {
-          "name" : "NoAction",
-          "primitives" : []
-        },
-        {
-          "name" : "SwitchEgress.dtel.convert_ingress_port2",
-          "primitives" : [
+            },
             {
               "name" : "ModifyFieldPrimitive",
               "operation" : "set",
               "dst" : {
                 "type" : "phv",
-                "name" : "hdr.dtel_switch_local_report.ingress_port"
+                "name" : "hdr.vlan_tag$0.pcp"
               },
               "dst_mask" : {
                 "type" : "immediate",
-                "name" : "511"
+                "name" : "7"
+              },
+              "src1" : {
+                "type" : "phv",
+                "name" : "eg_md.lkp.pcp"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "hdr.vlan_tag$0.cfi"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "1"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "hdr.vlan_tag$0.vid"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "4095"
               },
               "src1" : {
                 "type" : "action_param",
-                "name" : "port"
+                "name" : "vid"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "hdr.ethernet.ether_type"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "65535"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0x8100"
+              }
+            }
+          ]
+        },
+        {
+          "name" : "SwitchEgress.vlan_xlate.set_double_tagged",
+          "primitives" : []
+        }
+      ]
+    },
+    {
+      "name" : "SwitchEgress.vlan_xlate.bd_to_vlan_mapping",
+      "actions" : [
+        {
+          "name" : "SwitchEgress.vlan_xlate.set_vlan_untagged",
+          "primitives" : []
+        },
+        {
+          "name" : "SwitchEgress.vlan_xlate.set_vlan_tagged",
+          "primitives" : [
+            {
+              "name" : "AddHeaderPrimitive",
+              "dst" : {
+                "type" : "header",
+                "name" : "hdr.vlan_tag$0.$valid"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "hdr.vlan_tag$0.ether_type"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "65535"
+              },
+              "src1" : {
+                "type" : "phv",
+                "name" : "hdr.ethernet.ether_type"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "hdr.vlan_tag$0.pcp"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "7"
+              },
+              "src1" : {
+                "type" : "phv",
+                "name" : "eg_md.lkp.pcp"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "hdr.vlan_tag$0.cfi"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "1"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "hdr.vlan_tag$0.vid"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "4095"
+              },
+              "src1" : {
+                "type" : "action_param",
+                "name" : "vid"
+              }
+            },
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "hdr.ethernet.ether_type"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "65535"
+              },
+              "src1" : {
+                "type" : "immediate",
+                "name" : "0x8100"
               }
             }
           ]
@@ -12772,6 +12774,66 @@
       ]
     },
     {
+      "name" : "SwitchEgress.dtel.egress_port_conversion2",
+      "actions" : [
+        {
+          "name" : "NoAction",
+          "primitives" : []
+        },
+        {
+          "name" : "SwitchEgress.dtel.convert_egress_port2",
+          "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "hdr.dtel_switch_local_report.egress_port"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "511"
+              },
+              "src1" : {
+                "type" : "action_param",
+                "name" : "port"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "SwitchEgress.dtel.ingress_port_conversion2",
+      "actions" : [
+        {
+          "name" : "NoAction",
+          "primitives" : []
+        },
+        {
+          "name" : "SwitchEgress.dtel.convert_ingress_port2",
+          "primitives" : [
+            {
+              "name" : "ModifyFieldPrimitive",
+              "operation" : "set",
+              "dst" : {
+                "type" : "phv",
+                "name" : "hdr.dtel_switch_local_report.ingress_port"
+              },
+              "dst_mask" : {
+                "type" : "immediate",
+                "name" : "511"
+              },
+              "src1" : {
+                "type" : "action_param",
+                "name" : "port"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name" : "tbl_set_eg_intr_md",
       "actions" : [
         {
@@ -12808,6 +12870,23 @@
               "dst" : {
                 "type" : "counter",
                 "name" : "SwitchEgress.system_acl.stats"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name" : "SwitchEgress.qos.queue",
+      "actions" : [
+        {
+          "name" : "SwitchEgress.qos.count",
+          "primitives" : [
+            {
+              "name" : "CountPrimitive",
+              "dst" : {
+                "type" : "counter",
+                "name" : "SwitchEgress.qos.queue_stats"
               }
             }
           ]

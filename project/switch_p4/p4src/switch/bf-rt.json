@@ -14428,7 +14428,7 @@
           }
         },
         {
-          "id" : 301,
+          "id" : 304,
           "name" : "eg_md.pkt_src",
           "repeated" : false,
           "annotations" : [],
@@ -14440,7 +14440,7 @@
           }
         },
         {
-          "id" : 302,
+          "id" : 305,
           "name" : "eg_md.pkt_length",
           "repeated" : false,
           "annotations" : [],
@@ -14452,7 +14452,7 @@
           }
         },
         {
-          "id" : 303,
+          "id" : 306,
           "name" : "eg_md.pkt_type",
           "repeated" : false,
           "annotations" : [],
@@ -14464,7 +14464,7 @@
           }
         },
         {
-          "id" : 304,
+          "id" : 307,
           "name" : "eg_md.port_lag_index",
           "repeated" : false,
           "annotations" : [],
@@ -14476,7 +14476,7 @@
           }
         },
         {
-          "id" : 305,
+          "id" : 308,
           "name" : "eg_md.port_type",
           "repeated" : false,
           "annotations" : [],
@@ -14488,7 +14488,7 @@
           }
         },
         {
-          "id" : 306,
+          "id" : 309,
           "name" : "eg_md.port",
           "repeated" : false,
           "annotations" : [],
@@ -14500,7 +14500,7 @@
           }
         },
         {
-          "id" : 307,
+          "id" : 310,
           "name" : "eg_md.ingress_port",
           "repeated" : false,
           "annotations" : [],
@@ -14512,7 +14512,7 @@
           }
         },
         {
-          "id" : 308,
+          "id" : 311,
           "name" : "eg_md.ingress_ifindex",
           "repeated" : false,
           "annotations" : [],
@@ -14524,7 +14524,7 @@
           }
         },
         {
-          "id" : 309,
+          "id" : 312,
           "name" : "eg_md.bd",
           "repeated" : false,
           "annotations" : [],
@@ -14536,7 +14536,7 @@
           }
         },
         {
-          "id" : 310,
+          "id" : 313,
           "name" : "eg_md.vrf",
           "repeated" : false,
           "annotations" : [],
@@ -14548,7 +14548,7 @@
           }
         },
         {
-          "id" : 311,
+          "id" : 314,
           "name" : "eg_md.nexthop",
           "repeated" : false,
           "annotations" : [],
@@ -14560,7 +14560,7 @@
           }
         },
         {
-          "id" : 312,
+          "id" : 315,
           "name" : "eg_md.outer_nexthop",
           "repeated" : false,
           "annotations" : [],
@@ -14572,7 +14572,7 @@
           }
         },
         {
-          "id" : 313,
+          "id" : 316,
           "name" : "eg_md.timestamp",
           "repeated" : false,
           "annotations" : [],
@@ -14584,7 +14584,7 @@
           }
         },
         {
-          "id" : 314,
+          "id" : 317,
           "name" : "eg_md.ingress_timestamp",
           "repeated" : false,
           "annotations" : [],
@@ -14596,7 +14596,7 @@
           }
         },
         {
-          "id" : 315,
+          "id" : 318,
           "name" : "eg_md.checks.same_bd",
           "repeated" : false,
           "annotations" : [],
@@ -14608,7 +14608,7 @@
           }
         },
         {
-          "id" : 316,
+          "id" : 319,
           "name" : "eg_md.checks.mtu",
           "repeated" : false,
           "annotations" : [],
@@ -14620,7 +14620,7 @@
           }
         },
         {
-          "id" : 317,
+          "id" : 320,
           "name" : "eg_md.bypass",
           "repeated" : false,
           "annotations" : [],
@@ -14632,7 +14632,7 @@
           }
         },
         {
-          "id" : 318,
+          "id" : 321,
           "name" : "eg_md.port_lag_label",
           "repeated" : false,
           "annotations" : [],
@@ -14644,7 +14644,7 @@
           }
         },
         {
-          "id" : 319,
+          "id" : 322,
           "name" : "eg_md.bd_label",
           "repeated" : false,
           "annotations" : [],
@@ -14656,7 +14656,7 @@
           }
         },
         {
-          "id" : 320,
+          "id" : 323,
           "name" : "eg_md.if_label",
           "repeated" : false,
           "annotations" : [],
@@ -14668,7 +14668,7 @@
           }
         },
         {
-          "id" : 321,
+          "id" : 324,
           "name" : "eg_md.l4_port_label",
           "repeated" : false,
           "annotations" : [],
@@ -14680,7 +14680,7 @@
           }
         },
         {
-          "id" : 322,
+          "id" : 325,
           "name" : "eg_md.lkp.pkt_type",
           "repeated" : false,
           "annotations" : [],
@@ -14692,7 +14692,7 @@
           }
         },
         {
-          "id" : 323,
+          "id" : 326,
           "name" : "eg_md.lkp.mac_src_addr",
           "repeated" : false,
           "annotations" : [],
@@ -14704,7 +14704,7 @@
           }
         },
         {
-          "id" : 324,
+          "id" : 327,
           "name" : "eg_md.lkp.mac_dst_addr",
           "repeated" : false,
           "annotations" : [],
@@ -14716,7 +14716,7 @@
           }
         },
         {
-          "id" : 325,
+          "id" : 328,
           "name" : "eg_md.lkp.mac_type",
           "repeated" : false,
           "annotations" : [],
@@ -14728,7 +14728,7 @@
           }
         },
         {
-          "id" : 326,
+          "id" : 329,
           "name" : "eg_md.lkp.pcp",
           "repeated" : false,
           "annotations" : [],
@@ -14740,7 +14740,7 @@
           }
         },
         {
-          "id" : 327,
+          "id" : 330,
           "name" : "eg_md.lkp.arp_opcode",
           "repeated" : false,
           "annotations" : [],
@@ -14752,7 +14752,7 @@
           }
         },
         {
-          "id" : 328,
+          "id" : 331,
           "name" : "eg_md.lkp.ip_type",
           "repeated" : false,
           "annotations" : [],
@@ -14764,7 +14764,7 @@
           }
         },
         {
-          "id" : 329,
+          "id" : 332,
           "name" : "eg_md.lkp.ip_proto",
           "repeated" : false,
           "annotations" : [],
@@ -14776,7 +14776,7 @@
           }
         },
         {
-          "id" : 330,
+          "id" : 333,
           "name" : "eg_md.lkp.ip_ttl",
           "repeated" : false,
           "annotations" : [],
@@ -14788,7 +14788,7 @@
           }
         },
         {
-          "id" : 331,
+          "id" : 334,
           "name" : "eg_md.lkp.ip_tos",
           "repeated" : false,
           "annotations" : [],
@@ -14800,7 +14800,7 @@
           }
         },
         {
-          "id" : 332,
+          "id" : 335,
           "name" : "eg_md.lkp.ip_frag",
           "repeated" : false,
           "annotations" : [],
@@ -14812,7 +14812,7 @@
           }
         },
         {
-          "id" : 333,
+          "id" : 336,
           "name" : "eg_md.lkp.ip_src_addr",
           "repeated" : false,
           "annotations" : [],
@@ -14824,7 +14824,7 @@
           }
         },
         {
-          "id" : 334,
+          "id" : 337,
           "name" : "eg_md.lkp.ip_dst_addr",
           "repeated" : false,
           "annotations" : [],
@@ -14836,7 +14836,7 @@
           }
         },
         {
-          "id" : 335,
+          "id" : 338,
           "name" : "eg_md.lkp.tcp_flags",
           "repeated" : false,
           "annotations" : [],
@@ -14848,7 +14848,19 @@
           }
         },
         {
-          "id" : 336,
+          "id" : 339,
+          "name" : "eg_md.lkp.udp_flags",
+          "repeated" : false,
+          "annotations" : [],
+          "mandatory" : false,
+          "match_type" : "Ternary",
+          "type" : {
+            "type" : "bytes",
+            "width" : 8
+          }
+        },
+        {
+          "id" : 340,
           "name" : "eg_md.lkp.l4_src_port",
           "repeated" : false,
           "annotations" : [],
@@ -14860,7 +14872,7 @@
           }
         },
         {
-          "id" : 337,
+          "id" : 341,
           "name" : "eg_md.lkp.l4_dst_port",
           "repeated" : false,
           "annotations" : [],
@@ -14872,7 +14884,31 @@
           }
         },
         {
-          "id" : 338,
+          "id" : 342,
+          "name" : "eg_md.lkp.vxlan_flags",
+          "repeated" : false,
+          "annotations" : [],
+          "mandatory" : false,
+          "match_type" : "Ternary",
+          "type" : {
+            "type" : "bytes",
+            "width" : 8
+          }
+        },
+        {
+          "id" : 343,
+          "name" : "eg_md.lkp.vni",
+          "repeated" : false,
+          "annotations" : [],
+          "mandatory" : false,
+          "match_type" : "Ternary",
+          "type" : {
+            "type" : "bytes",
+            "width" : 24
+          }
+        },
+        {
+          "id" : 344,
           "name" : "eg_md.qos.trust_mode",
           "repeated" : false,
           "annotations" : [],
@@ -14884,7 +14920,7 @@
           }
         },
         {
-          "id" : 339,
+          "id" : 345,
           "name" : "eg_md.qos.group",
           "repeated" : false,
           "annotations" : [],
@@ -14896,7 +14932,7 @@
           }
         },
         {
-          "id" : 340,
+          "id" : 346,
           "name" : "eg_md.qos.tc",
           "repeated" : false,
           "annotations" : [],
@@ -14908,7 +14944,7 @@
           }
         },
         {
-          "id" : 341,
+          "id" : 347,
           "name" : "eg_md.qos.color",
           "repeated" : false,
           "annotations" : [],
@@ -14920,7 +14956,7 @@
           }
         },
         {
-          "id" : 342,
+          "id" : 348,
           "name" : "eg_md.qos.acl_policer_color",
           "repeated" : false,
           "annotations" : [],
@@ -14932,7 +14968,7 @@
           }
         },
         {
-          "id" : 343,
+          "id" : 349,
           "name" : "eg_md.qos.port_color",
           "repeated" : false,
           "annotations" : [],
@@ -14944,7 +14980,7 @@
           }
         },
         {
-          "id" : 344,
+          "id" : 350,
           "name" : "eg_md.qos.flow_color",
           "repeated" : false,
           "annotations" : [],
@@ -14956,7 +14992,7 @@
           }
         },
         {
-          "id" : 345,
+          "id" : 351,
           "name" : "eg_md.qos.storm_control_color",
           "repeated" : false,
           "annotations" : [],
@@ -14968,7 +15004,7 @@
           }
         },
         {
-          "id" : 346,
+          "id" : 352,
           "name" : "eg_md.qos.meter_index",
           "repeated" : false,
           "annotations" : [],
@@ -14980,7 +15016,7 @@
           }
         },
         {
-          "id" : 347,
+          "id" : 353,
           "name" : "eg_md.qos.ingress_flow_meter_index",
           "repeated" : false,
           "annotations" : [],
@@ -14992,7 +15028,7 @@
           }
         },
         {
-          "id" : 348,
+          "id" : 354,
           "name" : "eg_md.qos.qid",
           "repeated" : false,
           "annotations" : [],
@@ -15004,7 +15040,7 @@
           }
         },
         {
-          "id" : 349,
+          "id" : 355,
           "name" : "eg_md.qos.icos",
           "repeated" : false,
           "annotations" : [],
@@ -15016,7 +15052,7 @@
           }
         },
         {
-          "id" : 350,
+          "id" : 356,
           "name" : "eg_md.qos.qdepth",
           "repeated" : false,
           "annotations" : [],
@@ -15028,7 +15064,7 @@
           }
         },
         {
-          "id" : 351,
+          "id" : 357,
           "name" : "eg_md.tunnel.type",
           "repeated" : false,
           "annotations" : [],
@@ -15040,7 +15076,7 @@
           }
         },
         {
-          "id" : 352,
+          "id" : 358,
           "name" : "eg_md.tunnel.index",
           "repeated" : false,
           "annotations" : [],
@@ -15052,7 +15088,7 @@
           }
         },
         {
-          "id" : 353,
+          "id" : 359,
           "name" : "eg_md.tunnel.id",
           "repeated" : false,
           "annotations" : [],
@@ -15064,7 +15100,7 @@
           }
         },
         {
-          "id" : 354,
+          "id" : 360,
           "name" : "eg_md.tunnel.ifindex",
           "repeated" : false,
           "annotations" : [],
@@ -15076,7 +15112,7 @@
           }
         },
         {
-          "id" : 355,
+          "id" : 361,
           "name" : "eg_md.tunnel.hash",
           "repeated" : false,
           "annotations" : [],
@@ -15088,7 +15124,7 @@
           }
         },
         {
-          "id" : 356,
+          "id" : 362,
           "name" : "eg_md.mirror.src",
           "repeated" : false,
           "annotations" : [],
@@ -15100,7 +15136,7 @@
           }
         },
         {
-          "id" : 357,
+          "id" : 363,
           "name" : "eg_md.mirror.type",
           "repeated" : false,
           "annotations" : [],
@@ -15112,7 +15148,7 @@
           }
         },
         {
-          "id" : 358,
+          "id" : 364,
           "name" : "eg_md.mirror.session_id",
           "repeated" : false,
           "annotations" : [],
@@ -15124,7 +15160,7 @@
           }
         },
         {
-          "id" : 359,
+          "id" : 365,
           "name" : "eg_md.dtel.report_type",
           "repeated" : false,
           "annotations" : [],
@@ -15136,7 +15172,7 @@
           }
         },
         {
-          "id" : 360,
+          "id" : 366,
           "name" : "eg_md.dtel.latency",
           "repeated" : false,
           "annotations" : [],
@@ -15148,7 +15184,7 @@
           }
         },
         {
-          "id" : 361,
+          "id" : 367,
           "name" : "eg_md.dtel.session_id",
           "repeated" : false,
           "annotations" : [],
@@ -15160,7 +15196,7 @@
           }
         },
         {
-          "id" : 362,
+          "id" : 368,
           "name" : "eg_md.dtel.hash",
           "repeated" : false,
           "annotations" : [],
@@ -15172,7 +15208,7 @@
           }
         },
         {
-          "id" : 363,
+          "id" : 369,
           "name" : "eg_md.cpu_reason",
           "repeated" : false,
           "annotations" : [],
@@ -15184,7 +15220,7 @@
           }
         },
         {
-          "id" : 364,
+          "id" : 370,
           "name" : "eg_md.drop_reason",
           "repeated" : false,
           "annotations" : [],
@@ -15196,7 +15232,7 @@
           }
         },
         {
-          "id" : 365,
+          "id" : 371,
           "name" : "eg_intr_md._pad0",
           "repeated" : false,
           "annotations" : [],
@@ -15208,7 +15244,7 @@
           }
         },
         {
-          "id" : 366,
+          "id" : 372,
           "name" : "eg_intr_md.egress_port",
           "repeated" : false,
           "annotations" : [],
@@ -15220,7 +15256,7 @@
           }
         },
         {
-          "id" : 367,
+          "id" : 373,
           "name" : "eg_intr_md._pad1",
           "repeated" : false,
           "annotations" : [],
@@ -15232,7 +15268,7 @@
           }
         },
         {
-          "id" : 368,
+          "id" : 374,
           "name" : "eg_intr_md.enq_qdepth",
           "repeated" : false,
           "annotations" : [],
@@ -15244,7 +15280,7 @@
           }
         },
         {
-          "id" : 369,
+          "id" : 375,
           "name" : "eg_intr_md._pad2",
           "repeated" : false,
           "annotations" : [],
@@ -15256,7 +15292,7 @@
           }
         },
         {
-          "id" : 370,
+          "id" : 376,
           "name" : "eg_intr_md.enq_congest_stat",
           "repeated" : false,
           "annotations" : [],
@@ -15268,7 +15304,7 @@
           }
         },
         {
-          "id" : 371,
+          "id" : 377,
           "name" : "eg_intr_md._pad3",
           "repeated" : false,
           "annotations" : [],
@@ -15280,7 +15316,7 @@
           }
         },
         {
-          "id" : 372,
+          "id" : 378,
           "name" : "eg_intr_md.enq_tstamp",
           "repeated" : false,
           "annotations" : [],
@@ -15292,7 +15328,7 @@
           }
         },
         {
-          "id" : 373,
+          "id" : 379,
           "name" : "eg_intr_md._pad4",
           "repeated" : false,
           "annotations" : [],
@@ -15304,7 +15340,7 @@
           }
         },
         {
-          "id" : 374,
+          "id" : 380,
           "name" : "eg_intr_md.deq_qdepth",
           "repeated" : false,
           "annotations" : [],
@@ -15316,7 +15352,7 @@
           }
         },
         {
-          "id" : 375,
+          "id" : 381,
           "name" : "eg_intr_md._pad5",
           "repeated" : false,
           "annotations" : [],
@@ -15328,7 +15364,7 @@
           }
         },
         {
-          "id" : 376,
+          "id" : 382,
           "name" : "eg_intr_md.deq_congest_stat",
           "repeated" : false,
           "annotations" : [],
@@ -15340,7 +15376,7 @@
           }
         },
         {
-          "id" : 377,
+          "id" : 383,
           "name" : "eg_intr_md.app_pool_congest_stat",
           "repeated" : false,
           "annotations" : [],
@@ -15352,7 +15388,7 @@
           }
         },
         {
-          "id" : 378,
+          "id" : 384,
           "name" : "eg_intr_md._pad6",
           "repeated" : false,
           "annotations" : [],
@@ -15364,7 +15400,7 @@
           }
         },
         {
-          "id" : 379,
+          "id" : 385,
           "name" : "eg_intr_md.deq_timedelta",
           "repeated" : false,
           "annotations" : [],
@@ -15376,7 +15412,7 @@
           }
         },
         {
-          "id" : 380,
+          "id" : 386,
           "name" : "eg_intr_md.egress_rid",
           "repeated" : false,
           "annotations" : [],
@@ -15388,7 +15424,7 @@
           }
         },
         {
-          "id" : 381,
+          "id" : 387,
           "name" : "eg_intr_md._pad7",
           "repeated" : false,
           "annotations" : [],
@@ -15400,7 +15436,7 @@
           }
         },
         {
-          "id" : 382,
+          "id" : 388,
           "name" : "eg_intr_md.egress_rid_first",
           "repeated" : false,
           "annotations" : [],
@@ -15412,7 +15448,7 @@
           }
         },
         {
-          "id" : 383,
+          "id" : 389,
           "name" : "eg_intr_md._pad8",
           "repeated" : false,
           "annotations" : [],
@@ -15424,7 +15460,7 @@
           }
         },
         {
-          "id" : 384,
+          "id" : 390,
           "name" : "eg_intr_md.egress_qid",
           "repeated" : false,
           "annotations" : [],
@@ -15436,7 +15472,7 @@
           }
         },
         {
-          "id" : 385,
+          "id" : 391,
           "name" : "eg_intr_md._pad9",
           "repeated" : false,
           "annotations" : [],
@@ -15448,7 +15484,7 @@
           }
         },
         {
-          "id" : 386,
+          "id" : 392,
           "name" : "eg_intr_md.egress_cos",
           "repeated" : false,
           "annotations" : [],
@@ -15460,7 +15496,7 @@
           }
         },
         {
-          "id" : 387,
+          "id" : 393,
           "name" : "eg_intr_md._pad10",
           "repeated" : false,
           "annotations" : [],
@@ -15472,7 +15508,7 @@
           }
         },
         {
-          "id" : 388,
+          "id" : 394,
           "name" : "eg_intr_md.deflection_flag",
           "repeated" : false,
           "annotations" : [],
@@ -15484,7 +15520,7 @@
           }
         },
         {
-          "id" : 389,
+          "id" : 395,
           "name" : "eg_intr_md.pkt_length",
           "repeated" : false,
           "annotations" : [],
@@ -15496,7 +15532,7 @@
           }
         },
         {
-          "id" : 390,
+          "id" : 396,
           "name" : "eg_intr_md_from_prsr.global_tstamp",
           "repeated" : false,
           "annotations" : [],
@@ -15508,7 +15544,7 @@
           }
         },
         {
-          "id" : 391,
+          "id" : 397,
           "name" : "eg_intr_md_from_prsr.global_ver",
           "repeated" : false,
           "annotations" : [],
@@ -15520,7 +15556,7 @@
           }
         },
         {
-          "id" : 392,
+          "id" : 398,
           "name" : "eg_intr_md_from_prsr.parser_err",
           "repeated" : false,
           "annotations" : [],
@@ -15532,7 +15568,7 @@
           }
         },
         {
-          "id" : 393,
+          "id" : 399,
           "name" : "eg_intr_md_for_dprsr.drop_ctl",
           "repeated" : false,
           "annotations" : [],
@@ -15544,7 +15580,7 @@
           }
         },
         {
-          "id" : 394,
+          "id" : 400,
           "name" : "eg_intr_md_for_dprsr.mirror_type",
           "repeated" : false,
           "annotations" : [],
@@ -15556,7 +15592,7 @@
           }
         },
         {
-          "id" : 395,
+          "id" : 401,
           "name" : "eg_intr_md_for_dprsr.coalesce_flush",
           "repeated" : false,
           "annotations" : [],
@@ -15568,7 +15604,7 @@
           }
         },
         {
-          "id" : 396,
+          "id" : 402,
           "name" : "eg_intr_md_for_dprsr.coalesce_length",
           "repeated" : false,
           "annotations" : [],
@@ -15580,7 +15616,7 @@
           }
         },
         {
-          "id" : 397,
+          "id" : 403,
           "name" : "eg_intr_md_for_oport.capture_tstamp_on_tx",
           "repeated" : false,
           "annotations" : [],
@@ -15592,7 +15628,7 @@
           }
         },
         {
-          "id" : 398,
+          "id" : 404,
           "name" : "eg_intr_md_for_oport.update_delay_on_tx",
           "repeated" : false,
           "annotations" : [],
@@ -15604,7 +15640,7 @@
           }
         },
         {
-          "id" : 399,
+          "id" : 405,
           "name" : "eg_intr_md_for_oport.force_tx_error",
           "repeated" : false,
           "annotations" : [],
@@ -18427,7 +18463,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 301,
+                  "id" : 304,
                   "name" : "eg_md.pkt_src",
                   "repeated" : false,
                   "annotations" : [],
@@ -18441,7 +18477,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 302,
+                  "id" : 305,
                   "name" : "eg_md.pkt_length",
                   "repeated" : false,
                   "annotations" : [],
@@ -18455,7 +18491,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 303,
+                  "id" : 306,
                   "name" : "eg_md.pkt_type",
                   "repeated" : false,
                   "annotations" : [],
@@ -18469,7 +18505,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 304,
+                  "id" : 307,
                   "name" : "eg_md.port_lag_index",
                   "repeated" : false,
                   "annotations" : [],
@@ -18483,7 +18519,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 305,
+                  "id" : 308,
                   "name" : "eg_md.port_type",
                   "repeated" : false,
                   "annotations" : [],
@@ -18497,7 +18533,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 306,
+                  "id" : 309,
                   "name" : "eg_md.port",
                   "repeated" : false,
                   "annotations" : [],
@@ -18511,7 +18547,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 307,
+                  "id" : 310,
                   "name" : "eg_md.ingress_port",
                   "repeated" : false,
                   "annotations" : [],
@@ -18525,7 +18561,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 308,
+                  "id" : 311,
                   "name" : "eg_md.ingress_ifindex",
                   "repeated" : false,
                   "annotations" : [],
@@ -18539,7 +18575,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 309,
+                  "id" : 312,
                   "name" : "eg_md.bd",
                   "repeated" : false,
                   "annotations" : [],
@@ -18553,7 +18589,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 310,
+                  "id" : 313,
                   "name" : "eg_md.vrf",
                   "repeated" : false,
                   "annotations" : [],
@@ -18567,7 +18603,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 311,
+                  "id" : 314,
                   "name" : "eg_md.nexthop",
                   "repeated" : false,
                   "annotations" : [],
@@ -18581,7 +18617,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 312,
+                  "id" : 315,
                   "name" : "eg_md.outer_nexthop",
                   "repeated" : false,
                   "annotations" : [],
@@ -18595,7 +18631,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 313,
+                  "id" : 316,
                   "name" : "eg_md.timestamp",
                   "repeated" : false,
                   "annotations" : [],
@@ -18609,7 +18645,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 314,
+                  "id" : 317,
                   "name" : "eg_md.ingress_timestamp",
                   "repeated" : false,
                   "annotations" : [],
@@ -18623,7 +18659,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 315,
+                  "id" : 318,
                   "name" : "eg_md.checks.same_bd",
                   "repeated" : false,
                   "annotations" : [],
@@ -18637,7 +18673,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 316,
+                  "id" : 319,
                   "name" : "eg_md.checks.mtu",
                   "repeated" : false,
                   "annotations" : [],
@@ -18651,7 +18687,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 317,
+                  "id" : 320,
                   "name" : "eg_md.bypass",
                   "repeated" : false,
                   "annotations" : [],
@@ -18665,7 +18701,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 318,
+                  "id" : 321,
                   "name" : "eg_md.port_lag_label",
                   "repeated" : false,
                   "annotations" : [],
@@ -18679,7 +18715,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 319,
+                  "id" : 322,
                   "name" : "eg_md.bd_label",
                   "repeated" : false,
                   "annotations" : [],
@@ -18693,7 +18729,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 320,
+                  "id" : 323,
                   "name" : "eg_md.if_label",
                   "repeated" : false,
                   "annotations" : [],
@@ -18707,7 +18743,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 321,
+                  "id" : 324,
                   "name" : "eg_md.l4_port_label",
                   "repeated" : false,
                   "annotations" : [],
@@ -18721,7 +18757,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 322,
+                  "id" : 325,
                   "name" : "eg_md.lkp.pkt_type",
                   "repeated" : false,
                   "annotations" : [],
@@ -18735,7 +18771,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 323,
+                  "id" : 326,
                   "name" : "eg_md.lkp.mac_src_addr",
                   "repeated" : false,
                   "annotations" : [],
@@ -18749,7 +18785,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 324,
+                  "id" : 327,
                   "name" : "eg_md.lkp.mac_dst_addr",
                   "repeated" : false,
                   "annotations" : [],
@@ -18763,7 +18799,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 325,
+                  "id" : 328,
                   "name" : "eg_md.lkp.mac_type",
                   "repeated" : false,
                   "annotations" : [],
@@ -18777,7 +18813,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 326,
+                  "id" : 329,
                   "name" : "eg_md.lkp.pcp",
                   "repeated" : false,
                   "annotations" : [],
@@ -18791,7 +18827,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 327,
+                  "id" : 330,
                   "name" : "eg_md.lkp.arp_opcode",
                   "repeated" : false,
                   "annotations" : [],
@@ -18805,7 +18841,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 328,
+                  "id" : 331,
                   "name" : "eg_md.lkp.ip_type",
                   "repeated" : false,
                   "annotations" : [],
@@ -18819,7 +18855,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 329,
+                  "id" : 332,
                   "name" : "eg_md.lkp.ip_proto",
                   "repeated" : false,
                   "annotations" : [],
@@ -18833,7 +18869,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 330,
+                  "id" : 333,
                   "name" : "eg_md.lkp.ip_ttl",
                   "repeated" : false,
                   "annotations" : [],
@@ -18847,7 +18883,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 331,
+                  "id" : 334,
                   "name" : "eg_md.lkp.ip_tos",
                   "repeated" : false,
                   "annotations" : [],
@@ -18861,7 +18897,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 332,
+                  "id" : 335,
                   "name" : "eg_md.lkp.ip_frag",
                   "repeated" : false,
                   "annotations" : [],
@@ -18875,7 +18911,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 333,
+                  "id" : 336,
                   "name" : "eg_md.lkp.ip_src_addr",
                   "repeated" : false,
                   "annotations" : [],
@@ -18889,7 +18925,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 334,
+                  "id" : 337,
                   "name" : "eg_md.lkp.ip_dst_addr",
                   "repeated" : false,
                   "annotations" : [],
@@ -18903,7 +18939,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 335,
+                  "id" : 338,
                   "name" : "eg_md.lkp.tcp_flags",
                   "repeated" : false,
                   "annotations" : [],
@@ -18917,7 +18953,21 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 336,
+                  "id" : 339,
+                  "name" : "eg_md.lkp.udp_flags",
+                  "repeated" : false,
+                  "annotations" : [],
+                  "type" : {
+                    "type" : "bytes",
+                    "width" : 8
+                  }
+                }
+              },
+              {
+                "mandatory" : false,
+                "read_only" : true,
+                "singleton" : {
+                  "id" : 340,
                   "name" : "eg_md.lkp.l4_src_port",
                   "repeated" : false,
                   "annotations" : [],
@@ -18931,7 +18981,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 337,
+                  "id" : 341,
                   "name" : "eg_md.lkp.l4_dst_port",
                   "repeated" : false,
                   "annotations" : [],
@@ -18945,7 +18995,35 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 338,
+                  "id" : 342,
+                  "name" : "eg_md.lkp.vxlan_flags",
+                  "repeated" : false,
+                  "annotations" : [],
+                  "type" : {
+                    "type" : "bytes",
+                    "width" : 8
+                  }
+                }
+              },
+              {
+                "mandatory" : false,
+                "read_only" : true,
+                "singleton" : {
+                  "id" : 343,
+                  "name" : "eg_md.lkp.vni",
+                  "repeated" : false,
+                  "annotations" : [],
+                  "type" : {
+                    "type" : "bytes",
+                    "width" : 24
+                  }
+                }
+              },
+              {
+                "mandatory" : false,
+                "read_only" : true,
+                "singleton" : {
+                  "id" : 344,
                   "name" : "eg_md.qos.trust_mode",
                   "repeated" : false,
                   "annotations" : [],
@@ -18959,7 +19037,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 339,
+                  "id" : 345,
                   "name" : "eg_md.qos.group",
                   "repeated" : false,
                   "annotations" : [],
@@ -18973,7 +19051,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 340,
+                  "id" : 346,
                   "name" : "eg_md.qos.tc",
                   "repeated" : false,
                   "annotations" : [],
@@ -18987,7 +19065,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 341,
+                  "id" : 347,
                   "name" : "eg_md.qos.color",
                   "repeated" : false,
                   "annotations" : [],
@@ -19001,7 +19079,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 342,
+                  "id" : 348,
                   "name" : "eg_md.qos.acl_policer_color",
                   "repeated" : false,
                   "annotations" : [],
@@ -19015,7 +19093,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 343,
+                  "id" : 349,
                   "name" : "eg_md.qos.port_color",
                   "repeated" : false,
                   "annotations" : [],
@@ -19029,7 +19107,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 344,
+                  "id" : 350,
                   "name" : "eg_md.qos.flow_color",
                   "repeated" : false,
                   "annotations" : [],
@@ -19043,7 +19121,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 345,
+                  "id" : 351,
                   "name" : "eg_md.qos.storm_control_color",
                   "repeated" : false,
                   "annotations" : [],
@@ -19057,7 +19135,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 346,
+                  "id" : 352,
                   "name" : "eg_md.qos.meter_index",
                   "repeated" : false,
                   "annotations" : [],
@@ -19071,7 +19149,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 347,
+                  "id" : 353,
                   "name" : "eg_md.qos.ingress_flow_meter_index",
                   "repeated" : false,
                   "annotations" : [],
@@ -19085,7 +19163,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 348,
+                  "id" : 354,
                   "name" : "eg_md.qos.qid",
                   "repeated" : false,
                   "annotations" : [],
@@ -19099,7 +19177,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 349,
+                  "id" : 355,
                   "name" : "eg_md.qos.icos",
                   "repeated" : false,
                   "annotations" : [],
@@ -19113,7 +19191,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 350,
+                  "id" : 356,
                   "name" : "eg_md.qos.qdepth",
                   "repeated" : false,
                   "annotations" : [],
@@ -19127,7 +19205,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 351,
+                  "id" : 357,
                   "name" : "eg_md.tunnel.type",
                   "repeated" : false,
                   "annotations" : [],
@@ -19141,7 +19219,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 352,
+                  "id" : 358,
                   "name" : "eg_md.tunnel.index",
                   "repeated" : false,
                   "annotations" : [],
@@ -19155,7 +19233,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 353,
+                  "id" : 359,
                   "name" : "eg_md.tunnel.id",
                   "repeated" : false,
                   "annotations" : [],
@@ -19169,7 +19247,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 354,
+                  "id" : 360,
                   "name" : "eg_md.tunnel.ifindex",
                   "repeated" : false,
                   "annotations" : [],
@@ -19183,7 +19261,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 355,
+                  "id" : 361,
                   "name" : "eg_md.tunnel.hash",
                   "repeated" : false,
                   "annotations" : [],
@@ -19197,7 +19275,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 356,
+                  "id" : 362,
                   "name" : "eg_md.mirror.src",
                   "repeated" : false,
                   "annotations" : [],
@@ -19211,7 +19289,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 357,
+                  "id" : 363,
                   "name" : "eg_md.mirror.type",
                   "repeated" : false,
                   "annotations" : [],
@@ -19225,7 +19303,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 358,
+                  "id" : 364,
                   "name" : "eg_md.mirror.session_id",
                   "repeated" : false,
                   "annotations" : [],
@@ -19239,7 +19317,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 359,
+                  "id" : 365,
                   "name" : "eg_md.dtel.report_type",
                   "repeated" : false,
                   "annotations" : [],
@@ -19253,7 +19331,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 360,
+                  "id" : 366,
                   "name" : "eg_md.dtel.latency",
                   "repeated" : false,
                   "annotations" : [],
@@ -19267,7 +19345,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 361,
+                  "id" : 367,
                   "name" : "eg_md.dtel.session_id",
                   "repeated" : false,
                   "annotations" : [],
@@ -19281,7 +19359,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 362,
+                  "id" : 368,
                   "name" : "eg_md.dtel.hash",
                   "repeated" : false,
                   "annotations" : [],
@@ -19295,7 +19373,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 363,
+                  "id" : 369,
                   "name" : "eg_md.cpu_reason",
                   "repeated" : false,
                   "annotations" : [],
@@ -19309,7 +19387,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 364,
+                  "id" : 370,
                   "name" : "eg_md.drop_reason",
                   "repeated" : false,
                   "annotations" : [],
@@ -19323,7 +19401,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 365,
+                  "id" : 371,
                   "name" : "eg_intr_md._pad0",
                   "repeated" : false,
                   "annotations" : [],
@@ -19337,7 +19415,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 366,
+                  "id" : 372,
                   "name" : "eg_intr_md.egress_port",
                   "repeated" : false,
                   "annotations" : [],
@@ -19351,7 +19429,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 367,
+                  "id" : 373,
                   "name" : "eg_intr_md._pad1",
                   "repeated" : false,
                   "annotations" : [],
@@ -19365,7 +19443,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 368,
+                  "id" : 374,
                   "name" : "eg_intr_md.enq_qdepth",
                   "repeated" : false,
                   "annotations" : [],
@@ -19379,7 +19457,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 369,
+                  "id" : 375,
                   "name" : "eg_intr_md._pad2",
                   "repeated" : false,
                   "annotations" : [],
@@ -19393,7 +19471,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 370,
+                  "id" : 376,
                   "name" : "eg_intr_md.enq_congest_stat",
                   "repeated" : false,
                   "annotations" : [],
@@ -19407,7 +19485,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 371,
+                  "id" : 377,
                   "name" : "eg_intr_md._pad3",
                   "repeated" : false,
                   "annotations" : [],
@@ -19421,7 +19499,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 372,
+                  "id" : 378,
                   "name" : "eg_intr_md.enq_tstamp",
                   "repeated" : false,
                   "annotations" : [],
@@ -19435,7 +19513,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 373,
+                  "id" : 379,
                   "name" : "eg_intr_md._pad4",
                   "repeated" : false,
                   "annotations" : [],
@@ -19449,7 +19527,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 374,
+                  "id" : 380,
                   "name" : "eg_intr_md.deq_qdepth",
                   "repeated" : false,
                   "annotations" : [],
@@ -19463,7 +19541,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 375,
+                  "id" : 381,
                   "name" : "eg_intr_md._pad5",
                   "repeated" : false,
                   "annotations" : [],
@@ -19477,7 +19555,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 376,
+                  "id" : 382,
                   "name" : "eg_intr_md.deq_congest_stat",
                   "repeated" : false,
                   "annotations" : [],
@@ -19491,7 +19569,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 377,
+                  "id" : 383,
                   "name" : "eg_intr_md.app_pool_congest_stat",
                   "repeated" : false,
                   "annotations" : [],
@@ -19505,7 +19583,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 378,
+                  "id" : 384,
                   "name" : "eg_intr_md._pad6",
                   "repeated" : false,
                   "annotations" : [],
@@ -19519,7 +19597,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 379,
+                  "id" : 385,
                   "name" : "eg_intr_md.deq_timedelta",
                   "repeated" : false,
                   "annotations" : [],
@@ -19533,7 +19611,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 380,
+                  "id" : 386,
                   "name" : "eg_intr_md.egress_rid",
                   "repeated" : false,
                   "annotations" : [],
@@ -19547,7 +19625,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 381,
+                  "id" : 387,
                   "name" : "eg_intr_md._pad7",
                   "repeated" : false,
                   "annotations" : [],
@@ -19561,7 +19639,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 382,
+                  "id" : 388,
                   "name" : "eg_intr_md.egress_rid_first",
                   "repeated" : false,
                   "annotations" : [],
@@ -19575,7 +19653,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 383,
+                  "id" : 389,
                   "name" : "eg_intr_md._pad8",
                   "repeated" : false,
                   "annotations" : [],
@@ -19589,7 +19667,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 384,
+                  "id" : 390,
                   "name" : "eg_intr_md.egress_qid",
                   "repeated" : false,
                   "annotations" : [],
@@ -19603,7 +19681,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 385,
+                  "id" : 391,
                   "name" : "eg_intr_md._pad9",
                   "repeated" : false,
                   "annotations" : [],
@@ -19617,7 +19695,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 386,
+                  "id" : 392,
                   "name" : "eg_intr_md.egress_cos",
                   "repeated" : false,
                   "annotations" : [],
@@ -19631,7 +19709,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 387,
+                  "id" : 393,
                   "name" : "eg_intr_md._pad10",
                   "repeated" : false,
                   "annotations" : [],
@@ -19645,7 +19723,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 388,
+                  "id" : 394,
                   "name" : "eg_intr_md.deflection_flag",
                   "repeated" : false,
                   "annotations" : [],
@@ -19659,7 +19737,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 389,
+                  "id" : 395,
                   "name" : "eg_intr_md.pkt_length",
                   "repeated" : false,
                   "annotations" : [],
@@ -19673,7 +19751,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 390,
+                  "id" : 396,
                   "name" : "eg_intr_md_from_prsr.global_tstamp",
                   "repeated" : false,
                   "annotations" : [],
@@ -19687,7 +19765,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 391,
+                  "id" : 397,
                   "name" : "eg_intr_md_from_prsr.global_ver",
                   "repeated" : false,
                   "annotations" : [],
@@ -19701,7 +19779,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 392,
+                  "id" : 398,
                   "name" : "eg_intr_md_from_prsr.parser_err",
                   "repeated" : false,
                   "annotations" : [],
@@ -19715,7 +19793,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 393,
+                  "id" : 399,
                   "name" : "eg_intr_md_for_dprsr.drop_ctl",
                   "repeated" : false,
                   "annotations" : [],
@@ -19729,7 +19807,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 394,
+                  "id" : 400,
                   "name" : "eg_intr_md_for_dprsr.mirror_type",
                   "repeated" : false,
                   "annotations" : [],
@@ -19743,7 +19821,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 395,
+                  "id" : 401,
                   "name" : "eg_intr_md_for_dprsr.coalesce_flush",
                   "repeated" : false,
                   "annotations" : [],
@@ -19757,7 +19835,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 396,
+                  "id" : 402,
                   "name" : "eg_intr_md_for_dprsr.coalesce_length",
                   "repeated" : false,
                   "annotations" : [],
@@ -19771,7 +19849,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 397,
+                  "id" : 403,
                   "name" : "eg_intr_md_for_oport.capture_tstamp_on_tx",
                   "repeated" : false,
                   "annotations" : [],
@@ -19785,7 +19863,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 398,
+                  "id" : 404,
                   "name" : "eg_intr_md_for_oport.update_delay_on_tx",
                   "repeated" : false,
                   "annotations" : [],
@@ -19799,7 +19877,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 399,
+                  "id" : 405,
                   "name" : "eg_intr_md_for_oport.force_tx_error",
                   "repeated" : false,
                   "annotations" : [],
@@ -22834,6 +22912,18 @@
         },
         {
           "id" : 234,
+          "name" : "ig_md.lkp.udp_flags",
+          "repeated" : false,
+          "annotations" : [],
+          "mandatory" : false,
+          "match_type" : "Ternary",
+          "type" : {
+            "type" : "bytes",
+            "width" : 8
+          }
+        },
+        {
+          "id" : 235,
           "name" : "ig_md.lkp.l4_src_port",
           "repeated" : false,
           "annotations" : [],
@@ -22845,7 +22935,7 @@
           }
         },
         {
-          "id" : 235,
+          "id" : 236,
           "name" : "ig_md.lkp.l4_dst_port",
           "repeated" : false,
           "annotations" : [],
@@ -22857,7 +22947,31 @@
           }
         },
         {
-          "id" : 236,
+          "id" : 237,
+          "name" : "ig_md.lkp.vxlan_flags",
+          "repeated" : false,
+          "annotations" : [],
+          "mandatory" : false,
+          "match_type" : "Ternary",
+          "type" : {
+            "type" : "bytes",
+            "width" : 8
+          }
+        },
+        {
+          "id" : 238,
+          "name" : "ig_md.lkp.vni",
+          "repeated" : false,
+          "annotations" : [],
+          "mandatory" : false,
+          "match_type" : "Ternary",
+          "type" : {
+            "type" : "bytes",
+            "width" : 24
+          }
+        },
+        {
+          "id" : 239,
           "name" : "ig_md.multicast.id",
           "repeated" : false,
           "annotations" : [],
@@ -22869,7 +22983,7 @@
           }
         },
         {
-          "id" : 237,
+          "id" : 240,
           "name" : "ig_md.multicast.mode",
           "repeated" : false,
           "annotations" : [],
@@ -22881,7 +22995,7 @@
           }
         },
         {
-          "id" : 238,
+          "id" : 241,
           "name" : "ig_md.multicast.rpf_group",
           "repeated" : false,
           "annotations" : [],
@@ -22893,7 +23007,7 @@
           }
         },
         {
-          "id" : 239,
+          "id" : 242,
           "name" : "ig_md.stp.group",
           "repeated" : false,
           "annotations" : [],
@@ -22905,7 +23019,7 @@
           }
         },
         {
-          "id" : 240,
+          "id" : 243,
           "name" : "ig_md.stp.state_",
           "repeated" : false,
           "annotations" : [],
@@ -22917,7 +23031,7 @@
           }
         },
         {
-          "id" : 241,
+          "id" : 244,
           "name" : "ig_md.qos.trust_mode",
           "repeated" : false,
           "annotations" : [],
@@ -22929,7 +23043,7 @@
           }
         },
         {
-          "id" : 242,
+          "id" : 245,
           "name" : "ig_md.qos.group",
           "repeated" : false,
           "annotations" : [],
@@ -22941,7 +23055,7 @@
           }
         },
         {
-          "id" : 243,
+          "id" : 246,
           "name" : "ig_md.qos.tc",
           "repeated" : false,
           "annotations" : [],
@@ -22953,7 +23067,7 @@
           }
         },
         {
-          "id" : 244,
+          "id" : 247,
           "name" : "ig_md.qos.color",
           "repeated" : false,
           "annotations" : [],
@@ -22965,7 +23079,7 @@
           }
         },
         {
-          "id" : 245,
+          "id" : 248,
           "name" : "ig_md.qos.acl_policer_color",
           "repeated" : false,
           "annotations" : [],
@@ -22977,7 +23091,7 @@
           }
         },
         {
-          "id" : 246,
+          "id" : 249,
           "name" : "ig_md.qos.port_color",
           "repeated" : false,
           "annotations" : [],
@@ -22989,7 +23103,7 @@
           }
         },
         {
-          "id" : 247,
+          "id" : 250,
           "name" : "ig_md.qos.flow_color",
           "repeated" : false,
           "annotations" : [],
@@ -23001,7 +23115,7 @@
           }
         },
         {
-          "id" : 248,
+          "id" : 251,
           "name" : "ig_md.qos.storm_control_color",
           "repeated" : false,
           "annotations" : [],
@@ -23013,7 +23127,7 @@
           }
         },
         {
-          "id" : 249,
+          "id" : 252,
           "name" : "ig_md.qos.meter_index",
           "repeated" : false,
           "annotations" : [],
@@ -23025,7 +23139,7 @@
           }
         },
         {
-          "id" : 250,
+          "id" : 253,
           "name" : "ig_md.qos.ingress_flow_meter_index",
           "repeated" : false,
           "annotations" : [],
@@ -23037,7 +23151,7 @@
           }
         },
         {
-          "id" : 251,
+          "id" : 254,
           "name" : "ig_md.qos.qid",
           "repeated" : false,
           "annotations" : [],
@@ -23049,7 +23163,7 @@
           }
         },
         {
-          "id" : 252,
+          "id" : 255,
           "name" : "ig_md.qos.icos",
           "repeated" : false,
           "annotations" : [],
@@ -23061,7 +23175,7 @@
           }
         },
         {
-          "id" : 253,
+          "id" : 256,
           "name" : "ig_md.qos.qdepth",
           "repeated" : false,
           "annotations" : [],
@@ -23073,7 +23187,7 @@
           }
         },
         {
-          "id" : 254,
+          "id" : 257,
           "name" : "ig_md.tunnel.type",
           "repeated" : false,
           "annotations" : [],
@@ -23085,7 +23199,7 @@
           }
         },
         {
-          "id" : 255,
+          "id" : 258,
           "name" : "ig_md.tunnel.index",
           "repeated" : false,
           "annotations" : [],
@@ -23097,7 +23211,7 @@
           }
         },
         {
-          "id" : 256,
+          "id" : 259,
           "name" : "ig_md.tunnel.id",
           "repeated" : false,
           "annotations" : [],
@@ -23109,7 +23223,7 @@
           }
         },
         {
-          "id" : 257,
+          "id" : 260,
           "name" : "ig_md.tunnel.ifindex",
           "repeated" : false,
           "annotations" : [],
@@ -23121,7 +23235,7 @@
           }
         },
         {
-          "id" : 258,
+          "id" : 261,
           "name" : "ig_md.tunnel.hash",
           "repeated" : false,
           "annotations" : [],
@@ -23133,7 +23247,7 @@
           }
         },
         {
-          "id" : 259,
+          "id" : 262,
           "name" : "ig_md.learning.bd_mode",
           "repeated" : false,
           "annotations" : [],
@@ -23145,7 +23259,7 @@
           }
         },
         {
-          "id" : 260,
+          "id" : 263,
           "name" : "ig_md.learning.port_mode",
           "repeated" : false,
           "annotations" : [],
@@ -23157,7 +23271,7 @@
           }
         },
         {
-          "id" : 261,
+          "id" : 264,
           "name" : "ig_md.learning.digest.bd",
           "repeated" : false,
           "annotations" : [],
@@ -23169,7 +23283,7 @@
           }
         },
         {
-          "id" : 262,
+          "id" : 265,
           "name" : "ig_md.learning.digest.ifindex",
           "repeated" : false,
           "annotations" : [],
@@ -23181,7 +23295,7 @@
           }
         },
         {
-          "id" : 263,
+          "id" : 266,
           "name" : "ig_md.learning.digest.src_addr",
           "repeated" : false,
           "annotations" : [],
@@ -23193,7 +23307,7 @@
           }
         },
         {
-          "id" : 264,
+          "id" : 267,
           "name" : "ig_md.mirror.src",
           "repeated" : false,
           "annotations" : [],
@@ -23205,7 +23319,7 @@
           }
         },
         {
-          "id" : 265,
+          "id" : 268,
           "name" : "ig_md.mirror.type",
           "repeated" : false,
           "annotations" : [],
@@ -23217,7 +23331,7 @@
           }
         },
         {
-          "id" : 266,
+          "id" : 269,
           "name" : "ig_md.mirror.session_id",
           "repeated" : false,
           "annotations" : [],
@@ -23229,7 +23343,7 @@
           }
         },
         {
-          "id" : 267,
+          "id" : 270,
           "name" : "ig_md.dtel.report_type",
           "repeated" : false,
           "annotations" : [],
@@ -23241,7 +23355,7 @@
           }
         },
         {
-          "id" : 268,
+          "id" : 271,
           "name" : "ig_md.dtel.latency",
           "repeated" : false,
           "annotations" : [],
@@ -23253,7 +23367,7 @@
           }
         },
         {
-          "id" : 269,
+          "id" : 272,
           "name" : "ig_md.dtel.session_id",
           "repeated" : false,
           "annotations" : [],
@@ -23265,7 +23379,7 @@
           }
         },
         {
-          "id" : 270,
+          "id" : 273,
           "name" : "ig_md.dtel.hash",
           "repeated" : false,
           "annotations" : [],
@@ -23277,7 +23391,7 @@
           }
         },
         {
-          "id" : 271,
+          "id" : 274,
           "name" : "ig_intr_md.resubmit_flag",
           "repeated" : false,
           "annotations" : [],
@@ -23289,7 +23403,7 @@
           }
         },
         {
-          "id" : 272,
+          "id" : 275,
           "name" : "ig_intr_md._pad1",
           "repeated" : false,
           "annotations" : [],
@@ -23301,7 +23415,7 @@
           }
         },
         {
-          "id" : 273,
+          "id" : 276,
           "name" : "ig_intr_md.packet_version",
           "repeated" : false,
           "annotations" : [],
@@ -23313,7 +23427,7 @@
           }
         },
         {
-          "id" : 274,
+          "id" : 277,
           "name" : "ig_intr_md._pad2",
           "repeated" : false,
           "annotations" : [],
@@ -23325,7 +23439,7 @@
           }
         },
         {
-          "id" : 275,
+          "id" : 278,
           "name" : "ig_intr_md.ingress_port",
           "repeated" : false,
           "annotations" : [],
@@ -23337,7 +23451,7 @@
           }
         },
         {
-          "id" : 276,
+          "id" : 279,
           "name" : "ig_intr_md.ingress_mac_tstamp",
           "repeated" : false,
           "annotations" : [],
@@ -23349,7 +23463,7 @@
           }
         },
         {
-          "id" : 277,
+          "id" : 280,
           "name" : "ig_intr_from_prsr.global_tstamp",
           "repeated" : false,
           "annotations" : [],
@@ -23361,7 +23475,7 @@
           }
         },
         {
-          "id" : 278,
+          "id" : 281,
           "name" : "ig_intr_from_prsr.global_ver",
           "repeated" : false,
           "annotations" : [],
@@ -23373,7 +23487,7 @@
           }
         },
         {
-          "id" : 279,
+          "id" : 282,
           "name" : "ig_intr_from_prsr.parser_err",
           "repeated" : false,
           "annotations" : [],
@@ -23385,7 +23499,7 @@
           }
         },
         {
-          "id" : 280,
+          "id" : 283,
           "name" : "ig_intr_md_for_dprsr.drop_ctl",
           "repeated" : false,
           "annotations" : [],
@@ -23397,7 +23511,7 @@
           }
         },
         {
-          "id" : 281,
+          "id" : 284,
           "name" : "ig_intr_md_for_dprsr.digest_type",
           "repeated" : false,
           "annotations" : [],
@@ -23409,7 +23523,7 @@
           }
         },
         {
-          "id" : 282,
+          "id" : 285,
           "name" : "ig_intr_md_for_dprsr.resubmit_type",
           "repeated" : false,
           "annotations" : [],
@@ -23421,7 +23535,7 @@
           }
         },
         {
-          "id" : 283,
+          "id" : 286,
           "name" : "ig_intr_md_for_dprsr.mirror_type",
           "repeated" : false,
           "annotations" : [],
@@ -23433,7 +23547,7 @@
           }
         },
         {
-          "id" : 284,
+          "id" : 287,
           "name" : "ig_intr_md_for_tm.ucast_egress_port",
           "repeated" : false,
           "annotations" : [],
@@ -23445,7 +23559,7 @@
           }
         },
         {
-          "id" : 285,
+          "id" : 288,
           "name" : "ig_intr_md_for_tm.bypass_egress",
           "repeated" : false,
           "annotations" : [],
@@ -23457,7 +23571,7 @@
           }
         },
         {
-          "id" : 286,
+          "id" : 289,
           "name" : "ig_intr_md_for_tm.deflect_on_drop",
           "repeated" : false,
           "annotations" : [],
@@ -23469,7 +23583,7 @@
           }
         },
         {
-          "id" : 287,
+          "id" : 290,
           "name" : "ig_intr_md_for_tm.ingress_cos",
           "repeated" : false,
           "annotations" : [],
@@ -23481,7 +23595,7 @@
           }
         },
         {
-          "id" : 288,
+          "id" : 291,
           "name" : "ig_intr_md_for_tm.qid",
           "repeated" : false,
           "annotations" : [],
@@ -23493,7 +23607,7 @@
           }
         },
         {
-          "id" : 289,
+          "id" : 292,
           "name" : "ig_intr_md_for_tm.icos_for_copy_to_cpu",
           "repeated" : false,
           "annotations" : [],
@@ -23505,7 +23619,7 @@
           }
         },
         {
-          "id" : 290,
+          "id" : 293,
           "name" : "ig_intr_md_for_tm.copy_to_cpu",
           "repeated" : false,
           "annotations" : [],
@@ -23517,7 +23631,7 @@
           }
         },
         {
-          "id" : 291,
+          "id" : 294,
           "name" : "ig_intr_md_for_tm.packet_color",
           "repeated" : false,
           "annotations" : [],
@@ -23529,7 +23643,7 @@
           }
         },
         {
-          "id" : 292,
+          "id" : 295,
           "name" : "ig_intr_md_for_tm.disable_ucast_cutthru",
           "repeated" : false,
           "annotations" : [],
@@ -23541,7 +23655,7 @@
           }
         },
         {
-          "id" : 293,
+          "id" : 296,
           "name" : "ig_intr_md_for_tm.enable_mcast_cutthru",
           "repeated" : false,
           "annotations" : [],
@@ -23553,7 +23667,7 @@
           }
         },
         {
-          "id" : 294,
+          "id" : 297,
           "name" : "ig_intr_md_for_tm.mcast_grp_a",
           "repeated" : false,
           "annotations" : [],
@@ -23565,7 +23679,7 @@
           }
         },
         {
-          "id" : 295,
+          "id" : 298,
           "name" : "ig_intr_md_for_tm.mcast_grp_b",
           "repeated" : false,
           "annotations" : [],
@@ -23577,7 +23691,7 @@
           }
         },
         {
-          "id" : 296,
+          "id" : 299,
           "name" : "ig_intr_md_for_tm.level1_mcast_hash",
           "repeated" : false,
           "annotations" : [],
@@ -23589,7 +23703,7 @@
           }
         },
         {
-          "id" : 297,
+          "id" : 300,
           "name" : "ig_intr_md_for_tm.level2_mcast_hash",
           "repeated" : false,
           "annotations" : [],
@@ -23601,7 +23715,7 @@
           }
         },
         {
-          "id" : 298,
+          "id" : 301,
           "name" : "ig_intr_md_for_tm.level1_exclusion_id",
           "repeated" : false,
           "annotations" : [],
@@ -23613,7 +23727,7 @@
           }
         },
         {
-          "id" : 299,
+          "id" : 302,
           "name" : "ig_intr_md_for_tm.level2_exclusion_id",
           "repeated" : false,
           "annotations" : [],
@@ -23625,7 +23739,7 @@
           }
         },
         {
-          "id" : 300,
+          "id" : 303,
           "name" : "ig_intr_md_for_tm.rid",
           "repeated" : false,
           "annotations" : [],
@@ -26967,6 +27081,20 @@
                 "read_only" : true,
                 "singleton" : {
                   "id" : 234,
+                  "name" : "ig_md.lkp.udp_flags",
+                  "repeated" : false,
+                  "annotations" : [],
+                  "type" : {
+                    "type" : "bytes",
+                    "width" : 8
+                  }
+                }
+              },
+              {
+                "mandatory" : false,
+                "read_only" : true,
+                "singleton" : {
+                  "id" : 235,
                   "name" : "ig_md.lkp.l4_src_port",
                   "repeated" : false,
                   "annotations" : [],
@@ -26980,7 +27108,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 235,
+                  "id" : 236,
                   "name" : "ig_md.lkp.l4_dst_port",
                   "repeated" : false,
                   "annotations" : [],
@@ -26994,7 +27122,35 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 236,
+                  "id" : 237,
+                  "name" : "ig_md.lkp.vxlan_flags",
+                  "repeated" : false,
+                  "annotations" : [],
+                  "type" : {
+                    "type" : "bytes",
+                    "width" : 8
+                  }
+                }
+              },
+              {
+                "mandatory" : false,
+                "read_only" : true,
+                "singleton" : {
+                  "id" : 238,
+                  "name" : "ig_md.lkp.vni",
+                  "repeated" : false,
+                  "annotations" : [],
+                  "type" : {
+                    "type" : "bytes",
+                    "width" : 24
+                  }
+                }
+              },
+              {
+                "mandatory" : false,
+                "read_only" : true,
+                "singleton" : {
+                  "id" : 239,
                   "name" : "ig_md.multicast.id",
                   "repeated" : false,
                   "annotations" : [],
@@ -27008,7 +27164,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 237,
+                  "id" : 240,
                   "name" : "ig_md.multicast.mode",
                   "repeated" : false,
                   "annotations" : [],
@@ -27022,7 +27178,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 238,
+                  "id" : 241,
                   "name" : "ig_md.multicast.rpf_group",
                   "repeated" : false,
                   "annotations" : [],
@@ -27036,7 +27192,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 239,
+                  "id" : 242,
                   "name" : "ig_md.stp.group",
                   "repeated" : false,
                   "annotations" : [],
@@ -27050,7 +27206,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 240,
+                  "id" : 243,
                   "name" : "ig_md.stp.state_",
                   "repeated" : false,
                   "annotations" : [],
@@ -27064,7 +27220,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 241,
+                  "id" : 244,
                   "name" : "ig_md.qos.trust_mode",
                   "repeated" : false,
                   "annotations" : [],
@@ -27078,7 +27234,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 242,
+                  "id" : 245,
                   "name" : "ig_md.qos.group",
                   "repeated" : false,
                   "annotations" : [],
@@ -27092,7 +27248,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 243,
+                  "id" : 246,
                   "name" : "ig_md.qos.tc",
                   "repeated" : false,
                   "annotations" : [],
@@ -27106,7 +27262,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 244,
+                  "id" : 247,
                   "name" : "ig_md.qos.color",
                   "repeated" : false,
                   "annotations" : [],
@@ -27120,7 +27276,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 245,
+                  "id" : 248,
                   "name" : "ig_md.qos.acl_policer_color",
                   "repeated" : false,
                   "annotations" : [],
@@ -27134,7 +27290,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 246,
+                  "id" : 249,
                   "name" : "ig_md.qos.port_color",
                   "repeated" : false,
                   "annotations" : [],
@@ -27148,7 +27304,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 247,
+                  "id" : 250,
                   "name" : "ig_md.qos.flow_color",
                   "repeated" : false,
                   "annotations" : [],
@@ -27162,7 +27318,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 248,
+                  "id" : 251,
                   "name" : "ig_md.qos.storm_control_color",
                   "repeated" : false,
                   "annotations" : [],
@@ -27176,7 +27332,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 249,
+                  "id" : 252,
                   "name" : "ig_md.qos.meter_index",
                   "repeated" : false,
                   "annotations" : [],
@@ -27190,7 +27346,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 250,
+                  "id" : 253,
                   "name" : "ig_md.qos.ingress_flow_meter_index",
                   "repeated" : false,
                   "annotations" : [],
@@ -27204,7 +27360,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 251,
+                  "id" : 254,
                   "name" : "ig_md.qos.qid",
                   "repeated" : false,
                   "annotations" : [],
@@ -27218,7 +27374,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 252,
+                  "id" : 255,
                   "name" : "ig_md.qos.icos",
                   "repeated" : false,
                   "annotations" : [],
@@ -27232,7 +27388,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 253,
+                  "id" : 256,
                   "name" : "ig_md.qos.qdepth",
                   "repeated" : false,
                   "annotations" : [],
@@ -27246,7 +27402,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 254,
+                  "id" : 257,
                   "name" : "ig_md.tunnel.type",
                   "repeated" : false,
                   "annotations" : [],
@@ -27260,7 +27416,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 255,
+                  "id" : 258,
                   "name" : "ig_md.tunnel.index",
                   "repeated" : false,
                   "annotations" : [],
@@ -27274,7 +27430,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 256,
+                  "id" : 259,
                   "name" : "ig_md.tunnel.id",
                   "repeated" : false,
                   "annotations" : [],
@@ -27288,7 +27444,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 257,
+                  "id" : 260,
                   "name" : "ig_md.tunnel.ifindex",
                   "repeated" : false,
                   "annotations" : [],
@@ -27302,7 +27458,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 258,
+                  "id" : 261,
                   "name" : "ig_md.tunnel.hash",
                   "repeated" : false,
                   "annotations" : [],
@@ -27316,7 +27472,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 259,
+                  "id" : 262,
                   "name" : "ig_md.learning.bd_mode",
                   "repeated" : false,
                   "annotations" : [],
@@ -27330,7 +27486,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 260,
+                  "id" : 263,
                   "name" : "ig_md.learning.port_mode",
                   "repeated" : false,
                   "annotations" : [],
@@ -27344,7 +27500,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 261,
+                  "id" : 264,
                   "name" : "ig_md.learning.digest.bd",
                   "repeated" : false,
                   "annotations" : [],
@@ -27358,7 +27514,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 262,
+                  "id" : 265,
                   "name" : "ig_md.learning.digest.ifindex",
                   "repeated" : false,
                   "annotations" : [],
@@ -27372,7 +27528,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 263,
+                  "id" : 266,
                   "name" : "ig_md.learning.digest.src_addr",
                   "repeated" : false,
                   "annotations" : [],
@@ -27386,7 +27542,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 264,
+                  "id" : 267,
                   "name" : "ig_md.mirror.src",
                   "repeated" : false,
                   "annotations" : [],
@@ -27400,7 +27556,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 265,
+                  "id" : 268,
                   "name" : "ig_md.mirror.type",
                   "repeated" : false,
                   "annotations" : [],
@@ -27414,7 +27570,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 266,
+                  "id" : 269,
                   "name" : "ig_md.mirror.session_id",
                   "repeated" : false,
                   "annotations" : [],
@@ -27428,7 +27584,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 267,
+                  "id" : 270,
                   "name" : "ig_md.dtel.report_type",
                   "repeated" : false,
                   "annotations" : [],
@@ -27442,7 +27598,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 268,
+                  "id" : 271,
                   "name" : "ig_md.dtel.latency",
                   "repeated" : false,
                   "annotations" : [],
@@ -27456,7 +27612,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 269,
+                  "id" : 272,
                   "name" : "ig_md.dtel.session_id",
                   "repeated" : false,
                   "annotations" : [],
@@ -27470,7 +27626,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 270,
+                  "id" : 273,
                   "name" : "ig_md.dtel.hash",
                   "repeated" : false,
                   "annotations" : [],
@@ -27484,7 +27640,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 271,
+                  "id" : 274,
                   "name" : "ig_intr_md.resubmit_flag",
                   "repeated" : false,
                   "annotations" : [],
@@ -27498,7 +27654,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 272,
+                  "id" : 275,
                   "name" : "ig_intr_md._pad1",
                   "repeated" : false,
                   "annotations" : [],
@@ -27512,7 +27668,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 273,
+                  "id" : 276,
                   "name" : "ig_intr_md.packet_version",
                   "repeated" : false,
                   "annotations" : [],
@@ -27526,7 +27682,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 274,
+                  "id" : 277,
                   "name" : "ig_intr_md._pad2",
                   "repeated" : false,
                   "annotations" : [],
@@ -27540,7 +27696,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 275,
+                  "id" : 278,
                   "name" : "ig_intr_md.ingress_port",
                   "repeated" : false,
                   "annotations" : [],
@@ -27554,7 +27710,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 276,
+                  "id" : 279,
                   "name" : "ig_intr_md.ingress_mac_tstamp",
                   "repeated" : false,
                   "annotations" : [],
@@ -27568,7 +27724,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 277,
+                  "id" : 280,
                   "name" : "ig_intr_from_prsr.global_tstamp",
                   "repeated" : false,
                   "annotations" : [],
@@ -27582,7 +27738,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 278,
+                  "id" : 281,
                   "name" : "ig_intr_from_prsr.global_ver",
                   "repeated" : false,
                   "annotations" : [],
@@ -27596,7 +27752,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 279,
+                  "id" : 282,
                   "name" : "ig_intr_from_prsr.parser_err",
                   "repeated" : false,
                   "annotations" : [],
@@ -27610,7 +27766,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 280,
+                  "id" : 283,
                   "name" : "ig_intr_md_for_dprsr.drop_ctl",
                   "repeated" : false,
                   "annotations" : [],
@@ -27624,7 +27780,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 281,
+                  "id" : 284,
                   "name" : "ig_intr_md_for_dprsr.digest_type",
                   "repeated" : false,
                   "annotations" : [],
@@ -27638,7 +27794,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 282,
+                  "id" : 285,
                   "name" : "ig_intr_md_for_dprsr.resubmit_type",
                   "repeated" : false,
                   "annotations" : [],
@@ -27652,7 +27808,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 283,
+                  "id" : 286,
                   "name" : "ig_intr_md_for_dprsr.mirror_type",
                   "repeated" : false,
                   "annotations" : [],
@@ -27666,7 +27822,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 284,
+                  "id" : 287,
                   "name" : "ig_intr_md_for_tm.ucast_egress_port",
                   "repeated" : false,
                   "annotations" : [],
@@ -27680,7 +27836,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 285,
+                  "id" : 288,
                   "name" : "ig_intr_md_for_tm.bypass_egress",
                   "repeated" : false,
                   "annotations" : [],
@@ -27694,7 +27850,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 286,
+                  "id" : 289,
                   "name" : "ig_intr_md_for_tm.deflect_on_drop",
                   "repeated" : false,
                   "annotations" : [],
@@ -27708,7 +27864,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 287,
+                  "id" : 290,
                   "name" : "ig_intr_md_for_tm.ingress_cos",
                   "repeated" : false,
                   "annotations" : [],
@@ -27722,7 +27878,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 288,
+                  "id" : 291,
                   "name" : "ig_intr_md_for_tm.qid",
                   "repeated" : false,
                   "annotations" : [],
@@ -27736,7 +27892,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 289,
+                  "id" : 292,
                   "name" : "ig_intr_md_for_tm.icos_for_copy_to_cpu",
                   "repeated" : false,
                   "annotations" : [],
@@ -27750,7 +27906,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 290,
+                  "id" : 293,
                   "name" : "ig_intr_md_for_tm.copy_to_cpu",
                   "repeated" : false,
                   "annotations" : [],
@@ -27764,7 +27920,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 291,
+                  "id" : 294,
                   "name" : "ig_intr_md_for_tm.packet_color",
                   "repeated" : false,
                   "annotations" : [],
@@ -27778,7 +27934,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 292,
+                  "id" : 295,
                   "name" : "ig_intr_md_for_tm.disable_ucast_cutthru",
                   "repeated" : false,
                   "annotations" : [],
@@ -27792,7 +27948,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 293,
+                  "id" : 296,
                   "name" : "ig_intr_md_for_tm.enable_mcast_cutthru",
                   "repeated" : false,
                   "annotations" : [],
@@ -27806,7 +27962,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 294,
+                  "id" : 297,
                   "name" : "ig_intr_md_for_tm.mcast_grp_a",
                   "repeated" : false,
                   "annotations" : [],
@@ -27820,7 +27976,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 295,
+                  "id" : 298,
                   "name" : "ig_intr_md_for_tm.mcast_grp_b",
                   "repeated" : false,
                   "annotations" : [],
@@ -27834,7 +27990,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 296,
+                  "id" : 299,
                   "name" : "ig_intr_md_for_tm.level1_mcast_hash",
                   "repeated" : false,
                   "annotations" : [],
@@ -27848,7 +28004,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 297,
+                  "id" : 300,
                   "name" : "ig_intr_md_for_tm.level2_mcast_hash",
                   "repeated" : false,
                   "annotations" : [],
@@ -27862,7 +28018,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 298,
+                  "id" : 301,
                   "name" : "ig_intr_md_for_tm.level1_exclusion_id",
                   "repeated" : false,
                   "annotations" : [],
@@ -27876,7 +28032,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 299,
+                  "id" : 302,
                   "name" : "ig_intr_md_for_tm.level2_exclusion_id",
                   "repeated" : false,
                   "annotations" : [],
@@ -27890,7 +28046,7 @@
                 "mandatory" : false,
                 "read_only" : true,
                 "singleton" : {
-                  "id" : 300,
+                  "id" : 303,
                   "name" : "ig_intr_md_for_tm.rid",
                   "repeated" : false,
                   "annotations" : [],

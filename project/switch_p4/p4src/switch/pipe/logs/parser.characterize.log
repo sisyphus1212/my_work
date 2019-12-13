@@ -1,11 +1,12 @@
 Parser Characterization Report:
-Number of states on ingress: 23
+Number of states on ingress: 30
 
-Number of matches on ingress: 57
+Number of matches on ingress: 69
 
-Longest path (12 states) on ingress:
+Longest path (17 states) on ingress:
     start
     start.$split_0
+    start.$split_1
     parse_cpu
     parse_cpu.$split_0
     parse_vlan
@@ -15,79 +16,95 @@ Longest path (12 states) on ingress:
     parse_ipv4_options
     parse_ipv4_no_options
     parse_udp
-    parse_rocev2
+    parse_vxlan
+    parse_vxlan.$split_0
+    parse_inner_ipv4
+    parse_inner_tcp
+    parse_inner_tcp.$split_0
 
-Average rate: 6.08333 Bps
-Min packet size at 100 Gbps: 123 B (50 B payload)
-Max data rate for min-sized packets: 58.56 Gbps / 100.274 MPps
+Average rate: 4.29412 Bps
+Min packet size at 100 Gbps: 175 B (102 B payload)
+Max data rate for min-sized packets: 41.48 Gbps / 71.0274 MPps
 
 Extractor usage:
-+-----------------------+------------------------------------+-------+--------+--------+------------------+---------+
-|State                  |Match                               |8-bit  |16-bit  |32-bit  |Total Extractors  |Other    |
-+-----------------------+------------------------------------+-------+--------+--------+------------------+---------+
-|start                  |*                                   |2      |4       |3       |9                 |         |
-|start.$split_0         |0x0800****                          |0      |4       |0       |4                 |         |
-|-                      |0x0806****                          |0      |4       |0       |4                 |         |
-|-                      |0x86dd****                          |0      |4       |0       |4                 |         |
-|-                      |0x8100****                          |0      |4       |0       |4                 |         |
-|-                      |0x8100****                          |0      |4       |0       |4                 |         |
-|-                      |0x8906****                          |0      |4       |0       |4                 |         |
-|-                      |SwitchIngressParser.cpu_port        |0      |4       |0       |4                 |         |
-|-                      |0x********                          |0      |4       |0       |4                 |         |
-|parse_fcoe             |*                                   |0      |0       |0       |0                 |         |
-|parse_cpu              |*                                   |0      |4       |1       |5                 |         |
-|parse_cpu.$split_0     |0x0800                              |0      |2       |0       |2                 |         |
-|-                      |0x86dd                              |0      |2       |0       |2                 |         |
-|-                      |0x8100                              |0      |2       |0       |2                 |         |
-|-                      |0x8100                              |0      |2       |0       |2                 |         |
-|-                      |0x****                              |0      |2       |0       |2                 |         |
-|parse_vlan             |0x0806                              |1      |2       |0       |3                 |         |
-|-                      |0x0800                              |1      |2       |0       |3                 |         |
-|-                      |0x8100                              |1      |2       |0       |3                 |         |
-|-                      |0x86dd                              |1      |2       |0       |3                 |         |
-|-                      |0x****                              |1      |2       |0       |3                 |         |
-|parse_vlan.0           |0x0806                              |1      |0       |1       |2                 |         |
-|-                      |0x0800                              |1      |0       |1       |2                 |         |
-|-                      |0x8100                              |1      |0       |1       |2                 |         |
-|-                      |0x86dd                              |1      |0       |1       |2                 |         |
-|-                      |0x****                              |1      |0       |1       |2                 |         |
-|parse_arp              |*                                   |0      |3       |1       |4                 |         |
-|parse_ipv6             |*                                   |0      |4       |4       |8                 |         |
-|parse_ipv6.$split_0    |0x3a                                |0      |1       |4       |5                 |         |
-|-                      |0x06                                |0      |1       |4       |5                 |         |
-|-                      |0x11                                |0      |1       |4       |5                 |         |
-|-                      |0x04                                |0      |1       |4       |5                 |         |
-|-                      |0x29                                |0      |1       |4       |5                 |         |
-|-                      |0x**                                |0      |1       |4       |5                 |         |
-|parse_ipv4             |*                                   |0      |4       |2       |6                 |csum 0   |
-|parse_ipv4.$split_0    |0x*5                                |0      |3       |0       |3                 |         |
-|-                      |0x*6                                |0      |3       |0       |3                 |         |
-|-                      |0x**                                |0      |3       |0       |3                 |         |
-|parse_ipv4_options     |*                                   |0      |1       |1       |2                 |csum 0   |
-|parse_ipv4_no_options  |0b00000001***0000000000000          |0      |0       |0       |0                 |csum 0   |
-|-                      |0b00000010***0000000000000          |0      |0       |0       |0                 |csum 0   |
-|-                      |0b00000110***0000000000000          |0      |0       |0       |0                 |csum 0   |
-|-                      |0b00010001***0000000000000          |0      |0       |0       |0                 |csum 0   |
-|-                      |0b00000100***0000000000000          |0      |0       |0       |0                 |csum 0   |
-|-                      |0b00101001***0000000000000          |0      |0       |0       |0                 |csum 0   |
-|-                      |0x******                            |0      |0       |0       |0                 |csum 0   |
-|parse_tcp              |*                                   |4      |4       |2       |10                |         |
-|parse_tcp.$split_0     |*                                   |2      |0       |0       |2                 |         |
-|parse_udp              |SwitchIngressParser.udp_port_vxlan  |2      |2       |1       |5                 |         |
-|-                      |0x12b7                              |2      |2       |1       |5                 |         |
-|-                      |0x****                              |2      |2       |1       |5                 |         |
-|parse_vxlan            |*                                   |0      |0       |0       |0                 |         |
-|parse_rocev2           |*                                   |0      |0       |0       |0                 |         |
-|parse_ipinip           |*                                   |0      |0       |0       |0                 |         |
-|parse_ipv6inip         |*                                   |0      |0       |0       |0                 |         |
-|parse_icmp             |*                                   |2      |2       |0       |4                 |         |
-|parse_igmp             |*                                   |2      |2       |0       |4                 |         |
-+-----------------------+------------------------------------+-------+--------+--------+------------------+---------+
-Number of states on egress: 23
++--------------------------+------------------------------------+-------+--------+--------+------------------+---------+
+|State                     |Match                               |8-bit  |16-bit  |32-bit  |Total Extractors  |Other    |
++--------------------------+------------------------------------+-------+--------+--------+------------------+---------+
+|start                     |*                                   |0      |4       |3       |7                 |         |
+|start.$split_0            |*                                   |0      |4       |0       |4                 |         |
+|start.$split_1            |0x0800****                          |0      |1       |0       |1                 |         |
+|-                         |0x0806****                          |0      |1       |0       |1                 |         |
+|-                         |0x86dd****                          |0      |1       |0       |1                 |         |
+|-                         |0x8100****                          |0      |1       |0       |1                 |         |
+|-                         |0x8100****                          |0      |1       |0       |1                 |         |
+|-                         |0x8906****                          |0      |1       |0       |1                 |         |
+|-                         |SwitchIngressParser.cpu_port        |0      |1       |0       |1                 |         |
+|-                         |0x********                          |0      |1       |0       |1                 |         |
+|parse_fcoe                |*                                   |0      |0       |0       |0                 |         |
+|parse_cpu                 |*                                   |1      |4       |1       |6                 |         |
+|parse_cpu.$split_0        |0x0800                              |0      |1       |0       |1                 |         |
+|-                         |0x86dd                              |0      |1       |0       |1                 |         |
+|-                         |0x8100                              |0      |1       |0       |1                 |         |
+|-                         |0x8100                              |0      |1       |0       |1                 |         |
+|-                         |0x****                              |0      |1       |0       |1                 |         |
+|parse_vlan                |0x0806                              |1      |2       |0       |3                 |         |
+|-                         |0x0800                              |1      |2       |0       |3                 |         |
+|-                         |0x8100                              |1      |2       |0       |3                 |         |
+|-                         |0x86dd                              |1      |2       |0       |3                 |         |
+|-                         |0x****                              |1      |2       |0       |3                 |         |
+|parse_vlan.0              |0x0806                              |1      |0       |1       |2                 |         |
+|-                         |0x0800                              |1      |0       |1       |2                 |         |
+|-                         |0x8100                              |1      |0       |1       |2                 |         |
+|-                         |0x86dd                              |1      |0       |1       |2                 |         |
+|-                         |0x****                              |1      |0       |1       |2                 |         |
+|parse_ipv4                |*                                   |0      |4       |2       |6                 |csum 0   |
+|parse_ipv4.$split_0       |0x*5                                |0      |3       |0       |3                 |         |
+|-                         |0x*6                                |0      |3       |0       |3                 |         |
+|-                         |0x**                                |0      |3       |0       |3                 |         |
+|parse_ipv4_options        |*                                   |0      |3       |0       |3                 |csum 0   |
+|parse_ipv4_no_options     |0b00000001***0000000000000          |0      |0       |0       |0                 |csum 0   |
+|-                         |0b00000010***0000000000000          |0      |0       |0       |0                 |csum 0   |
+|-                         |0b00000110***0000000000000          |0      |0       |0       |0                 |csum 0   |
+|-                         |0b00010001***0000000000000          |0      |0       |0       |0                 |csum 0   |
+|-                         |0b00000100***0000000000000          |0      |0       |0       |0                 |csum 0   |
+|-                         |0b00101001***0000000000000          |0      |0       |0       |0                 |csum 0   |
+|-                         |0x******                            |0      |0       |0       |0                 |csum 0   |
+|parse_igmp                |*                                   |0      |1       |1       |2                 |         |
+|parse_arp                 |*                                   |0      |3       |1       |4                 |         |
+|parse_ipv6                |*                                   |0      |4       |4       |8                 |         |
+|parse_ipv6.$split_0       |0x3a                                |0      |1       |4       |5                 |         |
+|-                         |0x06                                |0      |1       |4       |5                 |         |
+|-                         |0x11                                |0      |1       |4       |5                 |         |
+|-                         |0x04                                |0      |1       |4       |5                 |         |
+|-                         |0x29                                |0      |1       |4       |5                 |         |
+|-                         |0x**                                |0      |1       |4       |5                 |         |
+|parse_icmp                |*                                   |2      |2       |0       |4                 |         |
+|parse_tcp                 |*                                   |4      |3       |3       |10                |         |
+|parse_udp                 |SwitchIngressParser.udp_port_vxlan  |2      |2       |1       |5                 |         |
+|-                         |0x12b7                              |2      |2       |1       |5                 |         |
+|-                         |0x****                              |2      |2       |1       |5                 |         |
+|parse_vxlan               |*                                   |4      |4       |3       |11                |         |
+|parse_vxlan.$split_0      |0x0800                              |0      |1       |0       |1                 |         |
+|-                         |0x86dd                              |0      |1       |0       |1                 |         |
+|-                         |0x****                              |0      |1       |0       |1                 |         |
+|parse_inner_ipv4          |0x01                                |2      |2       |4       |8                 |         |
+|-                         |0x06                                |2      |2       |4       |8                 |         |
+|-                         |0x11                                |2      |2       |4       |8                 |         |
+|-                         |0x**                                |2      |2       |4       |8                 |         |
+|parse_inner_icmp          |*                                   |0      |1       |1       |2                 |         |
+|parse_inner_tcp           |*                                   |0      |4       |3       |7                 |         |
+|parse_inner_tcp.$split_0  |*                                   |0      |1       |0       |1                 |         |
+|parse_inner_udp           |*                                   |0      |3       |1       |4                 |         |
+|parse_inner_ipv6          |*                                   |0      |0       |0       |0                 |         |
+|parse_rocev2              |*                                   |0      |0       |0       |0                 |         |
+|parse_ipinip              |*                                   |0      |0       |0       |0                 |         |
+|parse_ipv6inip            |*                                   |0      |0       |0       |0                 |         |
++--------------------------+------------------------------------+-------+--------+--------+------------------+---------+
+Number of states on egress: 22
 
-Number of matches on egress: 40
+Number of matches on egress: 39
 
-Longest path (10 states) on egress:
+Longest path (9 states) on egress:
     $entry_point
     start
     parse_bridged_pkt
@@ -95,13 +112,12 @@ Longest path (10 states) on egress:
     parse_bridged_pkt.$split_1
     parse_vlan
     parse_vlan.0
-    parse_ipv4
-    parse_ipv4.$split_0
-    parse_ipv4_options
+    parse_ipv6
+    parse_ipv6.$split_0
 
-Average rate: 7.3 Bps
-Min packet size at 100 Gbps: 103 B (30 B payload)
-Max data rate for min-sized packets: 70.76 Gbps / 121.164 MPps
+Average rate: 8.11111 Bps
+Min packet size at 100 Gbps: 93 B (20 B payload)
+Max data rate for min-sized packets: 78.08 Gbps / 133.699 MPps
 
 Extractor usage:
 +-------------------------------------------+-----------------------------+-------+--------+--------+------------------+-------+
@@ -117,13 +133,13 @@ Extractor usage:
 |parse_deflected_pkt                        |*                            |4      |4       |2       |10                |       |
 |parse_deflected_pkt.$split_0               |*                            |3      |1       |0       |4                 |       |
 |parse_bridged_pkt                          |*                            |4      |4       |3       |11                |       |
-|parse_bridged_pkt.$split_0                 |*                            |1      |4       |2       |7                 |       |
-|parse_bridged_pkt.$split_1                 |SwitchEgressParser.cpu_port  |0      |3       |0       |3                 |       |
-|-                                          |0x0800****                   |0      |3       |0       |3                 |       |
-|-                                          |0x86dd****                   |0      |3       |0       |3                 |       |
-|-                                          |0x8100****                   |0      |3       |0       |3                 |       |
-|-                                          |0x8100****                   |0      |3       |0       |3                 |       |
-|-                                          |0x********                   |0      |3       |0       |3                 |       |
+|parse_bridged_pkt.$split_0                 |*                            |0      |4       |2       |6                 |       |
+|parse_bridged_pkt.$split_1                 |SwitchEgressParser.cpu_port  |0      |4       |0       |4                 |       |
+|-                                          |0x0800****                   |0      |4       |0       |4                 |       |
+|-                                          |0x86dd****                   |0      |4       |0       |4                 |       |
+|-                                          |0x8100****                   |0      |4       |0       |4                 |       |
+|-                                          |0x8100****                   |0      |4       |0       |4                 |       |
+|-                                          |0x********                   |0      |4       |0       |4                 |       |
 |parse_cpu                                  |*                            |1      |0       |0       |1                 |       |
 |parse_vlan                                 |0x0800                       |1      |2       |0       |3                 |       |
 |-                                          |0x8100                       |1      |2       |0       |3                 |       |
@@ -133,16 +149,15 @@ Extractor usage:
 |-                                          |0x8100                       |1      |0       |1       |2                 |       |
 |-                                          |0x86dd                       |1      |0       |1       |2                 |       |
 |-                                          |0x****                       |1      |0       |1       |2                 |       |
-|parse_ipv4                                 |*                            |4      |2       |3       |9                 |       |
-|parse_ipv4.$split_0                        |0x***6****                   |1      |0       |0       |1                 |       |
-|-                                          |0x********                   |1      |0       |0       |1                 |       |
+|parse_ipv4                                 |0x***6****                   |4      |3       |3       |10                |       |
+|-                                          |0x********                   |4      |3       |3       |10                |       |
 |parse_ipv4_options                         |0x******                     |0      |0       |0       |0                 |       |
 |parse_ipv6                                 |*                            |4      |4       |4       |12                |       |
 |parse_ipv6.$split_0                        |0x**                         |0      |2       |3       |5                 |       |
-|parse_port_mirrored_metadata               |*                            |4      |4       |3       |11                |       |
-|parse_port_mirrored_metadata.$split_0      |*                            |0      |1       |0       |1                 |       |
-|parse_cpu_mirrored_metadata                |*                            |4      |4       |2       |10                |       |
-|parse_cpu_mirrored_metadata.$split_0       |*                            |0      |1       |0       |1                 |       |
+|parse_port_mirrored_metadata               |*                            |3      |4       |3       |10                |       |
+|parse_port_mirrored_metadata.$split_0      |*                            |0      |2       |0       |2                 |       |
+|parse_cpu_mirrored_metadata                |*                            |3      |4       |2       |9                 |       |
+|parse_cpu_mirrored_metadata.$split_0       |*                            |0      |2       |0       |2                 |       |
 |parse_dtel_drop_metadata                   |*                            |4      |4       |2       |10                |       |
 |parse_dtel_drop_metadata.$split_0          |*                            |3      |1       |0       |4                 |       |
 |parse_dtel_switch_local_metadata           |*                            |3      |4       |4       |11                |       |
