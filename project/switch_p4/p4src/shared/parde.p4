@@ -216,14 +216,14 @@ parser SwitchIngressParser(
     }
 
     state parse_vxlan {
-#ifdef VXLAN_ENABLE
+//#ifdef VXLAN_ENABLE
         pkt.extract(hdr.vxlan);
         ig_md.tunnel.type = SWITCH_TUNNEL_TYPE_VXLAN;
         ig_md.tunnel.id = hdr.vxlan.vni;
         transition parse_inner_ethernet;
-#else
-        transition accept;
-#endif
+//#else
+        //transition accept;
+//#endif
     }
 
     state parse_ipinip {

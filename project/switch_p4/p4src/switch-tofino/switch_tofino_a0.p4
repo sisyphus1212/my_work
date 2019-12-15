@@ -146,6 +146,7 @@ control SwitchIngress(
 
         pkt_validation.apply(
             hdr, ig_md.flags, ig_md.lkp, ig_intr_md_for_tm, ig_md.drop_reason);
+
         ingress_port_mapping.apply(hdr, ig_md, ig_intr_md_for_tm, ig_intr_md_for_dprsr);
         smac.apply(ig_md.lkp.mac_src_addr, ig_md, ig_intr_md_for_dprsr.digest_type);
         bd_stats.apply(ig_md.bd, ig_md.lkp.pkt_type);
@@ -159,7 +160,7 @@ control SwitchIngress(
             // Broadcast packets.
             dmac.apply(ig_md.lkp.mac_dst_addr, ig_md);
         }
-
+        
         acl.apply(ig_md.lkp, ig_md);
         mirror_acl.apply(ig_md.lkp, ig_md);
 

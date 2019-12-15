@@ -106,14 +106,6 @@ control PktValidation(
         lkp.pcp = hdr.vlan_tag[1].pcp;
     }
 
-    action valid_vxlan_pkt_tagged() {
-        lkp.vni = hdr.vxlan.vni;
-        lkp.mac_src_addr = hdr.ethernet.src_addr;
-        lkp.mac_dst_addr = hdr.ethernet.dst_addr;
-        lkp.mac_type = hdr.vlan_tag[0].ether_type;
-        lkp.pcp = hdr.vlan_tag[0].pcp;
-    }
-
     table validate_ethernet {
         key = {
             hdr.ethernet.src_addr : ternary;
@@ -145,6 +137,23 @@ control PktValidation(
         } */
     }
 
+
+    action valid_vxlan_pkt_tagged() {
+        lkp.vni = hdr.vxlan.vni;
+        lkp.tunnel_flag = true;
+    }
+
+    table validate_vxlan {
+            key = {
+                hdr.vxlan.vni : exact;
+            }
+
+            actions = {
+                NoAction;
+                valid_vxlan_pkt_tagged;
+            }
+
+    }
 //-----------------------------------------------------------------------------
 // Validate outer IPv4 header and set the lookup fields.
 // - Drop the packet if ttl is zero, ihl is invalid, src addr is multicast, or
@@ -328,6 +337,10 @@ control PktValidation(
                 }
 
                 validate_other.apply();
+                if (hdr.udp.dst_port == 4789){
+                    validate_vxlan.apply();
+                }
+            
             }
         }
     }

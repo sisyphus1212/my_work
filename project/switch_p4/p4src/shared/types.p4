@@ -96,6 +96,9 @@ const switch_bd_t SWITCH_BD_DEFAULT_VRF = 4097; // bd allocated for default vrf
 #endif
 typedef bit<switch_vrf_width> switch_vrf_t;
 
+typedef bit<8> switch_vxlan_t;
+const switch_vxlan_t SWITCH_VXLAN_FLAG = 0x8;
+
 #ifndef switch_nexthop_width
 #define switch_nexthop_width 16
 #endif
@@ -569,14 +572,14 @@ struct switch_lookup_fields_t {
     bit<2> ip_frag;
     bit<128> ip_src_addr;
     bit<128> ip_dst_addr;
+    bool tunnel_flag;
+    bit<24> vni;
 
     bit<8>  tcp_flags;
-    bit<8>  udp_flags;
+
     bit<16> l4_src_port;
     bit<16> l4_dst_port;
 
-    bit<8> vxlan_flags;
-    bit<24> vni;
 }
 
 // Header types used by ingress/egress deparsers.

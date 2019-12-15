@@ -84,7 +84,7 @@ const bit<32> TUNNEL_REWRITE_TABLE_SIZE = 512;
 const bit<32> ECMP_GROUP_TABLE_SIZE = 1024;
 const bit<32> OUTER_ECMP_GROUP_TABLE_SIZE = 1024;
 const bit<32> ECMP_SELECT_TABLE_SIZE = 16384;
-const bit<32> OUTER_ECMP_SELECT_TABLE_SIZE = 16384;
+const bit<32> OUTER_ECMP_SELECT_TABLE_SIZE = 1638;
 const bit<32> NEXTHOP_TABLE_SIZE = 16384; // 32768
 const bit<32> NUM_TUNNELS = 4096;
 
@@ -151,6 +151,7 @@ const bit<32> L3_MTU_TABLE_SIZE = 1024;
 #include "meter.p4"
 #include "wred.p4"
 #include "dtel.p4"
+#include "acl.p4"
 
 @pa_no_overlay("ingress", "hdr.bridged_md.__pad_3")
 
@@ -169,7 +170,7 @@ control SwitchIngress(
     IngressSTP() stp;
     SMAC(MAC_TABLE_SIZE) smac;
     DMAC(MAC_TABLE_SIZE) dmac;
-    IngressTunnel(IPV4_SRC_TUNNEL_TABLE_SIZE) tunnel;
+    //IngressTunnel(IPV4_SRC_TUNNEL_TABLE_SIZE) tunnel;
     IngressBd(BD_TABLE_SIZE) bd_stats;
     IngressMulticast(IPV4_MULTICAST_S_G_TABLE_SIZE,
                      IPV4_MULTICAST_STAR_G_TABLE_SIZE,
@@ -180,6 +181,8 @@ control SwitchIngress(
                    IPV4_LPM_TABLE_SIZE,
                    IPV6_HOST_TABLE_SIZE,
                    IPV6_LPM_TABLE_SIZE) unicast;
+   
+    InnerPktValidation()inner_pkt_validation;
     IngressAcl(INGRESS_IPV4_ACL_TABLE_SIZE,
                INGRESS_IPV6_ACL_TABLE_SIZE,
                INGRESS_MAC_ACL_TABLE_SIZE,
@@ -206,12 +209,20 @@ control SwitchIngress(
 #endif
 
         pkt_validation.apply(hdr, ig_md.flags, ig_md.lkp, ig_intr_md_for_tm, ig_md.drop_reason);
+
         ingress_port_mapping.apply(hdr, ig_md, ig_intr_md_for_tm, ig_intr_md_for_dprsr);
         stp.apply(ig_md, ig_md.stp);
 
-        tunnel.apply(hdr, ig_md, ig_md.lkp);
+        
         smac.apply(ig_md.lkp.mac_src_addr, ig_md, ig_intr_md_for_dprsr.digest_type);
         bd_stats.apply(ig_md.bd, ig_md.lkp.pkt_type);
+        
+        //tunnel.apply(hdr, ig_md, ig_md.lkp);
+
+        if (ig_md.lkp.tunnel_flag == true){
+            inner_pkt_validation.apply(hdr, ig_md.lkp, ig_md.flags, ig_md.drop_reason);
+        }
+
         acl.apply(ig_md.lkp, ig_md);
         mirror_acl.apply(ig_md.lkp, ig_md);
         if (ig_md.lkp.pkt_type == SWITCH_PKT_TYPE_UNICAST) {
