@@ -1,0 +1,895 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACLOCAL	Makefile	/^ACLOCAL = ${SHELL} \/root\/work\/makefile_test2\/missing aclocal-1.15$/;"	m
+ACLOCAL	src/Makefile	/^ACLOCAL = ${SHELL} \/root\/work\/makefile_test2\/missing aclocal-1.15$/;"	m
+ACLOCAL	src/debug/Makefile	/^ACLOCAL = ${SHELL} \/root\/work\/makefile_test2\/missing aclocal-1.15$/;"	m
+ACLOCAL	src/test/Makefile	/^ACLOCAL = ${SHELL} \/root\/work\/makefile_test2\/missing aclocal-1.15$/;"	m
+ACLOCAL_M4	Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ACLOCAL_M4	src/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ACLOCAL_M4	src/debug/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+ACLOCAL_M4	src/test/Makefile	/^ACLOCAL_M4 = $(top_srcdir)\/aclocal.m4$/;"	m
+AMTAR	Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+AMTAR	src/Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+AMTAR	src/debug/Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+AMTAR	src/test/Makefile	/^AMTAR = $${TAR-tar}$/;"	m
+AM_DEFAULT_VERBOSITY	Makefile	/^AM_DEFAULT_VERBOSITY = 1$/;"	m
+AM_DEFAULT_VERBOSITY	src/Makefile	/^AM_DEFAULT_VERBOSITY = 1$/;"	m
+AM_DEFAULT_VERBOSITY	src/debug/Makefile	/^AM_DEFAULT_VERBOSITY = 1$/;"	m
+AM_DEFAULT_VERBOSITY	src/test/Makefile	/^AM_DEFAULT_VERBOSITY = 1$/;"	m
+AM_RECURSIVE_TARGETS	Makefile	/^AM_RECURSIVE_TARGETS = $(am__recursive_targets:-recursive=) TAGS CTAGS \\$/;"	m
+AM_RECURSIVE_TARGETS	src/Makefile	/^AM_RECURSIVE_TARGETS = $(am__recursive_targets:-recursive=) TAGS CTAGS \\$/;"	m
+AM_V_CC	src/Makefile	/^AM_V_CC = $(am__v_CC_$(V))$/;"	m
+AM_V_CC	src/debug/Makefile	/^AM_V_CC = $(am__v_CC_$(V))$/;"	m
+AM_V_CC	src/test/Makefile	/^AM_V_CC = $(am__v_CC_$(V))$/;"	m
+AM_V_CCLD	src/Makefile	/^AM_V_CCLD = $(am__v_CCLD_$(V))$/;"	m
+AM_V_CCLD	src/debug/Makefile	/^AM_V_CCLD = $(am__v_CCLD_$(V))$/;"	m
+AM_V_CCLD	src/test/Makefile	/^AM_V_CCLD = $(am__v_CCLD_$(V))$/;"	m
+AM_V_GEN	Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m
+AM_V_GEN	src/Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m
+AM_V_GEN	src/debug/Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m
+AM_V_GEN	src/test/Makefile	/^AM_V_GEN = $(am__v_GEN_$(V))$/;"	m
+AM_V_P	Makefile	/^AM_V_P = $(am__v_P_$(V))$/;"	m
+AM_V_P	src/Makefile	/^AM_V_P = $(am__v_P_$(V))$/;"	m
+AM_V_P	src/debug/Makefile	/^AM_V_P = $(am__v_P_$(V))$/;"	m
+AM_V_P	src/test/Makefile	/^AM_V_P = $(am__v_P_$(V))$/;"	m
+AM_V_at	Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m
+AM_V_at	src/Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m
+AM_V_at	src/debug/Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m
+AM_V_at	src/test/Makefile	/^AM_V_at = $(am__v_at_$(V))$/;"	m
+AM_V_lt	src/debug/Makefile	/^AM_V_lt = $(am__v_lt_$(V))$/;"	m
+AM_V_lt	src/test/Makefile	/^AM_V_lt = $(am__v_lt_$(V))$/;"	m
+AR	src/debug/Makefile	/^AR = @AR@$/;"	m
+AR	src/test/Makefile	/^AR = @AR@$/;"	m
+AUTOCONF	Makefile	/^AUTOCONF = ${SHELL} \/root\/work\/makefile_test2\/missing autoconf$/;"	m
+AUTOCONF	src/Makefile	/^AUTOCONF = ${SHELL} \/root\/work\/makefile_test2\/missing autoconf$/;"	m
+AUTOCONF	src/debug/Makefile	/^AUTOCONF = ${SHELL} \/root\/work\/makefile_test2\/missing autoconf$/;"	m
+AUTOCONF	src/test/Makefile	/^AUTOCONF = ${SHELL} \/root\/work\/makefile_test2\/missing autoconf$/;"	m
+AUTOHEADER	Makefile	/^AUTOHEADER = ${SHELL} \/root\/work\/makefile_test2\/missing autoheader$/;"	m
+AUTOHEADER	src/Makefile	/^AUTOHEADER = ${SHELL} \/root\/work\/makefile_test2\/missing autoheader$/;"	m
+AUTOHEADER	src/debug/Makefile	/^AUTOHEADER = ${SHELL} \/root\/work\/makefile_test2\/missing autoheader$/;"	m
+AUTOHEADER	src/test/Makefile	/^AUTOHEADER = ${SHELL} \/root\/work\/makefile_test2\/missing autoheader$/;"	m
+AUTOMAKE	Makefile	/^AUTOMAKE = ${SHELL} \/root\/work\/makefile_test2\/missing automake-1.15$/;"	m
+AUTOMAKE	src/Makefile	/^AUTOMAKE = ${SHELL} \/root\/work\/makefile_test2\/missing automake-1.15$/;"	m
+AUTOMAKE	src/debug/Makefile	/^AUTOMAKE = ${SHELL} \/root\/work\/makefile_test2\/missing automake-1.15$/;"	m
+AUTOMAKE	src/test/Makefile	/^AUTOMAKE = ${SHELL} \/root\/work\/makefile_test2\/missing automake-1.15$/;"	m
+AUTOMAKE_OPTIONS	Makefile	/^AUTOMAKE_OPTIONS = foreign$/;"	m
+AUTOMAKE_OPTIONS	src/Makefile	/^AUTOMAKE_OPTIONS = foreign$/;"	m
+AUTOMAKE_OPTIONS	src/debug/Makefile	/^AUTOMAKE_OPTIONS = foreign$/;"	m
+AUTOMAKE_OPTIONS	src/test/Makefile	/^AUTOMAKE_OPTIONS = foreign$/;"	m
+AWK	Makefile	/^AWK = gawk$/;"	m
+AWK	src/Makefile	/^AWK = gawk$/;"	m
+AWK	src/debug/Makefile	/^AWK = gawk$/;"	m
+AWK	src/test/Makefile	/^AWK = gawk$/;"	m
+BT_BUF_SIZE	src/debug/backtrace.c	7;"	d	file:
+BT_BUF_SIZE	src/debug/backtrace.h	7;"	d
+BT_BUF_SIZE	src/include/backtrace.c	7;"	d	file:
+CC	Makefile	/^CC = gcc$/;"	m
+CC	src/Makefile	/^CC = gcc$/;"	m
+CC	src/debug/Makefile	/^CC = gcc$/;"	m
+CC	src/test/Makefile	/^CC = gcc$/;"	m
+CCDEPMODE	Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCDEPMODE	src/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCDEPMODE	src/debug/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCDEPMODE	src/test/Makefile	/^CCDEPMODE = depmode=gcc3$/;"	m
+CCLD	src/Makefile	/^CCLD = $(CC)$/;"	m
+CCLD	src/debug/Makefile	/^CCLD = $(CC)$/;"	m
+CCLD	src/test/Makefile	/^CCLD = $(CC)$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -O2$/;"	m
+CFLAGS	src/Makefile	/^CFLAGS = -g -O2$/;"	m
+CFLAGS	src/debug/Makefile	/^CFLAGS = -g -O2$/;"	m
+CFLAGS	src/test/Makefile	/^CFLAGS = -g -O2$/;"	m
+COMPILE	src/Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+COMPILE	src/debug/Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+COMPILE	src/test/Makefile	/^COMPILE = $(CC) $(DEFS) $(DEFAULT_INCLUDES) $(INCLUDES) $(AM_CPPFLAGS) \\$/;"	m
+CONFIG_CLEAN_FILES	Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_FILES	src/Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_FILES	src/debug/Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_FILES	src/test/Makefile	/^CONFIG_CLEAN_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	src/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	src/debug/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_CLEAN_VPATH_FILES	src/test/Makefile	/^CONFIG_CLEAN_VPATH_FILES =$/;"	m
+CONFIG_HEADER	Makefile	/^CONFIG_HEADER = config.h$/;"	m
+CONFIG_HEADER	src/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CONFIG_HEADER	src/debug/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CONFIG_HEADER	src/test/Makefile	/^CONFIG_HEADER = $(top_builddir)\/config.h$/;"	m
+CPP	Makefile	/^CPP = gcc -E$/;"	m
+CPP	src/Makefile	/^CPP = gcc -E$/;"	m
+CPP	src/debug/Makefile	/^CPP = gcc -E$/;"	m
+CPP	src/test/Makefile	/^CPP = gcc -E$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = $/;"	m
+CPPFLAGS	src/Makefile	/^CPPFLAGS = $/;"	m
+CPPFLAGS	src/debug/Makefile	/^CPPFLAGS = $/;"	m
+CPPFLAGS	src/test/Makefile	/^CPPFLAGS = $/;"	m
+CSCOPE	Makefile	/^CSCOPE = cscope$/;"	m
+CTAGS	Makefile	/^CTAGS = ctags$/;"	m
+CTAGS	src/Makefile	/^CTAGS = ctags$/;"	m
+CTAGS	src/debug/Makefile	/^CTAGS = ctags$/;"	m
+CTAGS	src/test/Makefile	/^CTAGS = ctags$/;"	m
+CXX	Makefile	/^CXX = g++$/;"	m
+CXX	src/Makefile	/^CXX = g++$/;"	m
+CXX	src/debug/Makefile	/^CXX = g++$/;"	m
+CXX	src/test/Makefile	/^CXX = g++$/;"	m
+CXXCPP	src/debug/Makefile	/^CXXCPP = @CXXCPP@$/;"	m
+CXXCPP	src/test/Makefile	/^CXXCPP = @CXXCPP@$/;"	m
+CXXDEPMODE	Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXDEPMODE	src/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXDEPMODE	src/debug/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXDEPMODE	src/test/Makefile	/^CXXDEPMODE = depmode=gcc3$/;"	m
+CXXFLAGS	Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CXXFLAGS	src/Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CXXFLAGS	src/debug/Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CXXFLAGS	src/test/Makefile	/^CXXFLAGS = -g -O2$/;"	m
+CYGPATH_W	Makefile	/^CYGPATH_W = echo$/;"	m
+CYGPATH_W	src/Makefile	/^CYGPATH_W = echo$/;"	m
+CYGPATH_W	src/debug/Makefile	/^CYGPATH_W = echo$/;"	m
+CYGPATH_W	src/test/Makefile	/^CYGPATH_W = echo$/;"	m
+CreateProcess	ltmain.sh	/^   CreateProcess().  We must quote the arguments since Win32 CreateProcess()$/;"	f
+DEFAULT_INCLUDES	src/Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFAULT_INCLUDES	src/debug/Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFAULT_INCLUDES	src/test/Makefile	/^DEFAULT_INCLUDES = -I. -I$(top_builddir)$/;"	m
+DEFS	Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEFS	src/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEFS	src/debug/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEFS	src/test/Makefile	/^DEFS = -DHAVE_CONFIG_H$/;"	m
+DEPDIR	Makefile	/^DEPDIR = .deps$/;"	m
+DEPDIR	src/Makefile	/^DEPDIR = .deps$/;"	m
+DEPDIR	src/debug/Makefile	/^DEPDIR = .deps$/;"	m
+DEPDIR	src/test/Makefile	/^DEPDIR = .deps$/;"	m
+DISTFILES	Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DISTFILES	src/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DISTFILES	src/debug/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DISTFILES	src/test/Makefile	/^DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)$/;"	m
+DIST_ARCHIVES	Makefile	/^DIST_ARCHIVES = $(distdir).tar.gz$/;"	m
+DIST_COMMON	Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(top_srcdir)\/configure \\$/;"	m
+DIST_COMMON	src/Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(am__DIST_COMMON)$/;"	m
+DIST_COMMON	src/debug/Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(am__DIST_COMMON)$/;"	m
+DIST_COMMON	src/test/Makefile	/^DIST_COMMON = $(srcdir)\/Makefile.am $(am__DIST_COMMON)$/;"	m
+DIST_SOURCES	Makefile	/^DIST_SOURCES =$/;"	m
+DIST_SOURCES	src/Makefile	/^DIST_SOURCES = $(make_test_SOURCES)$/;"	m
+DIST_SOURCES	src/debug/Makefile	/^DIST_SOURCES = $(libbacktrace_a_SOURCES)$/;"	m
+DIST_SOURCES	src/test/Makefile	/^DIST_SOURCES = $(libheader_a_SOURCES)$/;"	m
+DIST_SUBDIRS	Makefile	/^DIST_SUBDIRS = $(SUBDIRS)$/;"	m
+DIST_SUBDIRS	src/Makefile	/^DIST_SUBDIRS = $(SUBDIRS)$/;"	m
+DIST_TARGETS	Makefile	/^DIST_TARGETS = dist-gzip$/;"	m
+DLLTOOL	src/debug/Makefile	/^DLLTOOL = @DLLTOOL@$/;"	m
+DLLTOOL	src/test/Makefile	/^DLLTOOL = @DLLTOOL@$/;"	m
+DSYMUTIL	src/debug/Makefile	/^DSYMUTIL = @DSYMUTIL@$/;"	m
+DSYMUTIL	src/test/Makefile	/^DSYMUTIL = @DSYMUTIL@$/;"	m
+DUMPBIN	src/debug/Makefile	/^DUMPBIN = @DUMPBIN@$/;"	m
+DUMPBIN	src/test/Makefile	/^DUMPBIN = @DUMPBIN@$/;"	m
+ECHO_C	Makefile	/^ECHO_C = $/;"	m
+ECHO_C	src/Makefile	/^ECHO_C = $/;"	m
+ECHO_C	src/debug/Makefile	/^ECHO_C = $/;"	m
+ECHO_C	src/test/Makefile	/^ECHO_C = $/;"	m
+ECHO_N	Makefile	/^ECHO_N = -n$/;"	m
+ECHO_N	src/Makefile	/^ECHO_N = -n$/;"	m
+ECHO_N	src/debug/Makefile	/^ECHO_N = -n$/;"	m
+ECHO_N	src/test/Makefile	/^ECHO_N = -n$/;"	m
+ECHO_T	Makefile	/^ECHO_T = $/;"	m
+ECHO_T	src/Makefile	/^ECHO_T = $/;"	m
+ECHO_T	src/debug/Makefile	/^ECHO_T = $/;"	m
+ECHO_T	src/test/Makefile	/^ECHO_T = $/;"	m
+EGREP	Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+EGREP	src/Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+EGREP	src/debug/Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+EGREP	src/test/Makefile	/^EGREP = \/bin\/grep -E$/;"	m
+ETAGS	Makefile	/^ETAGS = etags$/;"	m
+ETAGS	src/Makefile	/^ETAGS = etags$/;"	m
+ETAGS	src/debug/Makefile	/^ETAGS = etags$/;"	m
+ETAGS	src/test/Makefile	/^ETAGS = etags$/;"	m
+EXEEXT	Makefile	/^EXEEXT = $/;"	m
+EXEEXT	src/Makefile	/^EXEEXT = $/;"	m
+EXEEXT	src/debug/Makefile	/^EXEEXT = $/;"	m
+EXEEXT	src/test/Makefile	/^EXEEXT = $/;"	m
+FGREP	src/debug/Makefile	/^FGREP = @FGREP@$/;"	m
+FGREP	src/test/Makefile	/^FGREP = @FGREP@$/;"	m
+GREP	Makefile	/^GREP = \/bin\/grep$/;"	m
+GREP	src/Makefile	/^GREP = \/bin\/grep$/;"	m
+GREP	src/debug/Makefile	/^GREP = \/bin\/grep$/;"	m
+GREP	src/test/Makefile	/^GREP = \/bin\/grep$/;"	m
+GZIP_ENV	Makefile	/^GZIP_ENV = --best$/;"	m
+HAVE_INTTYPES_H	config.h	5;"	d
+HAVE_MEMORY_H	config.h	8;"	d
+HAVE_STDINT_H	config.h	11;"	d
+HAVE_STDLIB_H	config.h	14;"	d
+HAVE_STRINGS_H	config.h	17;"	d
+HAVE_STRING_H	config.h	20;"	d
+HAVE_SYS_STAT_H	config.h	23;"	d
+HAVE_SYS_TYPES_H	config.h	26;"	d
+HAVE_UNISTD_H	config.h	29;"	d
+INSTALL	Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL	src/Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL	src/debug/Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL	src/test/Makefile	/^INSTALL = \/usr\/bin\/install -c$/;"	m
+INSTALL_DATA	Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_DATA	src/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_DATA	src/debug/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_DATA	src/test/Makefile	/^INSTALL_DATA = ${INSTALL} -m 644$/;"	m
+INSTALL_HEADER	Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_HEADER	src/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_HEADER	src/debug/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_HEADER	src/test/Makefile	/^INSTALL_HEADER = $(INSTALL_DATA)$/;"	m
+INSTALL_PROGRAM	Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM	src/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM	src/debug/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_PROGRAM	src/test/Makefile	/^INSTALL_PROGRAM = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	src/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	src/debug/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_SCRIPT	src/test/Makefile	/^INSTALL_SCRIPT = ${INSTALL}$/;"	m
+INSTALL_STRIP_PROGRAM	Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INSTALL_STRIP_PROGRAM	src/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INSTALL_STRIP_PROGRAM	src/debug/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+INSTALL_STRIP_PROGRAM	src/test/Makefile	/^INSTALL_STRIP_PROGRAM = $(install_sh) -c -s$/;"	m
+LD	src/debug/Makefile	/^LD = @LD@$/;"	m
+LD	src/test/Makefile	/^LD = @LD@$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LDFLAGS	src/Makefile	/^LDFLAGS = $/;"	m
+LDFLAGS	src/debug/Makefile	/^LDFLAGS = $/;"	m
+LDFLAGS	src/test/Makefile	/^LDFLAGS = $/;"	m
+LIBOBJS	Makefile	/^LIBOBJS = $/;"	m
+LIBOBJS	src/Makefile	/^LIBOBJS = $/;"	m
+LIBOBJS	src/debug/Makefile	/^LIBOBJS = $/;"	m
+LIBOBJS	src/test/Makefile	/^LIBOBJS = $/;"	m
+LIBS	Makefile	/^LIBS = $/;"	m
+LIBS	src/Makefile	/^LIBS = $/;"	m
+LIBS	src/debug/Makefile	/^LIBS = $/;"	m
+LIBS	src/test/Makefile	/^LIBS = $/;"	m
+LIBTOOL	src/debug/Makefile	/^LIBTOOL = @LIBTOOL@$/;"	m
+LIBTOOL	src/test/Makefile	/^LIBTOOL = @LIBTOOL@$/;"	m
+LINK	src/Makefile	/^LINK = $(CCLD) $(AM_CFLAGS) $(CFLAGS) $(AM_LDFLAGS) $(LDFLAGS) -o $@$/;"	m
+LINK	src/debug/Makefile	/^LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+LINK	src/test/Makefile	/^LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+LIPO	src/debug/Makefile	/^LIPO = @LIPO@$/;"	m
+LIPO	src/test/Makefile	/^LIPO = @LIPO@$/;"	m
+LN_S	src/debug/Makefile	/^LN_S = @LN_S@$/;"	m
+LN_S	src/test/Makefile	/^LN_S = @LN_S@$/;"	m
+LTCOMPILE	src/debug/Makefile	/^LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+LTCOMPILE	src/test/Makefile	/^LTCOMPILE = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \\$/;"	m
+LTLIBOBJS	Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBOBJS	src/Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBOBJS	src/debug/Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBOBJS	src/test/Makefile	/^LTLIBOBJS = $/;"	m
+LTLIBRARIES	src/debug/Makefile	/^LTLIBRARIES = $(noinst_LTLIBRARIES)$/;"	m
+LTLIBRARIES	src/test/Makefile	/^LTLIBRARIES = $(noinst_LTLIBRARIES)$/;"	m
+LT_SYS_LIBRARY_PATH	src/debug/Makefile	/^LT_SYS_LIBRARY_PATH = @LT_SYS_LIBRARY_PATH@$/;"	m
+LT_SYS_LIBRARY_PATH	src/test/Makefile	/^LT_SYS_LIBRARY_PATH = @LT_SYS_LIBRARY_PATH@$/;"	m
+MAKEINFO	Makefile	/^MAKEINFO = ${SHELL} \/root\/work\/makefile_test2\/missing makeinfo$/;"	m
+MAKEINFO	src/Makefile	/^MAKEINFO = ${SHELL} \/root\/work\/makefile_test2\/missing makeinfo$/;"	m
+MAKEINFO	src/debug/Makefile	/^MAKEINFO = ${SHELL} \/root\/work\/makefile_test2\/missing makeinfo$/;"	m
+MAKEINFO	src/test/Makefile	/^MAKEINFO = ${SHELL} \/root\/work\/makefile_test2\/missing makeinfo$/;"	m
+MANIFEST_TOOL	src/debug/Makefile	/^MANIFEST_TOOL = @MANIFEST_TOOL@$/;"	m
+MANIFEST_TOOL	src/test/Makefile	/^MANIFEST_TOOL = @MANIFEST_TOOL@$/;"	m
+MKDIR_P	Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MKDIR_P	src/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MKDIR_P	src/debug/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+MKDIR_P	src/test/Makefile	/^MKDIR_P = \/bin\/mkdir -p$/;"	m
+NM	src/debug/Makefile	/^NM = @NM@$/;"	m
+NM	src/test/Makefile	/^NM = @NM@$/;"	m
+NMEDIT	src/debug/Makefile	/^NMEDIT = @NMEDIT@$/;"	m
+NMEDIT	src/test/Makefile	/^NMEDIT = @NMEDIT@$/;"	m
+NORMAL_INSTALL	Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_INSTALL	src/Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_INSTALL	src/debug/Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_INSTALL	src/test/Makefile	/^NORMAL_INSTALL = :$/;"	m
+NORMAL_UNINSTALL	Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NORMAL_UNINSTALL	src/Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NORMAL_UNINSTALL	src/debug/Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+NORMAL_UNINSTALL	src/test/Makefile	/^NORMAL_UNINSTALL = :$/;"	m
+OBJDUMP	src/debug/Makefile	/^OBJDUMP = @OBJDUMP@$/;"	m
+OBJDUMP	src/test/Makefile	/^OBJDUMP = @OBJDUMP@$/;"	m
+OBJEXT	Makefile	/^OBJEXT = o$/;"	m
+OBJEXT	src/Makefile	/^OBJEXT = o$/;"	m
+OBJEXT	src/debug/Makefile	/^OBJEXT = o$/;"	m
+OBJEXT	src/test/Makefile	/^OBJEXT = o$/;"	m
+OTOOL	src/debug/Makefile	/^OTOOL = @OTOOL@$/;"	m
+OTOOL	src/test/Makefile	/^OTOOL = @OTOOL@$/;"	m
+OTOOL64	src/debug/Makefile	/^OTOOL64 = @OTOOL64@$/;"	m
+OTOOL64	src/test/Makefile	/^OTOOL64 = @OTOOL64@$/;"	m
+PACKAGE	Makefile	/^PACKAGE = make_test$/;"	m
+PACKAGE	config.h	32;"	d
+PACKAGE	src/Makefile	/^PACKAGE = make_test$/;"	m
+PACKAGE	src/debug/Makefile	/^PACKAGE = make_test$/;"	m
+PACKAGE	src/test/Makefile	/^PACKAGE = make_test$/;"	m
+PACKAGE_BUGREPORT	Makefile	/^PACKAGE_BUGREPORT = $/;"	m
+PACKAGE_BUGREPORT	config.h	35;"	d
+PACKAGE_BUGREPORT	src/Makefile	/^PACKAGE_BUGREPORT = $/;"	m
+PACKAGE_BUGREPORT	src/debug/Makefile	/^PACKAGE_BUGREPORT = $/;"	m
+PACKAGE_BUGREPORT	src/test/Makefile	/^PACKAGE_BUGREPORT = $/;"	m
+PACKAGE_NAME	Makefile	/^PACKAGE_NAME = make_test$/;"	m
+PACKAGE_NAME	config.h	38;"	d
+PACKAGE_NAME	src/Makefile	/^PACKAGE_NAME = make_test$/;"	m
+PACKAGE_NAME	src/debug/Makefile	/^PACKAGE_NAME = make_test$/;"	m
+PACKAGE_NAME	src/test/Makefile	/^PACKAGE_NAME = make_test$/;"	m
+PACKAGE_STRING	Makefile	/^PACKAGE_STRING = make_test 1.1$/;"	m
+PACKAGE_STRING	config.h	41;"	d
+PACKAGE_STRING	src/Makefile	/^PACKAGE_STRING = make_test 1.1$/;"	m
+PACKAGE_STRING	src/debug/Makefile	/^PACKAGE_STRING = make_test 1.1$/;"	m
+PACKAGE_STRING	src/test/Makefile	/^PACKAGE_STRING = make_test 1.1$/;"	m
+PACKAGE_TARNAME	Makefile	/^PACKAGE_TARNAME = make_test$/;"	m
+PACKAGE_TARNAME	config.h	44;"	d
+PACKAGE_TARNAME	src/Makefile	/^PACKAGE_TARNAME = make_test$/;"	m
+PACKAGE_TARNAME	src/debug/Makefile	/^PACKAGE_TARNAME = make_test$/;"	m
+PACKAGE_TARNAME	src/test/Makefile	/^PACKAGE_TARNAME = make_test$/;"	m
+PACKAGE_URL	Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_URL	config.h	47;"	d
+PACKAGE_URL	src/Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_URL	src/debug/Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_URL	src/test/Makefile	/^PACKAGE_URL = $/;"	m
+PACKAGE_VERSION	Makefile	/^PACKAGE_VERSION = 1.1$/;"	m
+PACKAGE_VERSION	config.h	50;"	d
+PACKAGE_VERSION	src/Makefile	/^PACKAGE_VERSION = 1.1$/;"	m
+PACKAGE_VERSION	src/debug/Makefile	/^PACKAGE_VERSION = 1.1$/;"	m
+PACKAGE_VERSION	src/test/Makefile	/^PACKAGE_VERSION = 1.1$/;"	m
+PATH_SEPARATOR	Makefile	/^PATH_SEPARATOR = :$/;"	m
+PATH_SEPARATOR	src/Makefile	/^PATH_SEPARATOR = :$/;"	m
+PATH_SEPARATOR	src/debug/Makefile	/^PATH_SEPARATOR = :$/;"	m
+PATH_SEPARATOR	src/test/Makefile	/^PATH_SEPARATOR = :$/;"	m
+POST_INSTALL	Makefile	/^POST_INSTALL = :$/;"	m
+POST_INSTALL	src/Makefile	/^POST_INSTALL = :$/;"	m
+POST_INSTALL	src/debug/Makefile	/^POST_INSTALL = :$/;"	m
+POST_INSTALL	src/test/Makefile	/^POST_INSTALL = :$/;"	m
+POST_UNINSTALL	Makefile	/^POST_UNINSTALL = :$/;"	m
+POST_UNINSTALL	src/Makefile	/^POST_UNINSTALL = :$/;"	m
+POST_UNINSTALL	src/debug/Makefile	/^POST_UNINSTALL = :$/;"	m
+POST_UNINSTALL	src/test/Makefile	/^POST_UNINSTALL = :$/;"	m
+PRE_INSTALL	Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_INSTALL	src/Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_INSTALL	src/debug/Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_INSTALL	src/test/Makefile	/^PRE_INSTALL = :$/;"	m
+PRE_UNINSTALL	Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRE_UNINSTALL	src/Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRE_UNINSTALL	src/debug/Makefile	/^PRE_UNINSTALL = :$/;"	m
+PRE_UNINSTALL	src/test/Makefile	/^PRE_UNINSTALL = :$/;"	m
+PROGRAMS	src/Makefile	/^PROGRAMS = $(bin_PROGRAMS)$/;"	m
+RANLIB	src/debug/Makefile	/^RANLIB = @RANLIB@$/;"	m
+RANLIB	src/test/Makefile	/^RANLIB = @RANLIB@$/;"	m
+RECURSIVE_CLEAN_TARGETS	Makefile	/^RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\\$/;"	m
+RECURSIVE_CLEAN_TARGETS	src/Makefile	/^RECURSIVE_CLEAN_TARGETS = mostlyclean-recursive clean-recursive	\\$/;"	m
+RECURSIVE_TARGETS	Makefile	/^RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \\$/;"	m
+RECURSIVE_TARGETS	src/Makefile	/^RECURSIVE_TARGETS = all-recursive check-recursive cscopelist-recursive \\$/;"	m
+SED	src/debug/Makefile	/^SED = @SED@$/;"	m
+SED	src/test/Makefile	/^SED = @SED@$/;"	m
+SET_MAKE	Makefile	/^SET_MAKE = $/;"	m
+SET_MAKE	src/Makefile	/^SET_MAKE = $/;"	m
+SET_MAKE	src/debug/Makefile	/^SET_MAKE = $/;"	m
+SET_MAKE	src/test/Makefile	/^SET_MAKE = $/;"	m
+SHELL	Makefile	/^SHELL = \/bin\/bash$/;"	m
+SHELL	src/Makefile	/^SHELL = \/bin\/bash$/;"	m
+SHELL	src/debug/Makefile	/^SHELL = \/bin\/bash$/;"	m
+SHELL	src/test/Makefile	/^SHELL = \/bin\/bash$/;"	m
+SOURCES	Makefile	/^SOURCES =$/;"	m
+SOURCES	src/Makefile	/^SOURCES = $(make_test_SOURCES)$/;"	m
+SOURCES	src/debug/Makefile	/^SOURCES = $(libbacktrace_a_SOURCES)$/;"	m
+SOURCES	src/test/Makefile	/^SOURCES = $(libheader_a_SOURCES)$/;"	m
+STDC_HEADERS	config.h	53;"	d
+STRIP	Makefile	/^STRIP = $/;"	m
+STRIP	src/Makefile	/^STRIP = $/;"	m
+STRIP	src/debug/Makefile	/^STRIP = $/;"	m
+STRIP	src/test/Makefile	/^STRIP = $/;"	m
+SUBDIRS	Makefile	/^SUBDIRS = .\/src$/;"	m
+SUBDIRS	src/Makefile	/^SUBDIRS = debug test$/;"	m
+VERSION	Makefile	/^VERSION = 1.1$/;"	m
+VERSION	config.h	56;"	d
+VERSION	src/Makefile	/^VERSION = 1.1$/;"	m
+VERSION	src/debug/Makefile	/^VERSION = 1.1$/;"	m
+VERSION	src/test/Makefile	/^VERSION = 1.1$/;"	m
+abs_builddir	Makefile	/^abs_builddir = \/root\/work\/makefile_test2$/;"	m
+abs_builddir	src/Makefile	/^abs_builddir = \/root\/work\/makefile_test2\/src$/;"	m
+abs_builddir	src/debug/Makefile	/^abs_builddir = \/root\/work\/makefile_test2\/src\/debug$/;"	m
+abs_builddir	src/test/Makefile	/^abs_builddir = \/root\/work\/makefile_test2\/src\/test$/;"	m
+abs_srcdir	Makefile	/^abs_srcdir = \/root\/work\/makefile_test2$/;"	m
+abs_srcdir	src/Makefile	/^abs_srcdir = \/root\/work\/makefile_test2\/src$/;"	m
+abs_srcdir	src/debug/Makefile	/^abs_srcdir = \/root\/work\/makefile_test2\/src\/debug$/;"	m
+abs_srcdir	src/test/Makefile	/^abs_srcdir = \/root\/work\/makefile_test2\/src\/test$/;"	m
+abs_top_builddir	Makefile	/^abs_top_builddir = \/root\/work\/makefile_test2$/;"	m
+abs_top_builddir	src/Makefile	/^abs_top_builddir = \/root\/work\/makefile_test2$/;"	m
+abs_top_builddir	src/debug/Makefile	/^abs_top_builddir = \/root\/work\/makefile_test2$/;"	m
+abs_top_builddir	src/test/Makefile	/^abs_top_builddir = \/root\/work\/makefile_test2$/;"	m
+abs_top_srcdir	Makefile	/^abs_top_srcdir = \/root\/work\/makefile_test2$/;"	m
+abs_top_srcdir	src/Makefile	/^abs_top_srcdir = \/root\/work\/makefile_test2$/;"	m
+abs_top_srcdir	src/debug/Makefile	/^abs_top_srcdir = \/root\/work\/makefile_test2$/;"	m
+abs_top_srcdir	src/test/Makefile	/^abs_top_srcdir = \/root\/work\/makefile_test2$/;"	m
+ac_ct_AR	src/debug/Makefile	/^ac_ct_AR = @ac_ct_AR@$/;"	m
+ac_ct_AR	src/test/Makefile	/^ac_ct_AR = @ac_ct_AR@$/;"	m
+ac_ct_CC	Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CC	src/Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CC	src/debug/Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CC	src/test/Makefile	/^ac_ct_CC = gcc$/;"	m
+ac_ct_CXX	Makefile	/^ac_ct_CXX = g++$/;"	m
+ac_ct_CXX	src/Makefile	/^ac_ct_CXX = g++$/;"	m
+ac_ct_CXX	src/debug/Makefile	/^ac_ct_CXX = g++$/;"	m
+ac_ct_CXX	src/test/Makefile	/^ac_ct_CXX = g++$/;"	m
+ac_ct_DUMPBIN	src/debug/Makefile	/^ac_ct_DUMPBIN = @ac_ct_DUMPBIN@$/;"	m
+ac_ct_DUMPBIN	src/test/Makefile	/^ac_ct_DUMPBIN = @ac_ct_DUMPBIN@$/;"	m
+am__CONFIG_DISTCLEAN_FILES	Makefile	/^am__CONFIG_DISTCLEAN_FILES = config.status config.cache config.log \\$/;"	m
+am__DIST_COMMON	Makefile	/^am__DIST_COMMON = $(srcdir)\/Makefile.in $(srcdir)\/config.h.in compile \\$/;"	m
+am__DIST_COMMON	src/Makefile	/^am__DIST_COMMON = $(srcdir)\/Makefile.in $(top_srcdir)\/depcomp$/;"	m
+am__DIST_COMMON	src/debug/Makefile	/^am__DIST_COMMON = $(srcdir)\/Makefile.in $(top_srcdir)\/depcomp$/;"	m
+am__DIST_COMMON	src/test/Makefile	/^am__DIST_COMMON = $(srcdir)\/Makefile.in $(top_srcdir)\/depcomp$/;"	m
+am__aclocal_m4_deps	Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__aclocal_m4_deps	src/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__aclocal_m4_deps	src/debug/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__aclocal_m4_deps	src/test/Makefile	/^am__aclocal_m4_deps = $(top_srcdir)\/configure.ac$/;"	m
+am__can_run_installinfo	Makefile	/^am__can_run_installinfo = \\$/;"	m
+am__can_run_installinfo	src/Makefile	/^am__can_run_installinfo = \\$/;"	m
+am__can_run_installinfo	src/debug/Makefile	/^am__can_run_installinfo = \\$/;"	m
+am__can_run_installinfo	src/test/Makefile	/^am__can_run_installinfo = \\$/;"	m
+am__cd	Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__cd	src/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__cd	src/debug/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__cd	src/test/Makefile	/^am__cd = CDPATH="$${ZSH_VERSION+.}$(PATH_SEPARATOR)" && cd$/;"	m
+am__configure_deps	Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__configure_deps	src/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__configure_deps	src/debug/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__configure_deps	src/test/Makefile	/^am__configure_deps = $(am__aclocal_m4_deps) $(CONFIGURE_DEPENDENCIES) \\$/;"	m
+am__define_uniq_tagged_files	Makefile	/^am__define_uniq_tagged_files = \\$/;"	m
+am__define_uniq_tagged_files	src/Makefile	/^am__define_uniq_tagged_files = \\$/;"	m
+am__define_uniq_tagged_files	src/debug/Makefile	/^am__define_uniq_tagged_files = \\$/;"	m
+am__define_uniq_tagged_files	src/test/Makefile	/^am__define_uniq_tagged_files = \\$/;"	m
+am__depfiles_maybe	src/Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__depfiles_maybe	src/debug/Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__depfiles_maybe	src/test/Makefile	/^am__depfiles_maybe = depfiles$/;"	m
+am__distuninstallcheck_listfiles	Makefile	/^am__distuninstallcheck_listfiles = $(distuninstallcheck_listfiles) \\$/;"	m
+am__include	Makefile	/^am__include = include$/;"	m
+am__include	src/Makefile	/^am__include = include$/;"	m
+am__include	src/debug/Makefile	/^am__include = include$/;"	m
+am__include	src/test/Makefile	/^am__include = include$/;"	m
+am__installdirs	src/Makefile	/^am__installdirs = "$(DESTDIR)$(bindir)"$/;"	m
+am__is_gnu_make	Makefile	/^am__is_gnu_make = { \\$/;"	m
+am__is_gnu_make	src/Makefile	/^am__is_gnu_make = { \\$/;"	m
+am__is_gnu_make	src/debug/Makefile	/^am__is_gnu_make = { \\$/;"	m
+am__is_gnu_make	src/test/Makefile	/^am__is_gnu_make = { \\$/;"	m
+am__leading_dot	Makefile	/^am__leading_dot = .$/;"	m
+am__leading_dot	src/Makefile	/^am__leading_dot = .$/;"	m
+am__leading_dot	src/debug/Makefile	/^am__leading_dot = .$/;"	m
+am__leading_dot	src/test/Makefile	/^am__leading_dot = .$/;"	m
+am__make_dryrun	Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m
+am__make_dryrun	src/Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m
+am__make_dryrun	src/debug/Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m
+am__make_dryrun	src/test/Makefile	/^am__make_dryrun = (target_option=n; $(am__make_running_with_option))$/;"	m
+am__make_keepgoing	Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m
+am__make_keepgoing	src/Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m
+am__make_keepgoing	src/debug/Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m
+am__make_keepgoing	src/test/Makefile	/^am__make_keepgoing = (target_option=k; $(am__make_running_with_option))$/;"	m
+am__make_running_with_option	Makefile	/^am__make_running_with_option = \\$/;"	m
+am__make_running_with_option	src/Makefile	/^am__make_running_with_option = \\$/;"	m
+am__make_running_with_option	src/debug/Makefile	/^am__make_running_with_option = \\$/;"	m
+am__make_running_with_option	src/test/Makefile	/^am__make_running_with_option = \\$/;"	m
+am__mv	src/Makefile	/^am__mv = mv -f$/;"	m
+am__mv	src/debug/Makefile	/^am__mv = mv -f$/;"	m
+am__mv	src/test/Makefile	/^am__mv = mv -f$/;"	m
+am__post_remove_distdir	Makefile	/^am__post_remove_distdir = $(am__remove_distdir)$/;"	m
+am__quote	Makefile	/^am__quote = $/;"	m
+am__quote	src/Makefile	/^am__quote = $/;"	m
+am__quote	src/debug/Makefile	/^am__quote = $/;"	m
+am__quote	src/test/Makefile	/^am__quote = $/;"	m
+am__recursive_targets	Makefile	/^am__recursive_targets = \\$/;"	m
+am__recursive_targets	src/Makefile	/^am__recursive_targets = \\$/;"	m
+am__relativize	Makefile	/^am__relativize = \\$/;"	m
+am__relativize	src/Makefile	/^am__relativize = \\$/;"	m
+am__remove_distdir	Makefile	/^am__remove_distdir = \\$/;"	m
+am__tagged_files	Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) \\$/;"	m
+am__tagged_files	src/Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)$/;"	m
+am__tagged_files	src/debug/Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)$/;"	m
+am__tagged_files	src/test/Makefile	/^am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)$/;"	m
+am__tar	Makefile	/^am__tar = $${TAR-tar} chof - "$$tardir"$/;"	m
+am__tar	src/Makefile	/^am__tar = $${TAR-tar} chof - "$$tardir"$/;"	m
+am__tar	src/debug/Makefile	/^am__tar = $${TAR-tar} chof - "$$tardir"$/;"	m
+am__tar	src/test/Makefile	/^am__tar = $${TAR-tar} chof - "$$tardir"$/;"	m
+am__uniquify_input	Makefile	/^am__uniquify_input = $(AWK) '\\$/;"	m
+am__uniquify_input	src/Makefile	/^am__uniquify_input = $(AWK) '\\$/;"	m
+am__uniquify_input	src/debug/Makefile	/^am__uniquify_input = $(AWK) '\\$/;"	m
+am__uniquify_input	src/test/Makefile	/^am__uniquify_input = $(AWK) '\\$/;"	m
+am__untar	Makefile	/^am__untar = $${TAR-tar} xf -$/;"	m
+am__untar	src/Makefile	/^am__untar = $${TAR-tar} xf -$/;"	m
+am__untar	src/debug/Makefile	/^am__untar = $${TAR-tar} xf -$/;"	m
+am__untar	src/test/Makefile	/^am__untar = $${TAR-tar} xf -$/;"	m
+am__v_CCLD_	src/Makefile	/^am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CCLD_	src/debug/Makefile	/^am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CCLD_	src/test/Makefile	/^am__v_CCLD_ = $(am__v_CCLD_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CCLD_0	src/Makefile	/^am__v_CCLD_0 = @echo "  CCLD    " $@;$/;"	m
+am__v_CCLD_0	src/debug/Makefile	/^am__v_CCLD_0 = @echo "  CCLD    " $@;$/;"	m
+am__v_CCLD_0	src/test/Makefile	/^am__v_CCLD_0 = @echo "  CCLD    " $@;$/;"	m
+am__v_CCLD_1	src/Makefile	/^am__v_CCLD_1 = $/;"	m
+am__v_CCLD_1	src/debug/Makefile	/^am__v_CCLD_1 = $/;"	m
+am__v_CCLD_1	src/test/Makefile	/^am__v_CCLD_1 = $/;"	m
+am__v_CC_	src/Makefile	/^am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CC_	src/debug/Makefile	/^am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CC_	src/test/Makefile	/^am__v_CC_ = $(am__v_CC_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_CC_0	src/Makefile	/^am__v_CC_0 = @echo "  CC      " $@;$/;"	m
+am__v_CC_0	src/debug/Makefile	/^am__v_CC_0 = @echo "  CC      " $@;$/;"	m
+am__v_CC_0	src/test/Makefile	/^am__v_CC_0 = @echo "  CC      " $@;$/;"	m
+am__v_CC_1	src/Makefile	/^am__v_CC_1 = $/;"	m
+am__v_CC_1	src/debug/Makefile	/^am__v_CC_1 = $/;"	m
+am__v_CC_1	src/test/Makefile	/^am__v_CC_1 = $/;"	m
+am__v_GEN_	Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_GEN_	src/Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_GEN_	src/debug/Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_GEN_	src/test/Makefile	/^am__v_GEN_ = $(am__v_GEN_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_GEN_0	Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m
+am__v_GEN_0	src/Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m
+am__v_GEN_0	src/debug/Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m
+am__v_GEN_0	src/test/Makefile	/^am__v_GEN_0 = @echo "  GEN     " $@;$/;"	m
+am__v_GEN_1	Makefile	/^am__v_GEN_1 = $/;"	m
+am__v_GEN_1	src/Makefile	/^am__v_GEN_1 = $/;"	m
+am__v_GEN_1	src/debug/Makefile	/^am__v_GEN_1 = $/;"	m
+am__v_GEN_1	src/test/Makefile	/^am__v_GEN_1 = $/;"	m
+am__v_P_	Makefile	/^am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_P_	src/Makefile	/^am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_P_	src/debug/Makefile	/^am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_P_	src/test/Makefile	/^am__v_P_ = $(am__v_P_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_P_0	Makefile	/^am__v_P_0 = false$/;"	m
+am__v_P_0	src/Makefile	/^am__v_P_0 = false$/;"	m
+am__v_P_0	src/debug/Makefile	/^am__v_P_0 = false$/;"	m
+am__v_P_0	src/test/Makefile	/^am__v_P_0 = false$/;"	m
+am__v_P_1	Makefile	/^am__v_P_1 = :$/;"	m
+am__v_P_1	src/Makefile	/^am__v_P_1 = :$/;"	m
+am__v_P_1	src/debug/Makefile	/^am__v_P_1 = :$/;"	m
+am__v_P_1	src/test/Makefile	/^am__v_P_1 = :$/;"	m
+am__v_at_	Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_at_	src/Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_at_	src/debug/Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_at_	src/test/Makefile	/^am__v_at_ = $(am__v_at_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_at_0	Makefile	/^am__v_at_0 = @$/;"	m
+am__v_at_0	src/Makefile	/^am__v_at_0 = @$/;"	m
+am__v_at_0	src/debug/Makefile	/^am__v_at_0 = @$/;"	m
+am__v_at_0	src/test/Makefile	/^am__v_at_0 = @$/;"	m
+am__v_at_1	Makefile	/^am__v_at_1 = $/;"	m
+am__v_at_1	src/Makefile	/^am__v_at_1 = $/;"	m
+am__v_at_1	src/debug/Makefile	/^am__v_at_1 = $/;"	m
+am__v_at_1	src/test/Makefile	/^am__v_at_1 = $/;"	m
+am__v_lt_	src/debug/Makefile	/^am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_lt_	src/test/Makefile	/^am__v_lt_ = $(am__v_lt_$(AM_DEFAULT_VERBOSITY))$/;"	m
+am__v_lt_0	src/debug/Makefile	/^am__v_lt_0 = --silent$/;"	m
+am__v_lt_0	src/test/Makefile	/^am__v_lt_0 = --silent$/;"	m
+am__v_lt_1	src/debug/Makefile	/^am__v_lt_1 = $/;"	m
+am__v_lt_1	src/test/Makefile	/^am__v_lt_1 = $/;"	m
+am_libbacktrace_a_OBJECTS	src/debug/Makefile	/^am_libbacktrace_a_OBJECTS = backtrace.lo$/;"	m
+am_libheader_a_OBJECTS	src/test/Makefile	/^am_libheader_a_OBJECTS = test.lo$/;"	m
+am_make_test_OBJECTS	src/Makefile	/^am_make_test_OBJECTS = test.$(OBJEXT)$/;"	m
+bin_PROGRAMS	src/Makefile	/^bin_PROGRAMS = make_test$(EXEEXT)$/;"	m
+bindir	Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bindir	src/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bindir	src/debug/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+bindir	src/test/Makefile	/^bindir = ${exec_prefix}\/bin$/;"	m
+build	src/debug/Makefile	/^build = @build@$/;"	m
+build	src/test/Makefile	/^build = @build@$/;"	m
+build_alias	Makefile	/^build_alias = $/;"	m
+build_alias	src/Makefile	/^build_alias = $/;"	m
+build_alias	src/debug/Makefile	/^build_alias = $/;"	m
+build_alias	src/test/Makefile	/^build_alias = $/;"	m
+build_cpu	src/debug/Makefile	/^build_cpu = @build_cpu@$/;"	m
+build_cpu	src/test/Makefile	/^build_cpu = @build_cpu@$/;"	m
+build_os	src/debug/Makefile	/^build_os = @build_os@$/;"	m
+build_os	src/test/Makefile	/^build_os = @build_os@$/;"	m
+build_triplet	src/debug/Makefile	/^build_triplet = @build@$/;"	m
+build_triplet	src/test/Makefile	/^build_triplet = @build@$/;"	m
+build_vendor	src/debug/Makefile	/^build_vendor = @build_vendor@$/;"	m
+build_vendor	src/test/Makefile	/^build_vendor = @build_vendor@$/;"	m
+builddir	Makefile	/^builddir = .$/;"	m
+builddir	src/Makefile	/^builddir = .$/;"	m
+builddir	src/debug/Makefile	/^builddir = .$/;"	m
+builddir	src/test/Makefile	/^builddir = .$/;"	m
+datadir	Makefile	/^datadir = ${datarootdir}$/;"	m
+datadir	src/Makefile	/^datadir = ${datarootdir}$/;"	m
+datadir	src/debug/Makefile	/^datadir = ${datarootdir}$/;"	m
+datadir	src/test/Makefile	/^datadir = ${datarootdir}$/;"	m
+datarootdir	Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+datarootdir	src/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+datarootdir	src/debug/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+datarootdir	src/test/Makefile	/^datarootdir = ${prefix}\/share$/;"	m
+depcomp	src/Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+depcomp	src/debug/Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+depcomp	src/test/Makefile	/^depcomp = $(SHELL) $(top_srcdir)\/depcomp$/;"	m
+distcleancheck_listfiles	Makefile	/^distcleancheck_listfiles = find . -type f -print$/;"	m
+distdir	Makefile	/^distdir = $(PACKAGE)-$(VERSION)$/;"	m
+distuninstallcheck_listfiles	Makefile	/^distuninstallcheck_listfiles = find . -type f -print$/;"	m
+docdir	Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+docdir	src/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+docdir	src/debug/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+docdir	src/test/Makefile	/^docdir = ${datarootdir}\/doc\/${PACKAGE_TARNAME}$/;"	m
+dvidir	Makefile	/^dvidir = ${docdir}$/;"	m
+dvidir	src/Makefile	/^dvidir = ${docdir}$/;"	m
+dvidir	src/debug/Makefile	/^dvidir = ${docdir}$/;"	m
+dvidir	src/test/Makefile	/^dvidir = ${docdir}$/;"	m
+exec_prefix	Makefile	/^exec_prefix = ${prefix}$/;"	m
+exec_prefix	src/Makefile	/^exec_prefix = ${prefix}$/;"	m
+exec_prefix	src/debug/Makefile	/^exec_prefix = ${prefix}$/;"	m
+exec_prefix	src/test/Makefile	/^exec_prefix = ${prefix}$/;"	m
+func_add_hook	ltmain.sh	/^func_add_hook ()$/;"	f
+func_append	ltmain.sh	/^  func_append ()$/;"	f
+func_append_quoted	ltmain.sh	/^  func_append_quoted ()$/;"	f
+func_append_uniq	ltmain.sh	/^func_append_uniq ()$/;"	f
+func_arith	ltmain.sh	/^  func_arith ()$/;"	f
+func_check_prog_grep	ltmain.sh	/^  func_check_prog_grep ()$/;"	f
+func_check_prog_sed	ltmain.sh	/^  func_check_prog_sed ()$/;"	f
+func_check_version_match	ltmain.sh	/^func_check_version_match ()$/;"	f
+func_config	ltmain.sh	/^func_config ()$/;"	f
+func_convert_core_file_wine_to_w32	ltmain.sh	/^func_convert_core_file_wine_to_w32 ()$/;"	f
+func_convert_core_msys_to_w32	ltmain.sh	/^func_convert_core_msys_to_w32 ()$/;"	f
+func_convert_core_path_wine_to_w32	ltmain.sh	/^func_convert_core_path_wine_to_w32 ()$/;"	f
+func_convert_file_check	ltmain.sh	/^func_convert_file_check ()$/;"	f
+func_convert_file_cygwin_to_w32	ltmain.sh	/^func_convert_file_cygwin_to_w32 ()$/;"	f
+func_convert_file_msys_to_cygwin	ltmain.sh	/^func_convert_file_msys_to_cygwin ()$/;"	f
+func_convert_file_msys_to_w32	ltmain.sh	/^func_convert_file_msys_to_w32 ()$/;"	f
+func_convert_file_nix_to_cygwin	ltmain.sh	/^func_convert_file_nix_to_cygwin ()$/;"	f
+func_convert_file_nix_to_w32	ltmain.sh	/^func_convert_file_nix_to_w32 ()$/;"	f
+func_convert_file_noop	ltmain.sh	/^func_convert_file_noop ()$/;"	f
+func_convert_path_check	ltmain.sh	/^func_convert_path_check ()$/;"	f
+func_convert_path_cygwin_to_w32	ltmain.sh	/^func_convert_path_cygwin_to_w32 ()$/;"	f
+func_convert_path_front_back_pathsep	ltmain.sh	/^func_convert_path_front_back_pathsep ()$/;"	f
+func_convert_path_msys_to_cygwin	ltmain.sh	/^func_convert_path_msys_to_cygwin ()$/;"	f
+func_convert_path_msys_to_w32	ltmain.sh	/^func_convert_path_msys_to_w32 ()$/;"	f
+func_convert_path_nix_to_cygwin	ltmain.sh	/^func_convert_path_nix_to_cygwin ()$/;"	f
+func_convert_path_nix_to_w32	ltmain.sh	/^func_convert_path_nix_to_w32 ()$/;"	f
+func_convert_path_noop	ltmain.sh	/^func_convert_path_noop ()$/;"	f
+func_cygming_dll_for_implib	ltmain.sh	/^func_cygming_dll_for_implib ()$/;"	f
+func_cygming_dll_for_implib_fallback	ltmain.sh	/^func_cygming_dll_for_implib_fallback ()$/;"	f
+func_cygming_dll_for_implib_fallback_core	ltmain.sh	/^func_cygming_dll_for_implib_fallback_core ()$/;"	f
+func_cygming_gnu_implib_p	ltmain.sh	/^func_cygming_gnu_implib_p ()$/;"	f
+func_cygming_ms_implib_p	ltmain.sh	/^func_cygming_ms_implib_p ()$/;"	f
+func_cygpath	ltmain.sh	/^func_cygpath ()$/;"	f
+func_dll_def_p	ltmain.sh	/^func_dll_def_p ()$/;"	f
+func_echo	ltmain.sh	/^func_echo ()$/;"	f
+func_echo_all	ltmain.sh	/^func_echo_all ()$/;"	f
+func_echo_infix_1	ltmain.sh	/^func_echo_infix_1 ()$/;"	f
+func_emit_cwrapperexe_src	ltmain.sh	/^func_emit_cwrapperexe_src ()$/;"	f
+func_emit_wrapper	ltmain.sh	/^func_emit_wrapper ()$/;"	f
+func_enable_tag	ltmain.sh	/^func_enable_tag ()$/;"	f
+func_error	ltmain.sh	/^func_error ()$/;"	f
+func_exec_program	ltmain.sh	/^func_exec_program ()$/;"	f
+func_exec_program_core	ltmain.sh	/^func_exec_program_core ()$/;"	f
+func_executable_p	ltmain.sh	/^func_executable_p ()$/;"	f
+func_execute_cmds	ltmain.sh	/^func_execute_cmds ()$/;"	f
+func_extract_an_archive	ltmain.sh	/^func_extract_an_archive ()$/;"	f
+func_extract_archives	ltmain.sh	/^func_extract_archives ()$/;"	f
+func_fallback_echo	ltmain.sh	/^func_fallback_echo ()$/;"	f
+func_fatal_configuration	ltmain.sh	/^func_fatal_configuration ()$/;"	f
+func_fatal_error	ltmain.sh	/^func_fatal_error ()$/;"	f
+func_fatal_help	ltmain.sh	/^func_fatal_help ()$/;"	f
+func_features	ltmain.sh	/^func_features ()$/;"	f
+func_generate_dlsyms	ltmain.sh	/^func_generate_dlsyms ()$/;"	f
+func_generated_by_libtool_p	ltmain.sh	/^func_generated_by_libtool_p ()$/;"	f
+func_grep	ltmain.sh	/^func_grep ()$/;"	f
+func_help	ltmain.sh	/^func_help ()$/;"	f
+func_hookable	ltmain.sh	/^func_hookable ()$/;"	f
+func_infer_tag	ltmain.sh	/^func_infer_tag ()$/;"	f
+func_init_to_host_path_cmd	ltmain.sh	/^func_init_to_host_path_cmd ()$/;"	f
+func_lalib_p	ltmain.sh	/^func_lalib_p ()$/;"	f
+func_lalib_unsafe_p	ltmain.sh	/^func_lalib_unsafe_p ()$/;"	f
+func_len	ltmain.sh	/^  func_len ()$/;"	f
+func_lo2o	ltmain.sh	/^  func_lo2o ()$/;"	f
+func_lt_dump_args	ltmain.sh	/^func_lt_dump_args ()$/;"	f
+func_lt_ver	ltmain.sh	/^func_lt_ver ()$/;"	f
+func_ltwrapper_executable_p	ltmain.sh	/^func_ltwrapper_executable_p ()$/;"	f
+func_ltwrapper_p	ltmain.sh	/^func_ltwrapper_p ()$/;"	f
+func_ltwrapper_script_p	ltmain.sh	/^func_ltwrapper_script_p ()$/;"	f
+func_ltwrapper_scriptname	ltmain.sh	/^func_ltwrapper_scriptname ()$/;"	f
+func_missing_arg	ltmain.sh	/^func_missing_arg ()$/;"	f
+func_mkdir_p	ltmain.sh	/^func_mkdir_p ()$/;"	f
+func_mktempdir	ltmain.sh	/^func_mktempdir ()$/;"	f
+func_mode_compile	ltmain.sh	/^func_mode_compile ()$/;"	f
+func_mode_execute	ltmain.sh	/^func_mode_execute ()$/;"	f
+func_mode_finish	ltmain.sh	/^func_mode_finish ()$/;"	f
+func_mode_help	ltmain.sh	/^func_mode_help ()$/;"	f
+func_mode_install	ltmain.sh	/^func_mode_install ()$/;"	f
+func_mode_link	ltmain.sh	/^func_mode_link ()$/;"	f
+func_mode_uninstall	ltmain.sh	/^func_mode_uninstall ()$/;"	f
+func_normal_abspath	ltmain.sh	/^func_normal_abspath ()$/;"	f
+func_notquiet	ltmain.sh	/^func_notquiet ()$/;"	f
+func_options	ltmain.sh	/^func_options ()$/;"	f
+func_options_prep	ltmain.sh	/^func_options_prep ()$/;"	f
+func_parse_lt_options	ltmain.sh	/^func_parse_lt_options ()$/;"	f
+func_parse_options	ltmain.sh	/^func_parse_options ()$/;"	f
+func_path_progs	ltmain.sh	/^func_path_progs ()$/;"	f
+func_quote_for_eval	ltmain.sh	/^func_quote_for_eval ()$/;"	f
+func_quote_for_expand	ltmain.sh	/^func_quote_for_expand ()$/;"	f
+func_relative_path	ltmain.sh	/^func_relative_path ()$/;"	f
+func_remove_hook	ltmain.sh	/^func_remove_hook ()$/;"	f
+func_replace_sysroot	ltmain.sh	/^func_replace_sysroot ()$/;"	f
+func_require_term_colors	ltmain.sh	/^func_require_term_colors ()$/;"	f
+func_resolve_sysroot	ltmain.sh	/^func_resolve_sysroot ()$/;"	f
+func_run_hooks	ltmain.sh	/^func_run_hooks ()$/;"	f
+func_show_eval	ltmain.sh	/^func_show_eval ()$/;"	f
+func_show_eval_locale	ltmain.sh	/^func_show_eval_locale ()$/;"	f
+func_sort_ver	ltmain.sh	/^func_sort_ver ()$/;"	f
+func_source	ltmain.sh	/^func_source ()$/;"	f
+func_split_equals	ltmain.sh	/^  func_split_equals ()$/;"	f
+func_split_short_opt	ltmain.sh	/^  func_split_short_opt ()$/;"	f
+func_stripname	ltmain.sh	/^  func_stripname ()$/;"	f
+func_suncc_cstd_abi	ltmain.sh	/^func_suncc_cstd_abi ()$/;"	f
+func_to_host_file	ltmain.sh	/^func_to_host_file ()$/;"	f
+func_to_host_path	ltmain.sh	/^func_to_host_path ()$/;"	f
+func_to_tool_file	ltmain.sh	/^func_to_tool_file ()$/;"	f
+func_tr_sh	ltmain.sh	/^func_tr_sh ()$/;"	f
+func_usage	ltmain.sh	/^func_usage ()$/;"	f
+func_usage_message	ltmain.sh	/^func_usage_message ()$/;"	f
+func_validate_options	ltmain.sh	/^func_validate_options ()$/;"	f
+func_verbose	ltmain.sh	/^func_verbose ()$/;"	f
+func_version	ltmain.sh	/^func_version ()$/;"	f
+func_warn_and_continue	ltmain.sh	/^func_warn_and_continue ()$/;"	f
+func_warning	ltmain.sh	/^func_warning ()$/;"	f
+func_win32_import_lib_p	ltmain.sh	/^func_win32_import_lib_p ()$/;"	f
+func_win32_libid	ltmain.sh	/^func_win32_libid ()$/;"	f
+func_write_libtool_object	ltmain.sh	/^func_write_libtool_object ()$/;"	f
+func_xform	ltmain.sh	/^  func_xform ()$/;"	f
+header_test	src/test/header.cpp	/^void header_test()$/;"	f
+host	src/debug/Makefile	/^host = @host@$/;"	m
+host	src/test/Makefile	/^host = @host@$/;"	m
+host_alias	Makefile	/^host_alias = $/;"	m
+host_alias	src/Makefile	/^host_alias = $/;"	m
+host_alias	src/debug/Makefile	/^host_alias = $/;"	m
+host_alias	src/test/Makefile	/^host_alias = $/;"	m
+host_cpu	src/debug/Makefile	/^host_cpu = @host_cpu@$/;"	m
+host_cpu	src/test/Makefile	/^host_cpu = @host_cpu@$/;"	m
+host_os	src/debug/Makefile	/^host_os = @host_os@$/;"	m
+host_os	src/test/Makefile	/^host_os = @host_os@$/;"	m
+host_triplet	src/debug/Makefile	/^host_triplet = @host@$/;"	m
+host_triplet	src/test/Makefile	/^host_triplet = @host@$/;"	m
+host_vendor	src/debug/Makefile	/^host_vendor = @host_vendor@$/;"	m
+host_vendor	src/test/Makefile	/^host_vendor = @host_vendor@$/;"	m
+htmldir	Makefile	/^htmldir = ${docdir}$/;"	m
+htmldir	src/Makefile	/^htmldir = ${docdir}$/;"	m
+htmldir	src/debug/Makefile	/^htmldir = ${docdir}$/;"	m
+htmldir	src/test/Makefile	/^htmldir = ${docdir}$/;"	m
+includedir	Makefile	/^includedir = ${prefix}\/include$/;"	m
+includedir	src/Makefile	/^includedir = ${prefix}\/include$/;"	m
+includedir	src/debug/Makefile	/^includedir = ${prefix}\/include$/;"	m
+includedir	src/test/Makefile	/^includedir = ${prefix}\/include$/;"	m
+infodir	Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+infodir	src/Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+infodir	src/debug/Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+infodir	src/test/Makefile	/^infodir = ${datarootdir}\/info$/;"	m
+install_sh	Makefile	/^install_sh = ${SHELL} \/root\/work\/makefile_test2\/install-sh$/;"	m
+install_sh	src/Makefile	/^install_sh = ${SHELL} \/root\/work\/makefile_test2\/install-sh$/;"	m
+install_sh	src/debug/Makefile	/^install_sh = ${SHELL} \/root\/work\/makefile_test2\/install-sh$/;"	m
+install_sh	src/test/Makefile	/^install_sh = ${SHELL} \/root\/work\/makefile_test2\/install-sh$/;"	m
+install_sh_DATA	Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_DATA	src/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_DATA	src/debug/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_DATA	src/test/Makefile	/^install_sh_DATA = $(install_sh) -c -m 644$/;"	m
+install_sh_PROGRAM	Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_PROGRAM	src/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_PROGRAM	src/debug/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_PROGRAM	src/test/Makefile	/^install_sh_PROGRAM = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	src/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	src/debug/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+install_sh_SCRIPT	src/test/Makefile	/^install_sh_SCRIPT = $(install_sh) -c$/;"	m
+libbacktrace_a_LIBADD	src/debug/Makefile	/^libbacktrace_a_LIBADD =$/;"	m
+libbacktrace_a_OBJECTS	src/debug/Makefile	/^libbacktrace_a_OBJECTS = $(am_libbacktrace_a_OBJECTS)$/;"	m
+libbacktrace_a_SOURCES	src/debug/Makefile	/^libbacktrace_a_SOURCES = backtrace.c$/;"	m
+libdir	Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libdir	src/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libdir	src/debug/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libdir	src/test/Makefile	/^libdir = ${exec_prefix}\/lib$/;"	m
+libexecdir	Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libexecdir	src/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libexecdir	src/debug/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libexecdir	src/test/Makefile	/^libexecdir = ${exec_prefix}\/libexec$/;"	m
+libheader_a_LIBADD	src/test/Makefile	/^libheader_a_LIBADD =$/;"	m
+libheader_a_OBJECTS	src/test/Makefile	/^libheader_a_OBJECTS = $(am_libheader_a_OBJECTS)$/;"	m
+libheader_a_SOURCES	src/test/Makefile	/^libheader_a_SOURCES = test.c$/;"	m
+libtool_options_prep	ltmain.sh	/^libtool_options_prep ()$/;"	f
+libtool_parse_options	ltmain.sh	/^libtool_parse_options ()$/;"	f
+libtool_validate_options	ltmain.sh	/^libtool_validate_options ()$/;"	f
+localedir	Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localedir	src/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localedir	src/debug/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localedir	src/test/Makefile	/^localedir = ${datarootdir}\/locale$/;"	m
+localstatedir	Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+localstatedir	src/Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+localstatedir	src/debug/Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+localstatedir	src/test/Makefile	/^localstatedir = ${prefix}\/var$/;"	m
+main	src/test.cpp	/^int main()$/;"	f
+make_test_DEPENDENCIES	src/Makefile	/^make_test_DEPENDENCIES = debug\/backtrace.a test\/header.a$/;"	m
+make_test_LDADD	src/Makefile	/^make_test_LDADD = debug\/backtrace.a test\/header.a$/;"	m
+make_test_OBJECTS	src/Makefile	/^make_test_OBJECTS = $(am_make_test_OBJECTS)$/;"	m
+make_test_SOURCES	src/Makefile	/^make_test_SOURCES = test.c$/;"	m
+mandir	Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mandir	src/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mandir	src/debug/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mandir	src/test/Makefile	/^mandir = ${datarootdir}\/man$/;"	m
+mkdir_p	Makefile	/^mkdir_p = $(MKDIR_P)$/;"	m
+mkdir_p	src/Makefile	/^mkdir_p = $(MKDIR_P)$/;"	m
+mkdir_p	src/debug/Makefile	/^mkdir_p = $(MKDIR_P)$/;"	m
+mkdir_p	src/test/Makefile	/^mkdir_p = $(MKDIR_P)$/;"	m
+mkinstalldirs	Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mkinstalldirs	src/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mkinstalldirs	src/debug/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+mkinstalldirs	src/test/Makefile	/^mkinstalldirs = $(install_sh) -d$/;"	m
+noinst_LTLIBRARIES	src/debug/Makefile	/^noinst_LTLIBRARIES = libbacktrace.a$/;"	m
+noinst_LTLIBRARIES	src/test/Makefile	/^noinst_LTLIBRARIES = libheader.a$/;"	m
+oldincludedir	Makefile	/^oldincludedir = \/usr\/include$/;"	m
+oldincludedir	src/Makefile	/^oldincludedir = \/usr\/include$/;"	m
+oldincludedir	src/debug/Makefile	/^oldincludedir = \/usr\/include$/;"	m
+oldincludedir	src/test/Makefile	/^oldincludedir = \/usr\/include$/;"	m
+pdfdir	Makefile	/^pdfdir = ${docdir}$/;"	m
+pdfdir	src/Makefile	/^pdfdir = ${docdir}$/;"	m
+pdfdir	src/debug/Makefile	/^pdfdir = ${docdir}$/;"	m
+pdfdir	src/test/Makefile	/^pdfdir = ${docdir}$/;"	m
+pkgdatadir	Makefile	/^pkgdatadir = $(datadir)\/make_test$/;"	m
+pkgdatadir	src/Makefile	/^pkgdatadir = $(datadir)\/make_test$/;"	m
+pkgdatadir	src/debug/Makefile	/^pkgdatadir = $(datadir)\/make_test$/;"	m
+pkgdatadir	src/test/Makefile	/^pkgdatadir = $(datadir)\/make_test$/;"	m
+pkgincludedir	Makefile	/^pkgincludedir = $(includedir)\/make_test$/;"	m
+pkgincludedir	src/Makefile	/^pkgincludedir = $(includedir)\/make_test$/;"	m
+pkgincludedir	src/debug/Makefile	/^pkgincludedir = $(includedir)\/make_test$/;"	m
+pkgincludedir	src/test/Makefile	/^pkgincludedir = $(includedir)\/make_test$/;"	m
+pkglibdir	Makefile	/^pkglibdir = $(libdir)\/make_test$/;"	m
+pkglibdir	src/Makefile	/^pkglibdir = $(libdir)\/make_test$/;"	m
+pkglibdir	src/debug/Makefile	/^pkglibdir = $(libdir)\/make_test$/;"	m
+pkglibdir	src/test/Makefile	/^pkglibdir = $(libdir)\/make_test$/;"	m
+pkglibexecdir	Makefile	/^pkglibexecdir = $(libexecdir)\/make_test$/;"	m
+pkglibexecdir	src/Makefile	/^pkglibexecdir = $(libexecdir)\/make_test$/;"	m
+pkglibexecdir	src/debug/Makefile	/^pkglibexecdir = $(libexecdir)\/make_test$/;"	m
+pkglibexecdir	src/test/Makefile	/^pkglibexecdir = $(libexecdir)\/make_test$/;"	m
+prefix	Makefile	/^prefix = \/usr\/local$/;"	m
+prefix	src/Makefile	/^prefix = \/usr\/local$/;"	m
+prefix	src/debug/Makefile	/^prefix = \/usr\/local$/;"	m
+prefix	src/test/Makefile	/^prefix = \/usr\/local$/;"	m
+print_backtrace	src/debug/backtrace.c	/^void print_backtrace()$/;"	f
+program_transform_name	Makefile	/^program_transform_name = s,x,x,$/;"	m
+program_transform_name	src/Makefile	/^program_transform_name = s,x,x,$/;"	m
+program_transform_name	src/debug/Makefile	/^program_transform_name = s,x,x,$/;"	m
+program_transform_name	src/test/Makefile	/^program_transform_name = s,x,x,$/;"	m
+psdir	Makefile	/^psdir = ${docdir}$/;"	m
+psdir	src/Makefile	/^psdir = ${docdir}$/;"	m
+psdir	src/debug/Makefile	/^psdir = ${docdir}$/;"	m
+psdir	src/test/Makefile	/^psdir = ${docdir}$/;"	m
+runstatedir	Makefile	/^runstatedir = ${localstatedir}\/run$/;"	m
+runstatedir	src/Makefile	/^runstatedir = ${localstatedir}\/run$/;"	m
+runstatedir	src/debug/Makefile	/^runstatedir = ${localstatedir}\/run$/;"	m
+runstatedir	src/test/Makefile	/^runstatedir = ${localstatedir}\/run$/;"	m
+sbindir	Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sbindir	src/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sbindir	src/debug/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sbindir	src/test/Makefile	/^sbindir = ${exec_prefix}\/sbin$/;"	m
+sharedstatedir	Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sharedstatedir	src/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sharedstatedir	src/debug/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+sharedstatedir	src/test/Makefile	/^sharedstatedir = ${prefix}\/com$/;"	m
+srcdir	Makefile	/^srcdir = .$/;"	m
+srcdir	src/Makefile	/^srcdir = .$/;"	m
+srcdir	src/debug/Makefile	/^srcdir = .$/;"	m
+srcdir	src/test/Makefile	/^srcdir = .$/;"	m
+subdir	Makefile	/^subdir = .$/;"	m
+subdir	src/Makefile	/^subdir = src$/;"	m
+subdir	src/debug/Makefile	/^subdir = src\/debug$/;"	m
+subdir	src/test/Makefile	/^subdir = src\/test$/;"	m
+sysconfdir	Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+sysconfdir	src/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+sysconfdir	src/debug/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+sysconfdir	src/test/Makefile	/^sysconfdir = ${prefix}\/etc$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | BZIP2=$${BZIP2--9} bzip2 -c >$(distdir).tar.bz2$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | XZ_OPT=$${XZ_OPT--e} xz -c >$(distdir).tar.xz$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | compress -c >$(distdir).tar.Z$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | eval GZIP= gzip $(GZIP_ENV) -c >$(distdir).tar.gz$/;"	m
+tardir	Makefile	/^	tardir=$(distdir) && $(am__tar) | lzip -c $${LZIP_OPT--9} >$(distdir).tar.lz$/;"	m
+target_alias	Makefile	/^target_alias = $/;"	m
+target_alias	src/Makefile	/^target_alias = $/;"	m
+target_alias	src/debug/Makefile	/^target_alias = $/;"	m
+target_alias	src/test/Makefile	/^target_alias = $/;"	m
+top_build_prefix	Makefile	/^top_build_prefix = $/;"	m
+top_build_prefix	src/Makefile	/^top_build_prefix = ..\/$/;"	m
+top_build_prefix	src/debug/Makefile	/^top_build_prefix = ..\/..\/$/;"	m
+top_build_prefix	src/test/Makefile	/^top_build_prefix = ..\/..\/$/;"	m
+top_builddir	Makefile	/^top_builddir = .$/;"	m
+top_builddir	src/Makefile	/^top_builddir = ..$/;"	m
+top_builddir	src/debug/Makefile	/^top_builddir = ..\/..$/;"	m
+top_builddir	src/test/Makefile	/^top_builddir = ..\/..$/;"	m
+top_distdir	Makefile	/^top_distdir = $(distdir)$/;"	m
+top_srcdir	Makefile	/^top_srcdir = .$/;"	m
+top_srcdir	src/Makefile	/^top_srcdir = ..$/;"	m
+top_srcdir	src/debug/Makefile	/^top_srcdir = ..\/..$/;"	m
+top_srcdir	src/test/Makefile	/^top_srcdir = ..\/..$/;"	m
+transform	Makefile	/^transform = $(program_transform_name)$/;"	m
+transform	src/Makefile	/^transform = $(program_transform_name)$/;"	m
+transform	src/debug/Makefile	/^transform = $(program_transform_name)$/;"	m
+transform	src/test/Makefile	/^transform = $(program_transform_name)$/;"	m

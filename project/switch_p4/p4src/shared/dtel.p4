@@ -41,6 +41,7 @@ control DtelAcl(in switch_lookup_fields_t lkp,
     table acl {
         key = {
             INGRESS_IP_ACL_KEY
+            INGRESS_VXLAN_ACL_KEY
             ig_md.port_lag_label : ternary;
             ig_md.bd_label : ternary;
             ig_md.l4_port_label : ternary;

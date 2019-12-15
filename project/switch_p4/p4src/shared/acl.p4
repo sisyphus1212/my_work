@@ -103,6 +103,7 @@ action egress_acl_mirror(inout switch_egress_metadata_t eg_md,
     lkp.mac_type : ternary;
 
 #define INGRESS_VXLAN_ACL_KEY
+    lkp.vni : exact;
 
 #define INGRESS_IPV4_ACL_KEY             \
     lkp.ip_src_addr[31:0] : ternary;     \
