@@ -145,7 +145,7 @@ control PktValidation(
 
     table validate_vxlan {
             key = {
-                hdr.vxlan.vni : exact;
+                hdr.vxlan.isValid() : ternary;
             }
 
             actions = {

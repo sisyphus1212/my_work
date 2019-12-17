@@ -136,6 +136,18 @@ action egress_acl_mirror(inout switch_egress_metadata_t eg_md,
     lkp.l4_dst_port : ternary;           \
     lkp.ip_ttl : ternary;                \
     lkp.tcp_flags : ternary;
+    
+#define INGRESS_INNER_IP_ACL_KEY               \
+    inner_lkp.mac_type : ternary;              \
+    inner_lkp.ip_src_addr : ternary;           \
+    inner_lkp.ip_dst_addr : ternary;           \
+    inner_lkp.ip_proto : ternary;              \
+    inner_lkp.ip_tos : ternary;                \
+    inner_lkp.l4_src_port : ternary;           \
+    inner_lkp.l4_dst_port : ternary;           \
+    inner_lkp.ip_ttl : ternary;                \
+    inner_lkp.tcp_flags : ternary;
+    
 
 #define EGRESS_IPV4_ACL_KEY              \
     hdr.ipv4.src_addr : ternary;         \

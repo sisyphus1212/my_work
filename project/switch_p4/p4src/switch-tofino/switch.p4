@@ -153,6 +153,10 @@ const bit<32> L3_MTU_TABLE_SIZE = 1024;
 #include "dtel.p4"
 #include "acl.p4"
 
+@pa_solitary("ingress","ig_md.lkp")
+@pa_solitary("ingress","ig_md.dtel_lkp")
+@pa_no_overlay("ingress","ig_md.dtel_lkp")
+@pa_no_overlay("ingress","ig_md.lkp")
 @pa_no_overlay("ingress", "hdr.bridged_md.__pad_3")
 
 control SwitchIngress(
@@ -220,7 +224,7 @@ control SwitchIngress(
         //tunnel.apply(hdr, ig_md, ig_md.lkp);
 
         if (ig_md.lkp.tunnel_flag == true){
-            inner_pkt_validation.apply(hdr, ig_md.lkp, ig_md.flags, ig_md.drop_reason);
+            inner_pkt_validation.apply(hdr, ig_md.dtel_lkp, ig_md.flags, ig_md.drop_reason);
         }
 
         acl.apply(ig_md.lkp, ig_md);
@@ -255,8 +259,12 @@ control SwitchIngress(
         }
 
         system_acl.apply(ig_md, ig_intr_md_for_tm, ig_intr_md_for_dprsr);
+
+
+
         dtel.apply(
-            hdr, ig_md.lkp, ig_md, ig_md.hash[15:0], ig_intr_md_for_dprsr, ig_intr_md_for_tm);
+        hdr, ig_md.dtel_lkp, ig_md, ig_md.hash[15:0], ig_intr_md_for_dprsr, ig_intr_md_for_tm);
+
 
         // Only add bridged metadata if we are NOT bypassing egress pipeline.
         if (ig_intr_md_for_tm.bypass_egress == 1w0) {

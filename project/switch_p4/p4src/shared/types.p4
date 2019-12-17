@@ -554,6 +554,7 @@ struct switch_ip_metadata_t {
     // switch_urpf_mode_t urpf_mode;
 }
 
+
 struct switch_lookup_fields_t {
     switch_pkt_type_t pkt_type;
 
@@ -672,7 +673,10 @@ struct switch_port_metadata_t {
 @pa_alias("ingress", "ig_md.qos.qid", "ig_intr_md_for_tm.qid")
 @pa_alias("ingress", "ig_md.qos.icos", "ig_intr_md_for_tm.ingress_cos")
 @pa_container_size("egress", "hdr.dtel_drop_report.drop_reason", 8)
-
+@pa_solitary("ingress","ig_md.lkp")
+@pa_solitary("ingress","ig_md.dtel_lkp")
+@pa_no_overlay("ingress","ig_md.dtel_lkp")
+@pa_no_overlay("ingress","ig_md.lkp")
 @pa_alias("ingress", "ig_intr_md_for_dprsr.mirror_type", "ig_md.mirror.type")
 // Ingress metadata
 struct switch_ingress_metadata_t {
@@ -707,7 +711,9 @@ struct switch_ingress_metadata_t {
     switch_cpu_reason_t cpu_reason;
 
     switch_rmac_group_t rmac_group;
+    switch_lookup_fields_t dtel_lkp;
     switch_lookup_fields_t lkp;
+    
     switch_multicast_metadata_t multicast;
     switch_stp_metadata_t stp;
     switch_qos_metadata_t qos;

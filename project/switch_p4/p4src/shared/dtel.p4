@@ -71,6 +71,7 @@ control Ipv4DtelAcl(in switch_lookup_fields_t lkp,
     table acl {
         key = {
             INGRESS_IPV4_ACL_KEY
+            INGRESS_VXLAN_ACL_KEY
             ig_md.port_lag_label : ternary;
             ig_md.bd_label : ternary;
             ig_md.l4_port_label : ternary;
@@ -100,6 +101,7 @@ control Ipv6DtelAcl(in switch_lookup_fields_t lkp,
     table acl {
         key = {
             INGRESS_IPV6_ACL_KEY
+            INGRESS_VXLAN_ACL_KEY
             ig_md.port_lag_label : ternary;
             ig_md.bd_label : ternary;
             ig_md.l4_port_label : ternary;
@@ -430,7 +432,7 @@ control FlowReport(inout switch_egress_metadata_t eg_md, out bit<2> flag) {
 }
 
 control IngressDtel(in  switch_header_t hdr,
-                    in switch_lookup_fields_t lkp,
+                    inout switch_lookup_fields_t lkp,
                     inout switch_ingress_metadata_t ig_md,
                     in bit<16> hash,
                     inout ingress_intrinsic_metadata_for_deparser_t ig_intr_md_for_dprsr,
@@ -458,10 +460,15 @@ control IngressDtel(in  switch_header_t hdr,
         implementation = session_selector;
     }
 
+
     apply {
 #ifdef DTEL_ENABLE
         ig_md.dtel.report_type = SWITCH_DTEL_REPORT_TYPE_NONE;
         ig_md.dtel.session_id = 0;
+    
+        if (ig_md.lkp.tunnel_flag != true) {
+            lkp = ig_md.lkp;
+        }
 
 #ifdef DTEL_ACL_ENABLE
         if (!INGRESS_BYPASS(ACL)) {
