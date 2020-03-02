@@ -25,6 +25,8 @@ git pull --rebase origin master, 将gitee上的文件和本地库合并. git pus
 此外，还有一种matching方式，会推送所有有对应的远程分支的本地分支。
 Git 2.0版本之前，默认采用matching方法，现在改为默认采用simple方式。
 
+### 查看git的配置信息
+* git config -l
 
 ## 常用命令
 * git config --global user.email "sisyphus12@aliyun.com"
@@ -48,11 +50,16 @@ Git 2.0版本之前，默认采用matching方法，现在改为默认采用simpl
 * git log --oneline -3 查看更改操作，只取其中三条
 * git show (id) 查看提交的更改，id为 git log 显示的id 
 ---
+## 远程分支与本地合并
 * git pull = git fetch + git merge
 * git fetch origin master:temp           #从远程的origin仓库的master分支下载到本地并新建一个分支temp
 ---
 * git reset --hard commit_id     //退到/进到 指定commit的sha码
 ----
+
+## 分支合并
+    
+
 * git lfs install
 * git lfs track "*.psd"
 * git add .gitattributes
