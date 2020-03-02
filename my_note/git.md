@@ -1,9 +1,9 @@
-## 7.配置远程仓库  origin是远程仓库的别名 代替xxx.git的地址
+## 1.配置远程仓库  origin是远程仓库的别名 代替xxx.git的地址
 ```shell
  git remote add my_work git@gitee.com:sisyphus12/my_work.git
 ```
 
-## 7.开始推送 
+## 2.开始推送 
 ```shell
 git push <远程主机名> <本地分支名>:<远程分支名>
 
@@ -13,7 +13,7 @@ git push my_work master:master
 ```shell
 git pull --rebase origin master, 将gitee上的文件和本地库合并. git push origin master
 ``` 
-## 8.使用git命令推送项目完成
+## 3.使用git命令推送项目完成
 
 ====小提示===
 
@@ -53,12 +53,16 @@ Git 2.0版本之前，默认采用matching方法，现在改为默认采用simpl
 ## 远程分支与本地合并
 * git pull = git fetch + git merge
 * git fetch origin master:temp           #从远程的origin仓库的master分支下载到本地并新建一个分支temp
+
+## 在解决冲突的时候文件覆盖
+* git checkout --ours 文件路径              功能:我的覆盖别人的
+* git checkout --theirs 文件路径            功能:别人的覆盖我的
 ---
 * git reset --hard commit_id     //退到/进到 指定commit的sha码
 ----
 
 ## 分支合并
-    
+
 
 * git lfs install
 * git lfs track "*.psd"
