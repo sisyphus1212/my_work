@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 " ____    ____  __   _______   _______ 
 " \   \  /   / |  | |       \ |   ____|
 "  \   \/   /  |  | |  .--.  ||  |__   
@@ -184,3 +185,16 @@ let g:ctrlp_mruf_default_order = 1
 let g:timeStampFormat = '170101'
 let g:timeStampString = '%y%m%d'
 let g:timeStampLeader = 'version'
+=======
+set paste
+set tabstop=9
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+syntax on
+set background=dark
+filetype indent on
+set nocompatible
+set mouse=v 
+set backspace=indent,eol,start
+
