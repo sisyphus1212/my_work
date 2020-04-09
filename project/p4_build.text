@@ -1,0 +1,1 @@
+/root/x564p/bf-sde-9.0.0/install/bin/p4c --std p4-16 --target tofino --arch tna -o ./tna_multicast -g --verbose 1 --bf-rt-schema ./tna_multicast/bf-rt.json    /root/x564p/bf-sde-9.0.0/pkgsrc/p4-examples/p4_16_programs/tna_multicast/tna_multicast.p4
