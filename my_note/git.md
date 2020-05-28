@@ -40,6 +40,8 @@ Git 2.0版本之前，默认采用matching方法，现在改为默认采用simpl
 * git remote -v 查看本地存储的远程仓库信息 
 * git checkout dev 从当前分支切换到‘dev’分支
     1. -b 'dev' 建立并切换新分支 
+* git rev-parse --abbrev-ref master@{upstream} 查看主分支对应的远程分支
+* git symbolic-ref -q --short HEAD 查看当前分支名
 * git branch 查看本地分支
     1. -d <branchname> //删除本地分支 
     2. -m //重命名本地分支 
