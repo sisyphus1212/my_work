@@ -2,20 +2,28 @@
 apt install nfs-kernel-server
 ##配置文件
 ####/etc/exports文件的内容如下：
-
-/tmp *(rw,sync,no_subtree_check,no_root_squash)
-
-/data *(rw,sync,no_subtree_check,no_root_squash)
+no_root_squash：登入到NFS主机的用户如果是root，该用户即拥有root权限；
+root_squash：登入NFS主机的用户如果是root，该用户权限将被限定为匿名使用者nobody；
+all_squash：不管登陆NFS主机的用户是何权限都会被重新设定为匿名使用者nobody。
+anonuid：将登入NFS主机的用户都设定成指定的user id，此ID必须存在于/etc/passwd中。
+anongid：同anonuid，但是变成group ID就是了！
+sync：资料同步写入存储器中。
+async：资料会先暂时存放在内存中，不会直接写入硬盘。
+insecure：允许从这台机器过来的非授权访问
 
 /logs *(rw,sync,no_subtree_check,no_root_squash)
+
+/home/lj *(rw,sync,no_root_squash)
 
 ##常用命令
 service nfs-kernel-server restart
 exportfs -rv
 nfsstat
 rpcinfo
-sudo showmount -e localhost
-
+showmount -a
+showmount -e 192.168.1.1
+显示被挂载的共享目录
+showmount -d  
 ##挂载共享目录
 sudo mount -t nfs 192.168.3.167:/data /mnt/data
 
