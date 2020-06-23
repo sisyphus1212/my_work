@@ -21,7 +21,8 @@
 *    -t: 终端。
 *    ubuntu:15.10: 这是指用 ubuntu 15.10 版本镜像为基础来启动容器。
 *    /bin/bash：放在镜像名后的是命令，这里我们希望有个交互式 Shell，因此用的是 /bin/bash。
-docker run -itd --name ubuntu:15.10 ubuntu /bin/bash
+
+docker run -itd --name=911 --hostname=9.1.1 ubuntu:sde /bin/bash
 
 ## 特权级别运行
 docker run  -p 22000:22 -p 30000:3000 --privileged=true  -v ~/work_dir/docker/ubuntu_p4_9.0:/root/bf-sde-9.1.0 -id --name=p4_9.1 ubuntu  /bin/bash
