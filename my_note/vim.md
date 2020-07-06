@@ -129,3 +129,20 @@ Ctrl + PageUp：移动到上一个分页
 ^Wq，离开当前窗口
 ^Wc，关闭当前的窗口
 ^Wo，关闭当前窗口以外的所有窗口
+
+
+ #常用配置
+set paste
+set mouse-=a
+syntax on
+set ts=4
+
+set nocompatible
+set expandtab
+set tags=tags
+set autoindent
+
+if has("autocmd")
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
+
